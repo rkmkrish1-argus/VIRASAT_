@@ -1,0 +1,5 @@
+Title: Federation Versus Freedom
+Author: Ambedkar, B.r.
+Date: 1939-01-01
+
+Book Source: Digital Library of India Item 2015.83949 dc.contributor.author: Ambedkar, B.r. dc.date.accessioned: 2015-06-30T18:37:13Z dc.date.available: 2015-06-30T18:37:13Z dc.date.citation: 1939 dc.identifier.barcode: 2030020000079 dc.identifier.origpath: /data7/upload/0168/494 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/83949 dc.description.scannerno: 9 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 175 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Gokhale Institute Of Political And Economics. dc.rights: Not Available dc.source.library: Osmania University dc.subject.classification: Social Sciences dc.subject.classification: Politics dc.subject.classification: Parliaments. Representation Of The People dc.title: Federation Versus Freedom

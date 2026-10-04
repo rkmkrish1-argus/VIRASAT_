@@ -1,0 +1,5 @@
+Title: The Role Of British Strategy In The Great War
+Author: C_r_m_f_cruttwell
+Date: 1936-01-01
+
+Book Source: Digital Library of India Item 2015.76695 dc.contributor.author: C_r_m_f_cruttwell dc.date.accessioned: 2015-06-30T15:33:11Z dc.date.available: 2015-06-30T15:33:11Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1936 dc.identifier.barcode: 2020050019438 dc.identifier.origpath: /data7/upload/0184/166 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76695 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 114 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Cambridge_at_the_university_press dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: The Role Of British Strategy In The Great War

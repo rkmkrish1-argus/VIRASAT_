@@ -1,0 +1,71 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL07_19481119",
+    "title": "Constituent Assembly Debates: Debate on Directive Principles of State Policy",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1948-11-19",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "In enacting this part of the Constitution, the Assembly is giving certain directions to the future legislature and the future executive of this country. If it is said that the Directive Principles have no legal force behind them, I am prepared to admit it. But I am not prepared to admit that they have no binding force at all. Nor am I prepared to concede that they are useless. The Directive Principles are like the Instrument of Instructions which were issued to the Governor-General by the British Government under the 1935 Act.\n\nWhoever captures power will not be free to do what he likes with it. In the exercise of it, he will have to respect these instruments of instructions which are called Directive Principles. He cannot ignore them. He may not have to answer for their breach in a court of law. But he will certainly have to answer for them before the electorate at election times. What great value these principles possess will be realized when we consider that they set the economic direction towards social democracy.",
+      "summary": "Dr. Ambedkar clarifies the profound significance of Directive Principles of State Policy: though non-justiciable in courts, they are supreme political instructions that every democratically elected government must account for before the people.",
+      "key_quotes": [
+        "Directive Principles are like the Instrument of Instructions... He may not have to answer for their breach in a court of law, but he will certainly have to answer before the electorate.",
+        "They set the economic direction towards social democracy."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume VII-493-495",
+      "collection": "Constituent Assembly of India Debates (Volume VII)",
+      "pages": 12,
+      "word_count": 179,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume VII",
+      "page_reference": "493-495",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "accountability",
+      "constitutional",
+      "democracy",
+      "directive_principles",
+      "dpsp",
+      "social_democracy",
+      "social_justice"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481119"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Debate on Directive Principles of State Policy",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar clarifies the profound significance of Directive Principles of State Policy: though non-justiciable in courts, they are supreme political instructions that every democratically elected government must account for before the people.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Debate on Directive Principles of State Policy",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar clarifies the profound significance of Directive Principles of State Policy: though non-justiciable in courts, they are supreme political instructions that every democratically elected government must account for before the people.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

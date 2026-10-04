@@ -1,0 +1,5 @@
+Title: Dr.bheemrav Ambedkar Ke Samajik Vicharon Ka Ek
+Author: Jaswant Nag
+Date: 1950-01-26
+
+Book Source: Digital Library of India Item 2015.268964 dc.contributor.author: Jaswant Nag dc.date.accessioned: 2015-07-27T20:23:47Z dc.date.available: 2015-07-27T20:23:47Z dc.identifier.barcode: 05990010889768 dc.identifier.origpath: /data58/upload/0091/485 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/268964 dc.description.scannerno: 20003492 dc.description.scanningcentre: IIIT, Allahabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 266 dc.format.mimetype: application/pdf dc.language.iso: Hindi dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Bundelkhand Uni.jhansi dc.source.library: Bundelkhand Uni.Jhansi dc.subject.classification: Sociology dc.title: Dr.bheemrav Ambedkar Ke Samajik Vicharon Ka Ek dc.type: ptiff dc.type: pdf

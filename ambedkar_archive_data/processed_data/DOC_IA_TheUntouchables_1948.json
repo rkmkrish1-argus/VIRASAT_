@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_TheUntouchables_1948",
+    "title": "The Untouchables",
+    "author": "B. R. Ambedkar",
+    "date": "1948-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Ambedkar, B.R. (1948) Untouchables: Who were they and why they became untouchables. Delhi, Amrit Books.",
+      "summary": "Ambedkar, B.R. (1948) Untouchables: Who were they and why they became untouchables. Delhi, Amrit Books.",
+      "key_quotes": [
+        "Archival record preserved: The Untouchables",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "TheUntouchables_1948",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 15,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 9388,
+      "url": "https://archive.org/details/TheUntouchables_1948",
+      "pdf_url": "https://archive.org/download/TheUntouchables_1948/TheUntouchables_1948.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Untouchables (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Untouchables",
+        "text_url": "https://archive.org/details/TheUntouchables_1948"
+      },
+      "mr": {
+        "title": "The Untouchables (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Untouchables",
+        "text_url": "https://archive.org/details/TheUntouchables_1948"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

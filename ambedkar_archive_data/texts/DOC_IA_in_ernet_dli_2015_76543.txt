@@ -1,0 +1,5 @@
+Title: 12316 The Way Of A Transgressor
+Author: Negley_farson
+Date: 1935-01-01
+
+Book Source: Digital Library of India Item 2015.76543 dc.contributor.author: Negley_farson dc.date.accessioned: 2015-06-30T15:29:12Z dc.date.available: 2015-06-30T15:29:12Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1935 dc.identifier.barcode: 2020050017900 dc.identifier.origpath: /data7/upload/0184/029 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76543 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 650 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Victor_gollancz_ltd dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: 12316 The Way Of A Transgressor

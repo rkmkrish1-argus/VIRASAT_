@@ -1,0 +1,16 @@
+.env
+backend/br.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+build/
+cloudflared.exe
+*.exe
+*.zip
+ambedkar_archive_data/ocr_models/
+.DS_Store
+Thumbs.db

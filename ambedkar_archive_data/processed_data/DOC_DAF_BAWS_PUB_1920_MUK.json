@@ -1,0 +1,63 @@
+{
+  "document": {
+    "id": "DOC_DAF_BAWS_PUB_1920_MUK",
+    "title": "Muknayak (Leader of the Voiceless) Inaugural Editorial",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1920-01-31",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Dr. Ambedkar launched the fortnightly Marathi newspaper 'Muknayak' with the patron support of Chhatrapati Shahu Maharaj.\n\nHindu society is like a multi-storied tower with no staircase and no entrance doors. One must die in the storey in which one was born. Those living on the top storeys have all privileges, light, and fresh air; those consigned to the bottom live in perpetual darkness and filth, forbidden from climbing up or mingling. A society structured like this without social mobility or fraternity is doomed to decline. Muknayak is founded to give voice to those who have been forcibly silenced for centuries.",
+      "summary": "The foundational editorial of Dr. Ambedkar's first journal, Muknayak, comparing caste society to an elevator-less, doorless multi-storey tower and declaring journalism as a weapon for the emancipation of the silenced masses.",
+      "key_quotes": [
+        "Hindu society is like a multi-storied tower with no staircase. One must die in the storey in which one is born.",
+        "Muknayak exists to break the deafening silence imposed upon millions."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "DAF-BAWS_PUB_1920_MUK",
+      "collection": "Dr. Babasaheb Ambedkar Writings and Speeches (BAWS Vol. 19)",
+      "pages": 45,
+      "word_count": 100,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "BAWS Vol. 19",
+      "page_reference": "1-12"
+    },
+    "tags": [
+      "equality",
+      "journalism",
+      "marathi_press",
+      "muknayak",
+      "social_justice",
+      "social_mobility"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481104"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "Muknayak (Leader of the Voiceless) Inaugural Editorial (डॉ. अंबेडकर प्रतिष्ठान)",
+        "summary": "The foundational editorial of Dr. Ambedkar's first journal, Muknayak, comparing caste society to an elevator-less, doorless multi-storey tower and declaring journalism as a weapon for the emancipation of the silenced masses."
+      },
+      "mr": {
+        "title": "Muknayak (Leader of the Voiceless) Inaugural Editorial (डॉ. आंबेडकर प्रतिष्ठान संग्रह)",
+        "summary": "The foundational editorial of Dr. Ambedkar's first journal, Muknayak, comparing caste society to an elevator-less, doorless multi-storey tower and declaring journalism as a weapon for the emancipation of the silenced masses."
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dr._B._R._Ambedkar.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

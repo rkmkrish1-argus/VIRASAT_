@@ -1,0 +1,5 @@
+Title: Baba Saheb Doctor Ambedkar-smarika
+Author: Suman, Ramdas
+Date: 1969-01-01
+
+Book Source: Digital Library of India Item 2015.347974 dc.contributor.author: Suman, Ramdas dc.date.accessioned: 2015-08-13T00:50:14Z dc.date.available: 2015-08-13T00:50:14Z dc.date.copyright: 1969 dc.date.digitalpublicationdate: 2010/09 dc.date.citation: 1969 dc.identifier.barcode: 99999990001301 dc.identifier.origpath: /data6/upload/0135/460 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/347974 dc.description.scannerno: Banasthali University dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 148 dc.format.mimetype: application/pdf dc.language.iso: Hindi dc.publisher.digitalrepublisher: digital library of india dc.publisher: Delhi, Ambedkar Lokopkari Sanstha Raigarpura dc.source.library: Prakrit Bharati Academy, Jaipur dc.title: Baba Saheb Doctor Ambedkar-smarika dc.type: print - paper dc.type: book

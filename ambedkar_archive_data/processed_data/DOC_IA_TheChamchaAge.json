@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_TheChamchaAge",
+    "title": "The Chamcha Age",
+    "author": "Kanshi Ram",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Kanshi Ram in his historical book, \"THE CHAMCHA AGE\", (an Era of the Stooges) published on 24 th September, 1982 , on the occasion of 50 th anniversary of the Poona -Pact, has vividly exclusively dealt with the disadvantages of the Chamcha Age.",
+      "summary": "Kanshi Ram in his historical book, \"THE CHAMCHA AGE\", (an Era of the Stooges) published on 24 th September, 1982 , on the occasion of 50 th anniversary of the Poona -Pact, has vividly exclusively dealt with the disadvantages of the Chamcha Age.",
+      "key_quotes": [
+        "Archival record preserved: The Chamcha Age",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "TheChamchaAge",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 43,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 17871,
+      "url": "https://archive.org/details/TheChamchaAge",
+      "pdf_url": "https://archive.org/download/TheChamchaAge/TheChamchaAge.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Chamcha Age (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Chamcha Age",
+        "text_url": "https://archive.org/details/TheChamchaAge"
+      },
+      "mr": {
+        "title": "The Chamcha Age (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Chamcha Age",
+        "text_url": "https://archive.org/details/TheChamchaAge"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

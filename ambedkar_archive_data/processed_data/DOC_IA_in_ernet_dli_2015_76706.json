@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76706",
+    "title": "Hungry Bengal",
+    "author": "T_k_dutt",
+    "date": "1944-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76706 dc.contributor.author: T_k_dutt dc.date.accessioned: 2015-06-30T15:33:28Z dc.date.available: 2015-06-30T15:33:28Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1944 dc.identifier.barcode: 2020050019452 dc.identifier.origpath: /data7/upload/0184/176 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76706 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 184 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Indian_printing_works_kacheri_road_lahore dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: Hungry Bengal",
+      "summary": "Book Source: Digital Library of India Item 2015.76706 dc.contributor.author: T_k_dutt dc.date.accessioned: 2015-06-30T15:33:28Z dc.date.available: 2015-06-30T15:33:28Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1944 dc.identifier.barcode: 2020050019452 dc.identi...",
+      "key_quotes": [
+        "Archival record preserved: Hungry Bengal",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76706",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 58,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 478,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76706",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76706/in.ernet.dli.2015.76706.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Hungry Bengal (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Hungry Bengal",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76706"
+      },
+      "mr": {
+        "title": "Hungry Bengal (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Hungry Bengal",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76706"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

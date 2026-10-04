@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_388128",
+    "title": "డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి",
+    "author": "అంబేద్కర్(మూలం), పేర్వారం జగన్నాధం(సం.)",
+    "date": "1994-01-01",
+    "type": "publication",
+    "language": "te",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.388128 dc.contributor.author: Dr.b.vijayabharathi dc.contributor.other: Ccl dc.date.accessioned: 2015-09-09T15:46:16Z dc.date.available: 2015-09-09T15:46:16Z dc.date.digitalpublicationdate: 06-01-2003 dc.date.citation: 1994 dc.identifier.barcode: 02020120004080 dc.identifier.origpath: /data/upload/0004/083 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/388128 dc.description.scanningcentre: City Central Library, Hyderabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 620 dc.format.mimetype: application/pdf dc.language.iso: Telugu dc.publisher.digitalrepublisher: PAR INFORAMTICS, HYDERABAD dc.publisher: Andhrapradesh Government dc.source.library: Rop Hyderabad dc.subject.classification: Religious dc.title: Dr.babashaheb Ambedkar Rachanalu-prasamgalu-part-1 dc.type: BOOK",
+      "summary": "Book Source: Digital Library of India Item 2015.388128 dc.contributor.author: Dr.b.vijayabharathi dc.contributor.other: Ccl dc.date.accessioned: 2015-09-09T15:46:16Z dc.date.available: 2015-09-09T15:46:16Z dc.date.digitalpublicationdate: 06-01-2003 dc.date.citation: 1994 dc.ident...",
+      "key_quotes": [
+        "Archival record preserved: డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.388128",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 61,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 502,
+      "url": "https://archive.org/details/in.ernet.dli.2015.388128",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.388128/in.ernet.dli.2015.388128.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.388128"
+      },
+      "mr": {
+        "title": "డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.388128"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

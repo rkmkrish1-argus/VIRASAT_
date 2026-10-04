@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76677",
+    "title": "Ladies Of The Press",
+    "author": "Ishbel_ross",
+    "date": "1936-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76677 dc.contributor.author: Ishbel_ross dc.date.accessioned: 2015-06-30T15:32:43Z dc.date.available: 2015-06-30T15:32:43Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1936 dc.identifier.barcode: 2020050019420 dc.identifier.origpath: /data7/upload/0184/151 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76677 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 626 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Per_and_others_publishers dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Ladies Of The Press",
+      "summary": "Book Source: Digital Library of India Item 2015.76677 dc.contributor.author: Ishbel_ross dc.date.accessioned: 2015-06-30T15:32:43Z dc.date.available: 2015-06-30T15:32:43Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1936 dc.identifier.barcode: 2020050019420 dc.ide...",
+      "key_quotes": [
+        "Archival record preserved: Ladies Of The Press",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76677",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 59,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 7365,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76677",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76677/in.ernet.dli.2015.76677.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Ladies Of The Press (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Ladies Of The Press",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76677"
+      },
+      "mr": {
+        "title": "Ladies Of The Press (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Ladies Of The Press",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76677"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL07_19481206",
+    "title": "Constituent Assembly Debates: Debate on Due Process of Law vs Procedure Established by Law",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1948-12-06",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "The question before the House is whether the words should be 'procedure established by law' or 'due process of law'. I must confess that I am in a somewhat difficult position with regard to this amendment. The question of whether we should adopt 'due process' or 'procedure established by law' is one where two contending views exist in constitutional jurisprudence.\n\nIf you use 'due process', you give the judiciary the power to question not merely whether a law was enacted according to proper legislative competence and procedure, but also whether the substance of the law is good or bad, just or unjust. On the other hand, if you restrict it to 'procedure established by law', the judiciary is confined to seeing whether the procedure prescribed by the legislature was observed. The House must choose between the supremacy of the legislature and the supremacy of the judiciary. The Drafting Committee placed the matter before the Assembly to make this momentous choice.",
+      "summary": "Dr. Ambedkar's insightful analysis on Draft Article 15 (now Article 21) examining the delicate constitutional balance between judicial review under 'due process' and legislative prerogative under 'procedure established by law'.",
+      "key_quotes": [
+        "The question is whether you want judicial supremacy or legislative supremacy in evaluating the substantive justice of laws."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume VII-850-858",
+      "collection": "Constituent Assembly of India Debates (Volume VII)",
+      "pages": 12,
+      "word_count": 160,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume VII",
+      "page_reference": "850-858",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "article_21",
+      "constitutional",
+      "democracy",
+      "due_process",
+      "equality",
+      "fundamental_rights",
+      "judiciary",
+      "liberty"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481206"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Debate on Due Process of Law vs Procedure Established by Law",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar's insightful analysis on Draft Article 15 (now Article 21) examining the delicate constitutional balance between judicial review under 'due process' and legislative prerogative under 'procedure established by law'.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Debate on Due Process of Law vs Procedure Established by Law",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar's insightful analysis on Draft Article 15 (now Article 21) examining the delicate constitutional balance between judicial review under 'due process' and legislative prerogative under 'procedure established by law'.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

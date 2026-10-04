@@ -1,0 +1,5 @@
+Title: Who Were The Shudras
+Author: B. R. Ambedkar
+Date: 1950-01-26
+
+Book Source: Digital Library of India Item 2015.282497 dc.contributor.author: B. R. Ambedkar dc.date.accessioned: 2015-08-04T16:47:09Z dc.date.available: 2015-08-04T16:47:09Z dc.identifier.barcode: 05990010903613 dc.identifier.origpath: /data58/upload/0105/330 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/282497 dc.description.scannerno: 20003571 dc.description.scanningcentre: IIIT, Allahabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 280 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Thacker & Co. Ltd. Bombay dc.rights: In Public Domain dc.source.library: Central Archaeological Library_ Asi_ New Delhi dc.subject.classification: Literature dc.title: Who Were The Shudras dc.type: ptiff dc.type: pdf

@@ -1,0 +1,5 @@
+Title: The Home Of Aryas
+Author: Pandit_lachhmi_dhar_kalla
+Date: 1930-01-01
+
+Book Source: Digital Library of India Item 2015.76632 dc.contributor.author: Pandit_lachhmi_dhar_kalla dc.date.accessioned: 2015-06-30T15:31:34Z dc.date.available: 2015-06-30T15:31:34Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1930 dc.identifier.barcode: 2020050018242 dc.identifier.origpath: /data7/upload/0184/109 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76632 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 168 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Printed_at_the_imperial_book_depot_press_delhi dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: The Home Of Aryas

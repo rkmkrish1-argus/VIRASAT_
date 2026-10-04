@@ -1,0 +1,5 @@
+Title: డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-మొదటి సంపుటి
+Author: అంబేద్కర్(మూలం), పేర్వారం జగన్నాధం(సం.)
+Date: 1994-01-01
+
+Book Source: Digital Library of India Item 2015.388128 dc.contributor.author: Dr.b.vijayabharathi dc.contributor.other: Ccl dc.date.accessioned: 2015-09-09T15:46:16Z dc.date.available: 2015-09-09T15:46:16Z dc.date.digitalpublicationdate: 06-01-2003 dc.date.citation: 1994 dc.identifier.barcode: 02020120004080 dc.identifier.origpath: /data/upload/0004/083 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/388128 dc.description.scanningcentre: City Central Library, Hyderabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 620 dc.format.mimetype: application/pdf dc.language.iso: Telugu dc.publisher.digitalrepublisher: PAR INFORAMTICS, HYDERABAD dc.publisher: Andhrapradesh Government dc.source.library: Rop Hyderabad dc.subject.classification: Religious dc.title: Dr.babashaheb Ambedkar Rachanalu-prasamgalu-part-1 dc.type: BOOK

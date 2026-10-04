@@ -1,0 +1,64 @@
+{
+  "document": {
+    "id": "DOC_DAF_BAWS_PUB_1946_WWS",
+    "title": "Who Were the Shudras? How They Came to Be the Fourth Varna",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1946-10-10",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Dedicated to Jyotirao Phule, the greatest modern social reformer of Maharashtra.\n\nThrough exhaustive historical and textual analysis of Vedic literature, Dr. Ambedkar proves that the Shudras were originally Aryans belonging to the solar dynasty who had a high status, and that their degradation into a subordinate fourth varna was the outcome of a prolonged historical struggle with the orthodox priesthood over social and religious supremacy.",
+      "summary": "Ambedkar's seminal historical treatise analyzing the origins of social stratification and the artificial creation of the fourth varna in ancient India, dedicated to Mahatma Jyotirao Phule.",
+      "key_quotes": [
+        "The Shudras were not a distinct racial non-Aryan group; their subjugation was a political and religious consequence of historical conflicts.",
+        "Dedicated to Mahatma Jyotirao Phule, who awakened the masses to their human dignity."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "DAF-BAWS_PUB_1946_WWS",
+      "collection": "Dr. Babasaheb Ambedkar Writings and Speeches (BAWS Vol. 7)",
+      "pages": 45,
+      "word_count": 65,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "BAWS Vol. 7",
+      "page_reference": "1-228"
+    },
+    "tags": [
+      "ancient_india",
+      "caste",
+      "history",
+      "jyotirao_phule",
+      "shudras",
+      "social_justice",
+      "social_reform"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481104"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "Who Were the Shudras? How They Came to Be the Fourth Varna (डॉ. अंबेडकर प्रतिष्ठान)",
+        "summary": "Ambedkar's seminal historical treatise analyzing the origins of social stratification and the artificial creation of the fourth varna in ancient India, dedicated to Mahatma Jyotirao Phule."
+      },
+      "mr": {
+        "title": "Who Were the Shudras? How They Came to Be the Fourth Varna (डॉ. आंबेडकर प्रतिष्ठान संग्रह)",
+        "summary": "Ambedkar's seminal historical treatise analyzing the origins of social stratification and the artificial creation of the fourth varna in ancient India, dedicated to Mahatma Jyotirao Phule."
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dr._B._R._Ambedkar.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

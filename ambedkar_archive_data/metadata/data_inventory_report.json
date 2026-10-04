@@ -1,0 +1,43 @@
+{
+  "report_name": "Dr. B.R. Ambedkar Digital Heritage Archive - Data Inventory",
+  "problem_statement_id": "26096",
+  "ministry": "Ministry of Social Justice and Empowerment (MoSJE)",
+  "primary_institution": "Dr. Ambedkar International Centre (DAIC)",
+  "timestamp": "2026-09-25T13:21:57.235151",
+  "total_documents": 530,
+  "total_words_indexed": 86624,
+  "total_embedding_chunks": 835,
+  "breakdown_by_source": {
+    "IA": 510,
+    "CAD": 10,
+    "Foundation": 10
+  },
+  "breakdown_by_type": {
+    "publication": 423,
+    "speech": 63,
+    "debate": 20,
+    "other": 20,
+    "manuscript": 4
+  },
+  "breakdown_by_language": {
+    "en": 410,
+    "hi": 42,
+    "mr": 18,
+    "bn": 11,
+    "gu": 9,
+    "ta": 9,
+    "te": 27,
+    "ka": 1,
+    "pa": 2,
+    "ml": 1
+  },
+  "sqlite_db": {
+    "path": "c:\\Users\\Vihal\\Downloads\\New folder\\ambedkar_archive_data\\database\\ambedkar_archive.db",
+    "tables": [
+      "documents",
+      "documents_fts",
+      "chunks_for_embeddings"
+    ]
+  },
+  "status": "INGESTION_COMPLETE_READY_FOR_BACKEND_AND_KIOSK"
+}

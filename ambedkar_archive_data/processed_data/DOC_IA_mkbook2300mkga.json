@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_mkbook2300mkga",
+    "title": "Ambedkar, Vol. 18-1",
+    "author": "Dr. Babasheb Ambedkar",
+    "date": "2003-01-01",
+    "type": "publication",
+    "language": "mr",
+    "content": {
+      "full_text": "Digital archival manuscript held in Internet Archive repository under identifier mkbook2300mkga. Published works and reference materials associated with Dr. B.R. Ambedkar.",
+      "summary": "Archival publication preserved in digital repository: Ambedkar, Vol. 18-1",
+      "key_quotes": [
+        "Archival record preserved: Ambedkar, Vol. 18-1",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "mkbook2300mkga",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 21,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 9306,
+      "url": "https://archive.org/details/mkbook2300mkga",
+      "pdf_url": "https://archive.org/download/mkbook2300mkga/mkbook2300mkga.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Ambedkar, Vol. 18-1 (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Ambedkar, Vol. 18-1",
+        "text_url": "https://archive.org/details/mkbook2300mkga"
+      },
+      "mr": {
+        "title": "Ambedkar, Vol. 18-1 (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Ambedkar, Vol. 18-1",
+        "text_url": "https://archive.org/details/mkbook2300mkga"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

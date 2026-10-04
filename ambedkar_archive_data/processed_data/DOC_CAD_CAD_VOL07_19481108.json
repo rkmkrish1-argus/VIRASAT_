@@ -1,0 +1,70 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL07_19481108",
+    "title": "Constituent Assembly Debates: Debate on Constitutional Morality and Village Realities",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1948-11-08",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "What is the village but a sink of localism, a den of ignorance, narrow-mindedness and communalism? I am glad that the Draft Constitution has discarded the village and adopted the individual as its unit. The Constitution must uphold the dignity and rights of the individual citizen against oppressive local majorities.\n\nConstitutional morality is not a natural sentiment. It has to be cultivated. We must realize that our people have yet to learn it. Democracy in India is only a top-dressing on an Indian soil, which is essentially undemocratic.",
+      "summary": "Dr. Ambedkar defends taking the individual as the fundamental unit of the Constitution rather than village units, articulating that constitutional morality must be deliberately cultivated in a deeply hierarchical society.",
+      "key_quotes": [
+        "Constitutional morality is not a natural sentiment. It has to be cultivated.",
+        "Democracy in India is only a top-dressing on an Indian soil, which is essentially undemocratic."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume VII-38-41",
+      "collection": "Constituent Assembly of India Debates (Volume VII)",
+      "pages": 12,
+      "word_count": 88,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume VII",
+      "page_reference": "38-41",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "buddhism",
+      "constitutional",
+      "constitutional_morality",
+      "democracy",
+      "individual_rights",
+      "social_order"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481108"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Debate on Constitutional Morality and Village Realities",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar defends taking the individual as the fundamental unit of the Constitution rather than village units, articulating that constitutional morality must be deliberately cultivated in a deeply hierarchical society.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Debate on Constitutional Morality and Village Realities",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar defends taking the individual as the fundamental unit of the Constitution rather than village units, articulating that constitutional morality must be deliberately cultivated in a deeply hierarchical society.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

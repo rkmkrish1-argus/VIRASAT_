@@ -1,0 +1,5 @@
+Title: Dalit Samaj O Ambedkar
+Author: Ghosh, Atin
+Date: 1960-01-01
+
+Book Source: Digital Library of India Item 2015.298993 dc.contributor.author: Ghosh, Atin dc.date.accessioned: 2015-08-10T12:39:13Z dc.date.available: 2015-08-10T12:39:13Z dc.date.digitalpublicationdate: 2012/09/5 dc.date.citation: 1960 dc.identifier.barcode: 99999990334869 dc.identifier.origpath: /data14/upload/0025/699 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/298993 dc.description.scannerno: SC-02 dc.description.scanningcentre: North Eastern States Libraries dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 186 dc.format.mimetype: application/pdf dc.language.iso: Bengali dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Modern Kalam, Calcutta dc.source.library: Birchandra State Central Library, Tripura dc.subject.keywords: Boidik Somaje Barnarsrom Protha dc.subject.keywords: Ambedkar er Purbabartikale Gat Pater Samossa dc.subject.keywords: Hoyen Adam Bag And Ito Satn dc.subject.keywords: Sonbidhan O Amedkar dc.subject.keywords: Giboni dc.title: Dalit Samaj O Ambedkar dc.type: Print - Paper dc.type: Book

@@ -1,0 +1,69 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL09_19491014",
+    "title": "Constituent Assembly Debates: Debate on Emergency Provisions and Article 356",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1949-10-14",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "With regard to Article 356, I do not altogether deny that there is a possibility of these articles being abused or employed for political purposes. But that objection applies to every part of the Constitution which gives discretion to the Executive.\n\nThe proper thing we ought to expect is that such articles will never be called into operation and that they would remain a dead letter. If at all they are brought into operation, I hope the President, who is endowed with this power, will take proper precautions before actually suspending the administration of the provinces.",
+      "summary": "Dr. Ambedkar's renowned doctrine that Article 356 (President's Rule) was conceived as a 'dead letter' to be deployed only as an extreme last resort against genuine breakdown of constitutional order, warning against its partisan misuse.",
+      "key_quotes": [
+        "The proper thing we ought to expect is that such articles will never be called into operation and that they would remain a dead letter."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume IX-175-182",
+      "collection": "Constituent Assembly of India Debates (Volume IX)",
+      "pages": 12,
+      "word_count": 96,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume IX",
+      "page_reference": "175-182",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "article_356",
+      "constitutional",
+      "dead_letter_doctrine",
+      "democracy",
+      "emergency_provisions",
+      "federalism"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL09_19491014"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Debate on Emergency Provisions and Article 356",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar's renowned doctrine that Article 356 (President's Rule) was conceived as a 'dead letter' to be deployed only as an extreme last resort against genuine breakdown of constitutional order, warning against its partisan misuse.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Debate on Emergency Provisions and Article 356",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar's renowned doctrine that Article 356 (President's Rule) was conceived as a 'dead letter' to be deployed only as an extreme last resort against genuine breakdown of constitutional order, warning against its partisan misuse.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

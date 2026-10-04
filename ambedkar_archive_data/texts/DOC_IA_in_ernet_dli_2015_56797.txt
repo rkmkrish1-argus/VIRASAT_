@@ -1,0 +1,5 @@
+Title: Untouchables
+Author: Ambedkar, B.r.
+Date: 1948-01-01
+
+Book Source: Digital Library of India Item 2015.56797 dc.contributor.author: Ambedkar, B.r. dc.date.accessioned: 2015-06-29T19:02:56Z dc.date.available: 2015-06-29T19:02:56Z dc.date.copyrightexpirydate: 0000-00-00 dc.date.digitalpublicationdate: 0000-00-00 dc.date.citation: 1948 dc.identifier.barcode: 99999990010648 dc.identifier.origpath: /data6/upload/0144/807 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/56797 dc.description.scanningcentre: IGNCA, Delhi dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 180 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher: Amrit Book dc.rights: Out_of_copyright dc.source.library: Central Archaeological Library, Asi dc.subject.classification: Untouchables, India dc.subject.classification: Scheduled Castes, India dc.subject.classification: Lower Classes, India dc.title: Untouchables

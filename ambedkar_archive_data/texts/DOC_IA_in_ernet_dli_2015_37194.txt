@@ -1,0 +1,5 @@
+Title: The Problem Of The Rupee
+Author: Ambedkar, B.r.
+Date: 1923-01-01
+
+Book Source: Digital Library of India Item 2015.37194 dc.contributor.author: Ambedkar, B.r. dc.date.accessioned: 2015-06-25T20:21:01Z dc.date.available: 2015-06-25T20:21:01Z dc.date.digitalpublicationdate: 2006-01-02 dc.date.citation: 1923 dc.identifier.barcode: 4990010207643 dc.identifier.origpath: /data3/upload/0061/795 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/37194 dc.description.scanningcentre: C-DAK, Kolkata dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 346 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: P.s. King And Son, London dc.rights: In Public Domain dc.source.library: North Bengal State Library, Coochbehar dc.subject.classification: Social Sciences dc.subject.classification: Economics dc.subject.classification: Finance dc.subject.keywords: India - Money Discount Rate dc.subject.keywords: India - Relative Value, Gold dc.title: The Problem Of The Rupee

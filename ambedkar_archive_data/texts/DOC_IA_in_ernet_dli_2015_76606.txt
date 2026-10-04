@@ -1,0 +1,5 @@
+Title: The Stranga Death Of Liberal England
+Author: George_dangerfield
+Date: 1936-01-01
+
+Book Source: Digital Library of India Item 2015.76606 dc.contributor.author: George_dangerfield dc.date.accessioned: 2015-06-30T15:30:55Z dc.date.available: 2015-06-30T15:30:55Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1936 dc.identifier.barcode: 2020050018215 dc.identifier.origpath: /data7/upload/0184/085 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76606 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 432 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: London_constable_and_co dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: The Stranga Death Of Liberal England

@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76566",
+    "title": "The Heroic Age Of India",
+    "author": "N_k_sidhanta",
+    "date": "1929-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76566 dc.contributor.author: N_k_sidhanta dc.date.accessioned: 2015-06-30T15:29:52Z dc.date.available: 2015-06-30T15:29:52Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1929 dc.identifier.barcode: 2020050018172 dc.identifier.origpath: /data7/upload/0184/050 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76566 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 264 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Kegan_paul_trench_trubner_and_co_ltd dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: The Heroic Age Of India",
+      "summary": "Book Source: Digital Library of India Item 2015.76566 dc.contributor.author: N_k_sidhanta dc.date.accessioned: 2015-06-30T15:29:52Z dc.date.available: 2015-06-30T15:29:52Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1929 dc.identifier.barcode: 2020050018172 dc.id...",
+      "key_quotes": [
+        "Archival record preserved: The Heroic Age Of India",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76566",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 61,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 454,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76566",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76566/in.ernet.dli.2015.76566.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Heroic Age Of India (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Heroic Age Of India",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76566"
+      },
+      "mr": {
+        "title": "The Heroic Age Of India (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Heroic Age Of India",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76566"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

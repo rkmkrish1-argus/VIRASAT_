@@ -1,0 +1,63 @@
+{
+  "document": {
+    "id": "DOC_DAF_BAWS_PUB_1916_CII",
+    "title": "Castes in India: Their Mechanism, Genesis and Development",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1916-05-09",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Presented before the Anthropology Seminar of Dr. A. A. Goldenweiser at Columbia University, New York.\n\nCaste in India is an endogamous group enclosed in an otherwise exogamous population. Endogamy is the only one that is peculiar to caste. Caste in India means an artificial chopping off of the population into fixed and definite units, each one prevented from fusing into another through the strict enforcement of endogamy. Sati, enforced widowhood, and child marriage are the natural corollaries used to maintain the mathematical balance between sexes within the closed caste circle.",
+      "summary": "Dr. Ambedkar's landmark academic paper at Columbia University providing the first anthropological and sociological demonstration that caste is maintained through enforced endogamy and gender subjugation.",
+      "key_quotes": [
+        "Endogamy is the only one that is peculiar to caste... an enclosed class.",
+        "Caste in India means an artificial chopping off of the population into fixed and definite units."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "DAF-BAWS_PUB_1916_CII",
+      "collection": "Dr. Babasaheb Ambedkar Writings and Speeches (BAWS Vol. 1)",
+      "pages": 45,
+      "word_count": 90,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "BAWS Vol. 1",
+      "page_reference": "3-22"
+    },
+    "tags": [
+      "anthropology",
+      "caste",
+      "columbia_university",
+      "endogamy",
+      "gender_justice",
+      "sociology"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481104"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "Castes in India: Their Mechanism, Genesis and Development (डॉ. अंबेडकर प्रतिष्ठान)",
+        "summary": "Dr. Ambedkar's landmark academic paper at Columbia University providing the first anthropological and sociological demonstration that caste is maintained through enforced endogamy and gender subjugation."
+      },
+      "mr": {
+        "title": "Castes in India: Their Mechanism, Genesis and Development (डॉ. आंबेडकर प्रतिष्ठान संग्रह)",
+        "summary": "Dr. Ambedkar's landmark academic paper at Columbia University providing the first anthropological and sociological demonstration that caste is maintained through enforced endogamy and gender subjugation."
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dr._B._R._Ambedkar.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

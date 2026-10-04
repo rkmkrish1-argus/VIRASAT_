@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_ambedkarcwcomplete",
+    "title": "Ambedkar CW Complete",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Complete English Works of Dr.Ambedkar- Published by Govt. of Maharashtra, and available online on their website. Copyright belongs to the Copyright holders",
+      "summary": "Complete English Works of Dr.Ambedkar- Published by Govt. of Maharashtra, and available online on their website. Copyright belongs to the Copyright holders",
+      "key_quotes": [
+        "Archival record preserved: Ambedkar CW Complete",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "ambedkarcwcomplete",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 22,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 1076,
+      "url": "https://archive.org/details/ambedkarcwcomplete",
+      "pdf_url": "https://archive.org/download/ambedkarcwcomplete/ambedkarcwcomplete.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Ambedkar CW Complete (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Ambedkar CW Complete",
+        "text_url": "https://archive.org/details/ambedkarcwcomplete"
+      },
+      "mr": {
+        "title": "Ambedkar CW Complete (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Ambedkar CW Complete",
+        "text_url": "https://archive.org/details/ambedkarcwcomplete"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

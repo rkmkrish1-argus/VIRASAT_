@@ -1,0 +1,5 @@
+Title: History Of Indian Currency Amp Banking
+Author: Ambedkar,b.r.
+Date: 1947-01-01
+
+Book Source: Digital Library of India Item 2015.113789 dc.contributor.author: Ambedkar,b.r. dc.date.accessioned: 2015-07-02T14:24:39Z dc.date.available: 2015-07-02T14:24:39Z dc.date.digitalpublicationdate: 2012-04-00 dc.date.citation: 1947 dc.identifier.barcode: 99999990304239 dc.identifier.origpath: /data9/upload/0302/171 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/113789 dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 297 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Bombay.,thacker And Company Ltd. dc.rights: Out_of_copyright dc.source.library: Central Library Mohanlal Sukhadia University,udaipur dc.subject.classification: History dc.title: History Of Indian Currency Amp Banking

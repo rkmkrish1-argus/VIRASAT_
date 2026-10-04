@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_collected-works-of-ambedkar",
+    "title": "The Collected Works Of Dr. Babasaheb Ambedkar",
+    "author": "Dr. Ambedkar Foundation, Ministry of Social Justice & Empowerment Govt. of India",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "This is a collection of Dr. Babasaheb Ambedkar's writings and speeches.",
+      "summary": "This is a collection of Dr. Babasaheb Ambedkar's writings and speeches.",
+      "key_quotes": [
+        "Archival record preserved: The Collected Works Of Dr. Babasaheb Ambedkar",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "collected-works-of-ambedkar",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 11,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 1073,
+      "url": "https://archive.org/details/collected-works-of-ambedkar",
+      "pdf_url": "https://archive.org/download/collected-works-of-ambedkar/collected-works-of-ambedkar.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Collected Works Of Dr. Babasaheb Ambedkar (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Collected Works Of Dr. Babasaheb Ambedkar",
+        "text_url": "https://archive.org/details/collected-works-of-ambedkar"
+      },
+      "mr": {
+        "title": "The Collected Works Of Dr. Babasaheb Ambedkar (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Collected Works Of Dr. Babasaheb Ambedkar",
+        "text_url": "https://archive.org/details/collected-works-of-ambedkar"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

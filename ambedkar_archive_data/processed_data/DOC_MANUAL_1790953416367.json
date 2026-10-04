@@ -1,0 +1,51 @@
+{
+  "document": {
+    "id": "DOC_MANUAL_1790953416367",
+    "title": "Example",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1942-07-20",
+    "type": "speech",
+    "language": "en",
+    "content": {
+      "full_text": "INDIAN CONTRACT ACT\n1872\n\nBY\nN. D. KHOPKAR\nJOINT DIRECTOR, DPS (RETD)\n\nCOMMUNICATION, ACCEPTANCE\nAND REVOCATION\n\n* COMMUNICATION\n* ACCEPTANCE\n* REVOCATION\n\nVOIDABLE CONTRACT AND VOID\nAGREEMENTS\n\n* WHAT AGREEMENTS ARE CONTRACTS",
+      "summary": "INDIAN CONTRACT ACT\n1872\n\nBY\nN. D. KHOPKAR\nJOINT DIRECTOR, DPS (RETD)\n\nCOMMUNICATION, ACCEPTANCE\nAND REVOCATION\n\n* COMMUNICATION\n* ACCEPTANCE\n* REVOCATION\n\nVOIDABLE CONTRACT AND VOID\nAGREEMENTS\n\n* WHAT AGREEMENTS ARE CONTRACTS...",
+      "key_quotes": [
+        "INDIAN CONTRACT ACT\n1872\n\nBY\nN. D. KHOPKAR\nJOINT DIRECTOR, DPS (RETD)\n\nCOMMUNICATION, ACCEPTANCE\nAND..."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "MANUAL-DOC_MANUAL_1790953416367",
+      "collection": "Institutional Upload",
+      "pages": 1,
+      "word_count": 32,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 0,
+      "url": "",
+      "pdf_url": ""
+    },
+    "tags": [
+      "constitutional",
+      "social_justice",
+      "labor_rights",
+      "equality"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [],
+      "debates": []
+    },
+    "translations": {},
+    "media": {
+      "ocr": {
+        "original_filename": "1.webp",
+        "engine": "Tesseract",
+        "model": "en",
+        "mode": "printed",
+        "language": "en",
+        "pages_processed": 1
+      }
+    }
+  }
+}

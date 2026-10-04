@@ -1,0 +1,5 @@
+Title: Towards Angkor
+Author: Quaritch_wales
+Date: 1937-01-01
+
+Book Source: Digital Library of India Item 2015.76512 dc.contributor.author: Quaritch_wales dc.date.accessioned: 2015-06-30T15:28:24Z dc.date.available: 2015-06-30T15:28:24Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1937 dc.identifier.barcode: 2020050017868 dc.identifier.origpath: /data7/upload/0184/001 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76512 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 308 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: George_g Harrap_and_co dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Towards Angkor

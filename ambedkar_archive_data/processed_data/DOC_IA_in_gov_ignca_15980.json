@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_gov_ignca_15980",
+    "title": "Buddha and his dhamma",
+    "author": "Ambedkar, B.R.",
+    "date": "1957-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "From the collection of the esteemed Archaeological Survey of India as maintained at the Indira Gandhi National Centre for the Arts.",
+      "summary": "From the collection of the esteemed Archaeological Survey of India as maintained at the Indira Gandhi National Centre for the Arts.",
+      "key_quotes": [
+        "Archival record preserved: Buddha and his dhamma",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.gov.ignca.15980",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 21,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 18503,
+      "url": "https://archive.org/details/in.gov.ignca.15980",
+      "pdf_url": "https://archive.org/download/in.gov.ignca.15980/in.gov.ignca.15980.pdf"
+    },
+    "tags": [
+      "buddhism"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Buddha and his dhamma (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Buddha and his dhamma",
+        "text_url": "https://archive.org/details/in.gov.ignca.15980"
+      },
+      "mr": {
+        "title": "Buddha and his dhamma (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Buddha and his dhamma",
+        "text_url": "https://archive.org/details/in.gov.ignca.15980"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Title: Who Were The Shudras
+Author: Ambedkar,b.r.
+Date: 1946-01-01
+
+Book Source: Digital Library of India Item 2015.143076 dc.contributor.author: Ambedkar,b.r. dc.date.accessioned: 2015-07-04T04:32:32Z dc.date.available: 2015-07-04T04:32:32Z dc.date.digitalpublicationdate: 2012-10-00 dc.date.citation: 1946 dc.identifier.barcode: 99999990290993 dc.identifier.origpath: /data9/upload/0288/925 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/143076 dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 282 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Bombay.,thacker Amp Co. Ltd. dc.rights: Out_of_copyright dc.source.library: Bharatiya Vidya Bhavan Library, Mumbai dc.subject.classification: Devotional dc.title: Who Were The Shudras

@@ -1,0 +1,5 @@
+Title: British Strategy
+Author: Herbert_richmond
+Date: 1941-01-01
+
+Book Source: Digital Library of India Item 2015.76595 dc.contributor.author: Herbert_richmond dc.date.accessioned: 2015-06-30T15:30:39Z dc.date.available: 2015-06-30T15:30:39Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1941 dc.identifier.barcode: 2020050018202 dc.identifier.origpath: /data7/upload/0184/075 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76595 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 176 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Cambridge_at_the_university_press dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: British Strategy

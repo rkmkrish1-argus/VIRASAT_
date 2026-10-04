@@ -1,0 +1,5 @@
+Title: Mr.gandhi And The Emancipatin Of The Untouchables
+Author: Ambedkar B.r
+Date: 1910-01-01
+
+Book Source: Digital Library of India Item 2015.66066 dc.contributor.author: Ambedkar B.r dc.date.accessioned: 2015-06-29T23:41:19Z dc.date.available: 2015-06-29T23:41:19Z dc.date.copyrightexpirydate: 0000-00-00 dc.date.digitalpublicationdate: 2010-08-00 dc.date.citation: 1910 dc.identifier.barcode: 99999990278480 dc.identifier.origpath: /data6/upload/0131/282 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/66066 dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 58 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Printed By The Patrika Publication Bheem Jullundur Punjab dc.rights: Copyright Permitted dc.source.library: University Of Rajasthan dc.subject.classification: Deffence The History Of The Mahatma Gandhi dc.title: Mr.gandhi And The Emancipatin Of The Untouchables

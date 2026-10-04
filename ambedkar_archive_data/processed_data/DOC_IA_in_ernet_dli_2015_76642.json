@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76642",
+    "title": "Annals Of The Delhi Badshahate",
+    "author": "S_k_bhuyan",
+    "date": "1947-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76642 dc.contributor.author: S_k_bhuyan dc.date.accessioned: 2015-06-30T15:31:48Z dc.date.available: 2015-06-30T15:31:48Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1947 dc.identifier.barcode: 2020050018255 dc.identifier.origpath: /data7/upload/0184/118 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76642 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 266 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Government_of_assam_in_the_department dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: Annals Of The Delhi Badshahate",
+      "summary": "Book Source: Digital Library of India Item 2015.76642 dc.contributor.author: S_k_bhuyan dc.date.accessioned: 2015-06-30T15:31:48Z dc.date.available: 2015-06-30T15:31:48Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1947 dc.identifier.barcode: 2020050018255 dc.iden...",
+      "key_quotes": [
+        "Archival record preserved: Annals Of The Delhi Badshahate",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76642",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 61,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 556,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76642",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76642/in.ernet.dli.2015.76642.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Annals Of The Delhi Badshahate (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Annals Of The Delhi Badshahate",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76642"
+      },
+      "mr": {
+        "title": "Annals Of The Delhi Badshahate (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Annals Of The Delhi Badshahate",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76642"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_coi_part_full",
+    "title": "THE CONSTITUTION OF INDIA",
+    "author": "DR. B.R. Ambedkar",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "THE CONSTITUTION OF INDIA",
+      "summary": "THE CONSTITUTION OF INDIA",
+      "key_quotes": [
+        "Archival record preserved: THE CONSTITUTION OF INDIA",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "coi_part_full",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 4,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 896,
+      "url": "https://archive.org/details/coi_part_full",
+      "pdf_url": "https://archive.org/download/coi_part_full/coi_part_full.pdf"
+    },
+    "tags": [
+      "constitutional"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "THE CONSTITUTION OF INDIA (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: THE CONSTITUTION OF INDIA",
+        "text_url": "https://archive.org/details/coi_part_full"
+      },
+      "mr": {
+        "title": "THE CONSTITUTION OF INDIA (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: THE CONSTITUTION OF INDIA",
+        "text_url": "https://archive.org/details/coi_part_full"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

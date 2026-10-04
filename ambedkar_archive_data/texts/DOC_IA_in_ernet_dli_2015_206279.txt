@@ -1,0 +1,5 @@
+Title: Constituent Assembly Of India Draft Constitution Of India
+Author: Government Of India Press New Delhi
+Date: 1948-01-01
+
+Book Source: Digital Library of India Item 2015.206279 dc.contributor.other: .ambedkar B.r Dr dc.date.accessioned: 2015-07-09T14:34:10Z dc.date.available: 2015-07-09T14:34:10Z dc.date.digitalpublicationdate: 2003-12-23 dc.date.citation: 1948 dc.identifier: Librarian, Rashtrapati Bhavan dc.identifier.barcode: 6010010075475 dc.identifier.origpath: /data_copy/upload/0075/480 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/206279 dc.description.scanningcentre: Rashtrapati Bhavan Library dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 240 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Rashtrapati Bhavan dc.publisher: Government Of India Press New Delhi dc.rights: Out_of_copyright dc.source.library: Rashtrapati Bhavan Library dc.subject.classification: Law dc.title: Constituent Assembly Of India Draft Constitution Of India

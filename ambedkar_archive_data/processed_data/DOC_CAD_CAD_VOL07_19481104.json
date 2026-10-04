@@ -1,0 +1,72 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL07_19481104",
+    "title": "Constituent Assembly Debates: Motion Introducing the Draft Constitution",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1948-11-04",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "Mr. Vice-President, Sir, I move that the Draft Constitution as framed by the Drafting Committee be taken into consideration. In doing so, I should like to draw the attention of the House to some of its salient features. A student of the Constitution would naturally ask: What is the form of government envisaged in the Draft Constitution? The Draft Constitution recommends a Parliamentary system of Government as in the United Kingdom, rather than the Presidential system as in America. In the Draft Constitution there is placed at the head of the Indian Union a functionary who is called the President of the Union. The title of this functionary reminds one of the President of the United States. But beyond identity of names there is nothing in common between the form of government prevalent in America and the form of government proposed under the Draft Constitution. The American form of government is called the Presidential system of government. What the Draft Constitution recommends is the Parliamentary system. The two are fundamentally different.\n\nUnder the Presidential system of the United States, the President is the chief head of the Executive. The administration is vested in him. Under the Draft Constitution, the President occupies the same position as the King under the English Constitution. He is the head of the State but not of the Executive. He represents the Nation but does not rule the Nation. He is the symbol of the nation. His place in the administration is that of a ceremonial device on a seal by which the nation's decisions are made known.\n\nA democratic executive must satisfy two conditions - it must be a stable executive and it must be a responsible executive. Unfortunately, it has not been possible so far to devise a system which can ensure both in equal degree. You can have a system which can give you more stability but less responsibility, or you can have a system which gives you more responsibility but less stability. The American system gives more stability but less responsibility. The British system, on the other hand, gives you more responsibility but less stability. The Drafting Committee has preferred the system of daily assessment of responsibility to periodic assessment.",
+      "summary": "Dr. Ambedkar introduces the Draft Constitution, elaborating why India chose the British Parliamentary executive over the American Presidential model: balancing stability with day-to-day executive accountability to the legislature.",
+      "key_quotes": [
+        "The President is the head of the State but not of the Executive. He represents the Nation but does not rule the Nation.",
+        "A democratic executive must satisfy two conditions: stability and responsibility. The Drafting Committee preferred daily assessment of responsibility to periodic assessment."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume VII-31-44",
+      "collection": "Constituent Assembly of India Debates (Volume VII)",
+      "pages": 12,
+      "word_count": 368,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume VII",
+      "page_reference": "31-44",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "constitutional",
+      "democracy",
+      "drafting_committee",
+      "equality",
+      "executive",
+      "federalism",
+      "parliamentary_democracy",
+      "rights"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481104"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Motion Introducing the Draft Constitution",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar introduces the Draft Constitution, elaborating why India chose the British Parliamentary executive over the American Presidential model: balancing stability with day-to-day executive accountability to the legislature.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Motion Introducing the Draft Constitution",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar introduces the Draft Constitution, elaborating why India chose the British Parliamentary executive over the American Presidential model: balancing stability with day-to-day executive accountability to the legislature.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

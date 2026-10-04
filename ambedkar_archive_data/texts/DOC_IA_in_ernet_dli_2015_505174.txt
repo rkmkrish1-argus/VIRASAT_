@@ -1,0 +1,5 @@
+Title: Ambedkar B.r.
+Author: Govt Of India Press
+Date: 1948-01-01
+
+Book Source: Digital Library of India Item 2015.505174 dc.coverage.spatial: new delhi dc.date.accessioned: 2015-09-27T11:43:23Z dc.date.available: 2015-09-27T11:43:23Z dc.date.copyright: 1948 dc.date.citation: 1948 dc.identifier.barcode: 99999990265244 dc.identifier.origpath: /data4/upload/0118/048 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/505174 dc.description: xxvii,214 dc.description.scanningcentre: UOD, Delhi dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 238 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher: Govt Of India Press dc.rights: not available dc.source.library: Central Library, Delhi University dc.subject.classification: Constitutinal Law dc.subject.classification: India Constitutions Law dc.subject.classification: Political Science dc.title: Draft Constitution Of India dc.title: Ambedkar B.r.

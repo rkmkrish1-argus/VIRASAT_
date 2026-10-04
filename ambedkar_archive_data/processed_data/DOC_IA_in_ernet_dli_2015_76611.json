@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76611",
+    "title": "Catalogue Of The Indian Collections",
+    "author": "K_coomaraswamy",
+    "date": "1930-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76611 dc.contributor.author: K_coomaraswamy dc.date.accessioned: 2015-06-30T15:31:02Z dc.date.available: 2015-06-30T15:31:02Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1930 dc.identifier.barcode: 2020050018222 dc.identifier.origpath: /data7/upload/0184/090 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76611 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 278 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Museum_of_fine_arts_boston dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Catalogue Of The Indian Collections",
+      "summary": "Book Source: Digital Library of India Item 2015.76611 dc.contributor.author: K_coomaraswamy dc.date.accessioned: 2015-06-30T15:31:02Z dc.date.available: 2015-06-30T15:31:02Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1930 dc.identifier.barcode: 2020050018222 dc....",
+      "key_quotes": [
+        "Archival record preserved: Catalogue Of The Indian Collections",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76611",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 60,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 628,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76611",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76611/in.ernet.dli.2015.76611.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Catalogue Of The Indian Collections (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Catalogue Of The Indian Collections",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76611"
+      },
+      "mr": {
+        "title": "Catalogue Of The Indian Collections (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Catalogue Of The Indian Collections",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76611"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

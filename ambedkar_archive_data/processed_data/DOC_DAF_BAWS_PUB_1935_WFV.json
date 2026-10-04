@@ -1,0 +1,65 @@
+{
+  "document": {
+    "id": "DOC_DAF_BAWS_PUB_1935_WFV",
+    "title": "Waiting for a Visa: Autobiographical Life Sketches",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1935-10-01",
+    "type": "manuscript",
+    "language": "en",
+    "content": {
+      "full_text": "Foreigners, of course, know of the existence of untouchability. But not being ground by it, they cannot know what it is to be an Untouchable. They cannot realize how an Untouchable is treated by society from morning till night.\n\nThis book contains four personal autobiographical experiences: traveling to Masur in Satara as a child, working in Baroda state as Finance Minister where peons flung files at my desk and no inn or hotel would accommodate me, suffering near Daulatabad fort over drinking water, and being stranded in a rural village. They illustrate the visceral, systemic indignities suffered by the depressed classes.",
+      "summary": "Dr. Ambedkar's poignant autobiographical sketches recording personal encounters with severe caste discrimination, untouchability, and denial of basic shelter and dignity despite highest academic distinctions.",
+      "key_quotes": [
+        "Foreigners know of untouchability, but not being ground by it, they cannot know what it is to be an Untouchable.",
+        "A man with degrees from Columbia and London could find no roof under which to lay his head in Baroda."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "DAF-BAWS_PUB_1935_WFV",
+      "collection": "Dr. Babasaheb Ambedkar Writings and Speeches (BAWS Vol. 12)",
+      "pages": 45,
+      "word_count": 101,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "BAWS Vol. 12",
+      "page_reference": "661-691"
+    },
+    "tags": [
+      "autobiography",
+      "dalits",
+      "economics",
+      "education",
+      "human_dignity",
+      "lived_experience",
+      "social_justice",
+      "untouchability"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481104"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "Waiting for a Visa: Autobiographical Life Sketches (डॉ. अंबेडकर प्रतिष्ठान)",
+        "summary": "Dr. Ambedkar's poignant autobiographical sketches recording personal encounters with severe caste discrimination, untouchability, and denial of basic shelter and dignity despite highest academic distinctions."
+      },
+      "mr": {
+        "title": "Waiting for a Visa: Autobiographical Life Sketches (डॉ. आंबेडकर प्रतिष्ठान संग्रह)",
+        "summary": "Dr. Ambedkar's poignant autobiographical sketches recording personal encounters with severe caste discrimination, untouchability, and denial of basic shelter and dignity despite highest academic distinctions."
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dr._B._R._Ambedkar.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

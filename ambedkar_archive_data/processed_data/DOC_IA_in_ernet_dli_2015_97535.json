@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_97535",
+    "title": "The Essance Of Buddhism",
+    "author": "B_r_ambedkar",
+    "date": "1948-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.97535 dc.contributor.author: B_r_ambedkar dc.contributor.other: Scl dc.date.accessioned: 2015-07-01T16:00:12Z dc.date.available: 2015-07-01T16:00:12Z dc.date.digitalpublicationdate: 0000-00-00 dc.date.citation: 1948 dc.identifier.barcode: 2020030002999 dc.identifier.origpath: /data8/upload/0208/154 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/97535 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 464 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Par Informatics, Hyderabad dc.publisher: Thacker_and_co dc.rights: In_copyright dc.source.library: Scl dc.title: The Essance Of Buddhism",
+      "summary": "Book Source: Digital Library of India Item 2015.97535 dc.contributor.author: B_r_ambedkar dc.contributor.other: Scl dc.date.accessioned: 2015-07-01T16:00:12Z dc.date.available: 2015-07-01T16:00:12Z dc.date.digitalpublicationdate: 0000-00-00 dc.date.citation: 1948 dc.identifier.ba...",
+      "key_quotes": [
+        "Archival record preserved: The Essance Of Buddhism",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.97535",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 56,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 1163,
+      "url": "https://archive.org/details/in.ernet.dli.2015.97535",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.97535/in.ernet.dli.2015.97535.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Essance Of Buddhism (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Essance Of Buddhism",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.97535"
+      },
+      "mr": {
+        "title": "The Essance Of Buddhism (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Essance Of Buddhism",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.97535"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

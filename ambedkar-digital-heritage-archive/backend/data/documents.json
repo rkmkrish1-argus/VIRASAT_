@@ -1,0 +1,60 @@
+[
+  {
+    "id": "2b9b2a91-9e5e-445e-80e9-856a21e4057b",
+    "title": "Annihilation of Caste",
+    "author": "B. R. Ambedkar",
+    "year": 1936,
+    "language": "English",
+    "collection": "Books & Speeches",
+    "type": "Book",
+    "description": "A major work by Dr. B. R. Ambedkar examining caste and social reform.",
+    "tags": [
+      "caste",
+      "social reform",
+      "speech"
+    ],
+    "text": "Annihilation of Caste is a major text by B. R. Ambedkar. This sample record is included for testing the archive search.",
+    "source": "Sample archival record",
+    "filename": null,
+    "createdAt": "2026-10-02T14:23:20.838Z"
+  },
+  {
+    "id": "12c062df-751b-4a5a-9654-4169fcd1c876",
+    "title": "What Congress and Gandhi Have Done to the Untouchables",
+    "author": "B. R. Ambedkar",
+    "year": 1945,
+    "language": "English",
+    "collection": "Political Writings",
+    "type": "Book",
+    "description": "Sample catalog record for testing political writings and archive search.",
+    "tags": [
+      "politics",
+      "Gandhi",
+      "Congress",
+      "Dalit history"
+    ],
+    "text": "Sample searchable text for What Congress and Gandhi Have Done to the Untouchables.",
+    "source": "Sample archival record",
+    "filename": null,
+    "createdAt": "2026-10-02T14:23:20.838Z"
+  },
+  {
+    "id": "5b840b94-7cab-42aa-bae0-cc99c1372d47",
+    "title": "Constituent Assembly Debates — Fundamental Rights",
+    "author": "Constituent Assembly of India",
+    "year": 1948,
+    "language": "English",
+    "collection": "Constituent Assembly Debates",
+    "type": "Debate",
+    "description": "Sample record representing a Constituent Assembly debate.",
+    "tags": [
+      "constitution",
+      "fundamental rights",
+      "assembly"
+    ],
+    "text": "Sample searchable debate text. Replace this record with verified archival material before public release.",
+    "source": "Sample archival record",
+    "filename": null,
+    "createdAt": "2026-10-02T14:23:20.838Z"
+  }
+]

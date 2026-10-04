@@ -1,0 +1,5 @@
+Title: Labour And Factory Legislation(1945)
+Author: Ambedkar B. R.
+Date: 1945-01-01
+
+Book Source: Digital Library of India Item 2015.15135 dc.contributor.author: Ambedkar B. R. dc.date.accessioned: 2015-06-23T23:06:45Z dc.date.available: 2015-06-23T23:06:45Z dc.date.digitalpublicationdate: 2006-01-16 dc.date.citation: 1945 dc.identifier: Librarian, Bits-Pilani dc.identifier.barcode: 99999990149433 dc.identifier.origpath: /data1/upload/0004/530 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/15135 dc.description.scanningcentre: C-DAC, Noida dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 1348 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: 22, Prithviraj Road, New Delhi dc.rights: Not Available dc.source.library: Central Library, Bits-pilani dc.subject.classification: Social Sciences dc.title: Labour And Factory Legislation(1945)

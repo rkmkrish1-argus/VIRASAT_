@@ -1,0 +1,5 @@
+Title: డాక్టర్ బాబా సాహెబ్ అంబేద్కర్ రచనలు-ప్రసంగాలు రెండవ సంపుటం
+Author: అంబేద్కర్(మూలం), పేర్వారం జగన్నాధం(సం.)
+Date: 1995-01-01
+
+Book Source: Digital Library of India Item 2015.388695 dc.contributor.author: Dr.p.apadarao dc.contributor.other: Ccl dc.date.accessioned: 2015-09-09T15:51:31Z dc.date.available: 2015-09-09T15:51:31Z dc.date.digitalpublicationdate: 06-01-2003 dc.date.citation: 1995 dc.identifier.barcode: 02020120007162 dc.identifier.origpath: /data/upload/0007/167 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/388695 dc.description.scanningcentre: City Central Library, Hyderabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 913 dc.format.mimetype: application/pdf dc.language.iso: Telugu dc.publisher.digitalrepublisher: PAR INFORAMTICS, HYDERABAD dc.publisher: Andhrapradesh Government dc.source.library: Rop Hyderabad dc.subject.classification: Religious dc.title: Dr.babashaheb Ambedkar Rachanalu-prasamgalu-part-3 dc.type: BOOK

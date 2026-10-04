@@ -1,0 +1,5 @@
+Title: డాక్టర్ బాబా సాహెబ్ అంబేత్కర్ రచనలు-ప్రసంగాలు-పన్నెండవ సంపుటి
+Author: అంబేద్కర్(మూలం), నాయని కృష్ణకుమారి(సం.)
+Date: 1996-01-01
+
+Book Source: Digital Library of India Item 2015.390056 dc.contributor.author: Acharya Nayani Krishna Kumari dc.date.accessioned: 2015-09-09T16:03:15Z dc.date.available: 2015-09-09T16:03:15Z dc.date.digitalpublicationdate: 10-12-2002 dc.date.citation: 1996 dc.identifier.barcode: 02020120020045 dc.identifier.origpath: /data/upload/0020/050 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/390056 dc.description.scanningcentre: City Central Library, Hyderabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 742 dc.format.mimetype: application/pdf dc.language.iso: Telugu dc.publisher.digitalrepublisher: PAR INFORMATICS HYDERABAD dc.publisher: Andhra Pradesh Prabuthvamu dc.subject.classification: Achala Bodha Siddantham dc.title: Doctor Babasahe Ambedkar Rachanalu-prasangalu Samputa-12 dc.type: enter document type dc.rights.holder: enter name of the copyright owner

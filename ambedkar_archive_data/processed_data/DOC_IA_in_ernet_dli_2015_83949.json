@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_83949",
+    "title": "Federation Versus Freedom",
+    "author": "Ambedkar, B.r.",
+    "date": "1939-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.83949 dc.contributor.author: Ambedkar, B.r. dc.date.accessioned: 2015-06-30T18:37:13Z dc.date.available: 2015-06-30T18:37:13Z dc.date.citation: 1939 dc.identifier.barcode: 2030020000079 dc.identifier.origpath: /data7/upload/0168/494 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/83949 dc.description.scannerno: 9 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 175 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Gokhale Institute Of Political And Economics. dc.rights: Not Available dc.source.library: Osmania University dc.subject.classification: Social Sciences dc.subject.classification: Politics dc.subject.classification: Parliaments. Representation Of The People dc.title: Federation Versus Freedom",
+      "summary": "Book Source: Digital Library of India Item 2015.83949 dc.contributor.author: Ambedkar, B.r. dc.date.accessioned: 2015-06-30T18:37:13Z dc.date.available: 2015-06-30T18:37:13Z dc.date.citation: 1939 dc.identifier.barcode: 2030020000079 dc.identifier.origpath: /data7/upload/0168/494...",
+      "key_quotes": [
+        "Archival record preserved: Federation Versus Freedom",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.83949",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 73,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 1692,
+      "url": "https://archive.org/details/in.ernet.dli.2015.83949",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.83949/in.ernet.dli.2015.83949.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Federation Versus Freedom (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Federation Versus Freedom",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.83949"
+      },
+      "mr": {
+        "title": "Federation Versus Freedom (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Federation Versus Freedom",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.83949"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

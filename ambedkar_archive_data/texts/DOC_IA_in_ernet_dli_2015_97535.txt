@@ -1,0 +1,5 @@
+Title: The Essance Of Buddhism
+Author: B_r_ambedkar
+Date: 1948-01-01
+
+Book Source: Digital Library of India Item 2015.97535 dc.contributor.author: B_r_ambedkar dc.contributor.other: Scl dc.date.accessioned: 2015-07-01T16:00:12Z dc.date.available: 2015-07-01T16:00:12Z dc.date.digitalpublicationdate: 0000-00-00 dc.date.citation: 1948 dc.identifier.barcode: 2020030002999 dc.identifier.origpath: /data8/upload/0208/154 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/97535 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 464 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Par Informatics, Hyderabad dc.publisher: Thacker_and_co dc.rights: In_copyright dc.source.library: Scl dc.title: The Essance Of Buddhism

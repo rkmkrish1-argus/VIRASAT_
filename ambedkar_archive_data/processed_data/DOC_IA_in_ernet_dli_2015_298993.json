@@ -1,0 +1,58 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_298993",
+    "title": "Dalit Samaj O Ambedkar",
+    "author": "Ghosh, Atin",
+    "date": "1960-01-01",
+    "type": "publication",
+    "language": "bn",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.298993 dc.contributor.author: Ghosh, Atin dc.date.accessioned: 2015-08-10T12:39:13Z dc.date.available: 2015-08-10T12:39:13Z dc.date.digitalpublicationdate: 2012/09/5 dc.date.citation: 1960 dc.identifier.barcode: 99999990334869 dc.identifier.origpath: /data14/upload/0025/699 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/298993 dc.description.scannerno: SC-02 dc.description.scanningcentre: North Eastern States Libraries dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 186 dc.format.mimetype: application/pdf dc.language.iso: Bengali dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Modern Kalam, Calcutta dc.source.library: Birchandra State Central Library, Tripura dc.subject.keywords: Boidik Somaje Barnarsrom Protha dc.subject.keywords: Ambedkar er Purbabartikale Gat Pater Samossa dc.subject.keywords: Hoyen Adam Bag And Ito Satn dc.subject.keywords: Sonbidhan O Amedkar dc.subject.keywords: Giboni dc.title: Dalit Samaj O Ambedkar dc.type: Print - Paper dc.type: Book",
+      "summary": "Book Source: Digital Library of India Item 2015.298993 dc.contributor.author: Ghosh, Atin dc.date.accessioned: 2015-08-10T12:39:13Z dc.date.available: 2015-08-10T12:39:13Z dc.date.digitalpublicationdate: 2012/09/5 dc.date.citation: 1960 dc.identifier.barcode: 99999990334869 dc.id...",
+      "key_quotes": [
+        "Archival record preserved: Dalit Samaj O Ambedkar",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.298993",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 95,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 2301,
+      "url": "https://archive.org/details/in.ernet.dli.2015.298993",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.298993/in.ernet.dli.2015.298993.pdf"
+    },
+    "tags": [
+      "dalits",
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Dalit Samaj O Ambedkar (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Dalit Samaj O Ambedkar",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.298993"
+      },
+      "mr": {
+        "title": "Dalit Samaj O Ambedkar (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Dalit Samaj O Ambedkar",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.298993"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

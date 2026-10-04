@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_gandhi-aur-ambedkar-sahitya",
+    "title": "Gandhi Aur Ambedkar Sahitya",
+    "author": "Sarvahitkari",
+    "date": "2021-05-04",
+    "type": "publication",
+    "language": "hi",
+    "content": {
+      "full_text": "Gandhi Aur Ambedkar Sahitya",
+      "summary": "Gandhi Aur Ambedkar Sahitya",
+      "key_quotes": [
+        "Archival record preserved: Gandhi Aur Ambedkar Sahitya",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "gandhi-aur-ambedkar-sahitya",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 4,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 4202,
+      "url": "https://archive.org/details/gandhi-aur-ambedkar-sahitya",
+      "pdf_url": "https://archive.org/download/gandhi-aur-ambedkar-sahitya/gandhi-aur-ambedkar-sahitya.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Gandhi Aur Ambedkar Sahitya (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Gandhi Aur Ambedkar Sahitya",
+        "text_url": "https://archive.org/details/gandhi-aur-ambedkar-sahitya"
+      },
+      "mr": {
+        "title": "Gandhi Aur Ambedkar Sahitya (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Gandhi Aur Ambedkar Sahitya",
+        "text_url": "https://archive.org/details/gandhi-aur-ambedkar-sahitya"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Title: Dr. Babasaheb Ambedkar Writing Speeches Vol. 9
+Author: Dr. Babasaheb Ambedkar
+Date: 1950-01-26
+
+Book Source: Digital Library of India Item 2015.233305 dc.contributor.author: Dr. Babasaheb Ambedkar dc.contributor.other: Vasant Moon dc.date.accessioned: 2015-07-10T18:51:05Z dc.date.available: 2015-07-10T18:51:05Z dc.date.digitalpublicationdate: 0000-00-00 dc.identifier.barcode: 99999990130689 dc.identifier.origpath: /rawdataupload1/upload/0129/351 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/233305 dc.description.scanningcentre: Government Central Press, Mumbai dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 523 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Government Central Press, Mumbai dc.publisher: Education Department, Government Of Maharashtrar dc.rights: Education Department, Govt. Of Maharashtra dc.source.library: Udl, Banglore dc.subject.classification: What Congress And Gandhi Have Done To The Untouchables dc.title: Dr. Babasaheb Ambedkar Writing Speeches Vol. 9

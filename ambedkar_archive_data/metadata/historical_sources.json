@@ -1,0 +1,80 @@
+[
+  {
+    "id": "DOC_DAF_HIST_1916_CASTES_IN_INDIA",
+    "title": "Castes in India: Their Mechanism, Genesis and Development",
+    "author": "Dr. B. R. Ambedkar",
+    "date": "1916-05-09",
+    "type": "publication",
+    "language": "en",
+    "source": "Foundation",
+    "url": "https://www.mea.gov.in/Images/attach/amb/Volume_01.pdf",
+    "collection": "Dr. Babasaheb Ambedkar: Writings and Speeches, Volume 1",
+    "summary": "Primary-source catalog record for Ambedkar's 1916 paper on caste, endogamy, and social organization. The official Foundation volume is the source; consult the PDF for the full text and page references.",
+    "tags": ["historical source", "caste", "endogamy", "Columbia University", "anthropology", "1916"]
+  },
+  {
+    "id": "DOC_DAF_HIST_1936_ANNIHILATION_OF_CASTE",
+    "title": "Annihilation of Caste",
+    "author": "Dr. B. R. Ambedkar",
+    "date": "1936-05-15",
+    "type": "publication",
+    "language": "en",
+    "source": "Foundation",
+    "url": "https://www.mea.gov.in/Images/attach/amb/Volume_01.pdf",
+    "collection": "Dr. Babasaheb Ambedkar: Writings and Speeches, Volume 1",
+    "summary": "Primary-source catalog record for Ambedkar's 1936 address on caste and social reform. The official Foundation volume is linked for reading the original text.",
+    "tags": ["historical source", "caste", "social reform", "equality", "1936"]
+  },
+  {
+    "id": "DOC_DAF_HIST_1946_ASSEMBLY_AUDIO",
+    "title": "Speech to the Constituent Assembly, 17 December 1946 (Audio)",
+    "author": "Dr. B. R. Ambedkar",
+    "date": "1946-12-17",
+    "type": "speech",
+    "language": "en",
+    "source": "Foundation",
+    "url": "https://ambedkarfoundation.nic.in/audio.html",
+    "collection": "Dr. Ambedkar Foundation Audio Gallery",
+    "summary": "Official Foundation audio catalog entry for Ambedkar's Constituent Assembly speech of 17 December 1946. Open the source page to listen to the archival audio.",
+    "tags": ["historical source", "audio", "speech", "Constituent Assembly", "1946", "objectives resolution"]
+  },
+  {
+    "id": "DOC_CAD_HIST_1949_FINAL_SPEECH",
+    "title": "Constituent Assembly Debate, 25 November 1949: Dr. B. R. Ambedkar's Final Address",
+    "author": "Dr. B. R. Ambedkar",
+    "date": "1949-11-25",
+    "type": "debate",
+    "language": "en",
+    "source": "CAD",
+    "url": "https://eparlib.sansad.in/bitstream/123456789/763285/1/cad_25-11-1949.pdf",
+    "collection": "Constituent Assembly of India Debates, Volume XI",
+    "summary": "Official Parliament Digital Library record of the 25 November 1949 Constituent Assembly sitting, including Ambedkar's address on constitutional methods, democracy, and social democracy. Open the parliamentary PDF for the primary text and page references.",
+    "tags": ["historical source", "Constituent Assembly", "constitution", "social democracy", "constitutional methods", "1949"]
+  },
+  {
+    "id": "DOC_CAD_HIST_DRAFT_MAKING_COLLECTION",
+    "title": "Constituent Assembly Draft Making Debates, 1946–1950 (Official Collection)",
+    "author": "Constituent Assembly of India",
+    "date": "1946-12-09",
+    "type": "debate",
+    "language": "en",
+    "source": "CAD",
+    "url": "https://eparlib.sansad.in/handle/123456789/760448/browse?submit_browse=browse.menu.date&type=date",
+    "collection": "Parliament Digital Library: Historical Debates",
+    "summary": "Catalog record for the Parliament Digital Library's official Draft Making Debates collection. Browse the date-wise records for the Constituent Assembly's 1946–1950 proceedings; individual sitting records link to their source documents.",
+    "tags": ["historical source", "Constituent Assembly", "Draft Making", "debates", "1946", "1950"]
+  },
+  {
+    "id": "DOC_DAF_HIST_INDIAN_CONSTITUTION",
+    "title": "The Constitution of India (Official Reading Resources)",
+    "author": "Constituent Assembly of India",
+    "date": "1949-11-26",
+    "type": "publication",
+    "language": "en",
+    "source": "Foundation",
+    "url": "https://ambedkarfoundation.nic.in/publication.html",
+    "collection": "Dr. Ambedkar Foundation: Indian Constitution",
+    "summary": "Official Foundation page linking the Constitution's preface, contents, Parts I–XXII, Schedules, appendices, and index. The Assembly adopted the Constitution on 26 November 1949; open the source page to access its document files.",
+    "tags": ["historical source", "Constitution of India", "fundamental rights", "constitutional history", "1949"]
+  }
+]

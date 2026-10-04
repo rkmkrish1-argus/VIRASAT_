@@ -1,0 +1,5 @@
+Title: Ecnomic History Of Angient India
+Author: Santhosh_kumar
+Date: 1944-01-01
+
+Book Source: Digital Library of India Item 2015.76510 dc.contributor.author: Santhosh_kumar dc.date.accessioned: 2015-06-30T15:28:20Z dc.date.available: 2015-06-30T15:28:20Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1944 dc.identifier.barcode: 2020050017866 dc.identifier.origpath: /data7/upload/0183/999 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76510 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 368 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Second_edition_culcutta dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Ecnomic History Of Angient India

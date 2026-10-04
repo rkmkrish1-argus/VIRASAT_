@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_dli_ernet_6720",
+    "title": "Ambedkar Vol. 1",
+    "author": "Dr. Babasehab Ambedkar",
+    "date": "1989-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Source: Digital Library of India Scanning Centre: Government Central Press, Mumbai Source Library: Udl Date Accessioned: 6/19/2015 19:20 The Digital Library of India was a project under the auspices of the Government of India.",
+      "summary": "Source: Digital Library of India Scanning Centre: Government Central Press, Mumbai Source Library: Udl Date Accessioned: 6/19/2015 19:20 The Digital Library of India was a project under the auspices of the Government of India.",
+      "key_quotes": [
+        "Archival record preserved: Ambedkar Vol. 1",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "dli.ernet.6720",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 34,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 345,
+      "url": "https://archive.org/details/dli.ernet.6720",
+      "pdf_url": "https://archive.org/download/dli.ernet.6720/dli.ernet.6720.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Ambedkar Vol. 1 (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Ambedkar Vol. 1",
+        "text_url": "https://archive.org/details/dli.ernet.6720"
+      },
+      "mr": {
+        "title": "Ambedkar Vol. 1 (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Ambedkar Vol. 1",
+        "text_url": "https://archive.org/details/dli.ernet.6720"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

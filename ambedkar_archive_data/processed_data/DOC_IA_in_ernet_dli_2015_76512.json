@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76512",
+    "title": "Towards Angkor",
+    "author": "Quaritch_wales",
+    "date": "1937-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76512 dc.contributor.author: Quaritch_wales dc.date.accessioned: 2015-06-30T15:28:24Z dc.date.available: 2015-06-30T15:28:24Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1937 dc.identifier.barcode: 2020050017868 dc.identifier.origpath: /data7/upload/0184/001 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76512 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 308 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: George_g Harrap_and_co dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Towards Angkor",
+      "summary": "Book Source: Digital Library of India Item 2015.76512 dc.contributor.author: Quaritch_wales dc.date.accessioned: 2015-06-30T15:28:24Z dc.date.available: 2015-06-30T15:28:24Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1937 dc.identifier.barcode: 2020050017868 dc....",
+      "key_quotes": [
+        "Archival record preserved: Towards Angkor",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76512",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 58,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 829,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76512",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76512/in.ernet.dli.2015.76512.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Towards Angkor (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Towards Angkor",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76512"
+      },
+      "mr": {
+        "title": "Towards Angkor (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Towards Angkor",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76512"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

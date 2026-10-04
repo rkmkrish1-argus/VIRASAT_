@@ -1,0 +1,64 @@
+{
+  "document": {
+    "id": "DOC_DAF_BAWS_PUB_1956_BHD",
+    "title": "The Buddha and His Dhamma",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1956-11-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Dr. Ambedkar's magnum opus on Buddhist philosophy, completed shortly before his passing in December 1956.\n\nThe purpose of religion is to reconstruct the world, not to explain its origin or preserve social hierarchy. Buddhism is grounded in Morality (Sila), Wisdom (Panna), and Universal Compassion (Karuna). Unlike theistic religions that demand unconditional surrender to supernatural revelation, the Dhamma demands reason, self-examination, and relentless moral action for the alleviation of human suffering (Dukkha). Equality and fraternity are the ethical bedrock of the Sangha and civilized human society.",
+      "summary": "Dr. Ambedkar's monumental philosophical exposition of Buddhism as an ethical, rational, and egalitarian philosophy of human liberation, social reconstruction, and universal compassion.",
+      "key_quotes": [
+        "The purpose of religion is to reconstruct the world, not to explain its origin.",
+        "Morality is Dhamma, and Dhamma is Morality. In Dhamma, morality is sacred and universal."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "DAF-BAWS_PUB_1956_BHD",
+      "collection": "Dr. Babasaheb Ambedkar Writings and Speeches (BAWS Vol. 11)",
+      "pages": 45,
+      "word_count": 85,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "BAWS Vol. 11",
+      "page_reference": "1-600"
+    },
+    "tags": [
+      "buddhism",
+      "compassion",
+      "dhamma",
+      "equality",
+      "ethics",
+      "philosophy",
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481104"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "The Buddha and His Dhamma (डॉ. अंबेडकर प्रतिष्ठान)",
+        "summary": "Dr. Ambedkar's monumental philosophical exposition of Buddhism as an ethical, rational, and egalitarian philosophy of human liberation, social reconstruction, and universal compassion."
+      },
+      "mr": {
+        "title": "The Buddha and His Dhamma (डॉ. आंबेडकर प्रतिष्ठान संग्रह)",
+        "summary": "Dr. Ambedkar's monumental philosophical exposition of Buddhism as an ethical, rational, and egalitarian philosophy of human liberation, social reconstruction, and universal compassion."
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dr._B._R._Ambedkar.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

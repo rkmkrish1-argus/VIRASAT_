@@ -1,0 +1,5 @@
+Title: A History Of Fine Art In India And Ceylon
+Author: Vincent_a_smith
+Date: 1930-01-01
+
+Book Source: Digital Library of India Item 2015.76620 dc.contributor.author: Vincent_a_smith dc.date.accessioned: 2015-06-30T15:31:17Z dc.date.available: 2015-06-30T15:31:17Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1930 dc.identifier.barcode: 2020050018231 dc.identifier.origpath: /data7/upload/0184/098 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76620 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 444 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Oxford_at_the_clarendon_press dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: A History Of Fine Art In India And Ceylon

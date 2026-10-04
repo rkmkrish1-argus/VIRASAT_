@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_Ambedkar",
+    "title": "Ambedkar",
+    "author": "Sridhar",
+    "date": "1950-01-26",
+    "type": "speech",
+    "language": "en",
+    "content": {
+      "full_text": "ambedkar - mathimaran",
+      "summary": "ambedkar - mathimaran",
+      "key_quotes": [
+        "Archival record preserved: Ambedkar",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "Ambedkar",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 3,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 943,
+      "url": "https://archive.org/details/Ambedkar",
+      "pdf_url": "https://archive.org/download/Ambedkar/Ambedkar.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Ambedkar (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Ambedkar",
+        "text_url": "https://archive.org/details/Ambedkar"
+      },
+      "mr": {
+        "title": "Ambedkar (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Ambedkar",
+        "text_url": "https://archive.org/details/Ambedkar"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": "https://archive.org/details/Ambedkar",
+      "video": null
+    }
+  }
+}

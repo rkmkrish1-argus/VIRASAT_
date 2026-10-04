@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_JaibhimMhananyaAadhi",
+    "title": "Jaibhim Mhananya Aadhi",
+    "author": "Kabir Kala Manch",
+    "date": "2013-04-14",
+    "type": "speech",
+    "language": "en",
+    "content": {
+      "full_text": "A revolutionary song from Kabir Kala Manch",
+      "summary": "A revolutionary song from Kabir Kala Manch",
+      "key_quotes": [
+        "Archival record preserved: Jaibhim Mhananya Aadhi",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "JaibhimMhananyaAadhi",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 7,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 742,
+      "url": "https://archive.org/details/JaibhimMhananyaAadhi",
+      "pdf_url": "https://archive.org/download/JaibhimMhananyaAadhi/JaibhimMhananyaAadhi.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Jaibhim Mhananya Aadhi (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Jaibhim Mhananya Aadhi",
+        "text_url": "https://archive.org/details/JaibhimMhananyaAadhi"
+      },
+      "mr": {
+        "title": "Jaibhim Mhananya Aadhi (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Jaibhim Mhananya Aadhi",
+        "text_url": "https://archive.org/details/JaibhimMhananyaAadhi"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": "https://archive.org/details/JaibhimMhananyaAadhi",
+      "video": null
+    }
+  }
+}

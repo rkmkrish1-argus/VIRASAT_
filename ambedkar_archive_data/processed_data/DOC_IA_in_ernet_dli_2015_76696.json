@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76696",
+    "title": "A History Of Hindi Literature",
+    "author": "F_e_keay_",
+    "date": "1933-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76696 dc.contributor.author: F_e_keay_ dc.date.accessioned: 2015-06-30T15:33:12Z dc.date.available: 2015-06-30T15:33:12Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1933 dc.identifier.barcode: 2020050019439 dc.identifier.origpath: /data7/upload/0184/167 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76696 dc.description.scannerno: 50032 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 134 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Oxford_univarsity_press dc.rights: In_copyright dc.source.library: Br Ambedkar dc.subject.classification: Generalities dc.title: A History Of Hindi Literature",
+      "summary": "Book Source: Digital Library of India Item 2015.76696 dc.contributor.author: F_e_keay_ dc.date.accessioned: 2015-06-30T15:33:12Z dc.date.available: 2015-06-30T15:33:12Z dc.date.digitalpublicationdate: 2005-03-24 dc.date.citation: 1933 dc.identifier.barcode: 2020050019439 dc.ident...",
+      "key_quotes": [
+        "Archival record preserved: A History Of Hindi Literature",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76696",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 61,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 809,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76696",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76696/in.ernet.dli.2015.76696.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "A History Of Hindi Literature (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: A History Of Hindi Literature",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76696"
+      },
+      "mr": {
+        "title": "A History Of Hindi Literature (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: A History Of Hindi Literature",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76696"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

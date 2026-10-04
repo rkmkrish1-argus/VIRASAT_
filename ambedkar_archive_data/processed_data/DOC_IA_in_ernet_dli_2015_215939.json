@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_215939",
+    "title": "The Untouchables",
+    "author": "Ambedkar, B.r",
+    "date": "1948-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.215939 dc.contributor.author: Ambedkar, B.r dc.date.accessioned: 2015-07-09T19:33:24Z dc.date.available: 2015-07-09T19:33:24Z dc.date.digitalpublicationdate: 2005-02-14 dc.date.citation: 1948 dc.identifier: Librarian, SJM dc.identifier.barcode: 2990150057117 dc.identifier.origpath: /data_copy/upload/0057/122 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/215939 dc.description.scannerno: 50014 dc.description.scanningcentre: Salar Jung Museum dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 180 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Amrit Book Co dc.source.library: Salar Jung Museum, Hyderabad dc.subject.classification: Religion. Theology dc.subject.classification: Religions Of The Indian Subcontinent dc.subject.classification: Hinduism Narrowly dc.title: The Untouchables",
+      "summary": "Book Source: Digital Library of India Item 2015.215939 dc.contributor.author: Ambedkar, B.r dc.date.accessioned: 2015-07-09T19:33:24Z dc.date.available: 2015-07-09T19:33:24Z dc.date.digitalpublicationdate: 2005-02-14 dc.date.citation: 1948 dc.identifier: Librarian, SJM dc.identif...",
+      "key_quotes": [
+        "Archival record preserved: The Untouchables",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.215939",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 75,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 10857,
+      "url": "https://archive.org/details/in.ernet.dli.2015.215939",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.215939/in.ernet.dli.2015.215939.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Untouchables (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Untouchables",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.215939"
+      },
+      "mr": {
+        "title": "The Untouchables (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Untouchables",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.215939"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

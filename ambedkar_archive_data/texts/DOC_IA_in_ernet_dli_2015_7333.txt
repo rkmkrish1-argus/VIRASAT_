@@ -1,0 +1,5 @@
+Title: Commodity Exchanges (1947)
+Author: Salvi P.g.
+Date: 1947-01-01
+
+Book Source: Digital Library of India Item 2015.7333 dc.contributor.author: Salvi P.g. dc.contributor.other: Ambedkar B.r Dr dc.date.accessioned: 2015-06-19T18:16:38Z dc.date.available: 2015-06-19T18:16:38Z dc.date.digitalpublicationdate: 2007-02-28 dc.date.citation: 1947 dc.identifier.barcode: 99999990146041 dc.identifier.origpath: /data1/upload/0001/138 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/7333 dc.description.scanningcentre: UOD, Delhi dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 272 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: The Co-operators Book Depot Bombay dc.rights: Not Available dc.source.library: I A R I Library dc.subject.classification: Natural Science dc.title: Commodity Exchanges (1947)

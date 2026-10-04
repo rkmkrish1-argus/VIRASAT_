@@ -1,0 +1,5 @@
+Title: What Congress And Gandhi Ji Have Done To The Untouchables
+Author: B. R. Ambedkar
+Date: 1945-01-01
+
+Book Source: Digital Library of India Item 2015.226158 dc.contributor.author: B. R. Ambedkar dc.date.accessioned: 2015-07-10T15:33:22Z dc.date.available: 2015-07-10T15:33:22Z dc.date.digitalpublicationdate: 0000-00-00 dc.date.citation: 1945 dc.identifier.barcode: 5990010116669 dc.identifier.origpath: /rawdataupload/upload/0116/671 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/226158 dc.description.scanningcentre: IIIT, Allahabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 382 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher: Thacker And Co. Ltd dc.rights: Out_of_copyright dc.subject.classification: Literature dc.title: What Congress And Gandhi Ji Have Done To The Untouchables dc.rights.holder: Hindustani Academy Allahabad

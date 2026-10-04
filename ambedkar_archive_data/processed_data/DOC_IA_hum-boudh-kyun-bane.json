@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_hum-boudh-kyun-bane",
+    "title": "Hum Boudh Kyun Bane",
+    "author": "Dr.B.R.Ambedkar",
+    "date": "2023-12-09",
+    "type": "publication",
+    "language": "hi",
+    "content": {
+      "full_text": "This book contains a series of lectures delivered by Dr.B.R.Ambedkar to his followers citing reasons behind his adherence to Buddhism.",
+      "summary": "This book contains a series of lectures delivered by Dr.B.R.Ambedkar to his followers citing reasons behind his adherence to Buddhism.",
+      "key_quotes": [
+        "Archival record preserved: Hum Boudh Kyun Bane",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "hum-boudh-kyun-bane",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 20,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 605,
+      "url": "https://archive.org/details/hum-boudh-kyun-bane",
+      "pdf_url": "https://archive.org/download/hum-boudh-kyun-bane/hum-boudh-kyun-bane.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Hum Boudh Kyun Bane (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Hum Boudh Kyun Bane",
+        "text_url": "https://archive.org/details/hum-boudh-kyun-bane"
+      },
+      "mr": {
+        "title": "Hum Boudh Kyun Bane (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Hum Boudh Kyun Bane",
+        "text_url": "https://archive.org/details/hum-boudh-kyun-bane"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

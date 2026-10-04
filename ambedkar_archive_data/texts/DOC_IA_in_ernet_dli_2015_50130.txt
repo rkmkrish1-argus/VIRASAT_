@@ -1,0 +1,5 @@
+Title: Pakistan Or Partition Of India
+Author: Ambedkar B. R.
+Date: 1945-01-01
+
+Book Source: Digital Library of India Item 2015.50130 dc.contributor.author: Ambedkar B. R. dc.date.accessioned: 2015-06-26T15:15:31Z dc.date.available: 2015-06-26T15:15:31Z dc.date.digitalpublicationdate: 2009-08-00 dc.date.citation: 1945 dc.identifier.barcode: 99999990242703 dc.identifier.origpath: /data4/upload/0095/507 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/50130 dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 511 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Bombay. dc.rights: Copyright Permitted dc.source.library: Banasthali University dc.subject.classification: Muslims --india dc.subject.classification: India --politics And Government dc.subject.classification: India --nationality dc.subject.keywords: India --politics And Government dc.title: Pakistan Or Partition Of India

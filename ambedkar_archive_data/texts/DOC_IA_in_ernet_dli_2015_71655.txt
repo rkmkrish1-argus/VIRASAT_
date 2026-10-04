@@ -1,0 +1,5 @@
+Title: Annihilation Of Caste With A Reply To Mhatma Gandhi
+Author: Ambedkar B.r
+Date: 1945-01-01
+
+Book Source: Digital Library of India Item 2015.71655 dc.contributor.author: Ambedkar B.r dc.date.accessioned: 2015-06-30T12:39:22Z dc.date.available: 2015-06-30T12:39:22Z dc.date.copyrightexpirydate: 0000-00-00 dc.date.digitalpublicationdate: 2010-10-00 dc.date.citation: 1945 dc.identifier.barcode: 99999990279183 dc.identifier.origpath: /data6/upload/0131/985 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/71655 dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 116 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Amritsar, Ambedkar Printing Press Amritsar dc.rights: Copyright Permitted dc.source.library: University Of Rajasthan dc.subject.classification: History dc.title: Annihilation Of Caste With A Reply To Mhatma Gandhi

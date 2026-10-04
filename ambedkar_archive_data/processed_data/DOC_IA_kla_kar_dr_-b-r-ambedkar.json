@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_kla_kar_dr_-b-r-ambedkar",
+    "title": "Dr. B R Ambedkar",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "ka",
+    "content": {
+      "full_text": "Digital archival manuscript held in Internet Archive repository under identifier kla.kar.dr.-b-r-ambedkar. Published works and reference materials associated with Dr. B.R. Ambedkar.",
+      "summary": "Archival publication preserved in digital repository: Dr. B R Ambedkar",
+      "key_quotes": [
+        "Archival record preserved: Dr. B R Ambedkar",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "kla.kar.dr.-b-r-ambedkar",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 21,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 2109,
+      "url": "https://archive.org/details/kla.kar.dr.-b-r-ambedkar",
+      "pdf_url": "https://archive.org/download/kla.kar.dr.-b-r-ambedkar/kla.kar.dr.-b-r-ambedkar.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Dr. B R Ambedkar (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Dr. B R Ambedkar",
+        "text_url": "https://archive.org/details/kla.kar.dr.-b-r-ambedkar"
+      },
+      "mr": {
+        "title": "Dr. B R Ambedkar (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Dr. B R Ambedkar",
+        "text_url": "https://archive.org/details/kla.kar.dr.-b-r-ambedkar"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

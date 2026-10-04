@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. B.R. Ambedkar Digital Heritage Archive | MoSJE</title>
+  <!-- System typography keeps the archive fast, legible, and native to each device. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Tailwind CSS CDN for instant styling without build step -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col" data-theme="light">
+
+  <!-- TOP EMBLEM & HEADER BAR -->
+  <header class="gov-header border-b border-amber-900/40 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="archive-mark" aria-hidden="true">
+          <span>BA</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="institution-label">Government of India · MoSJE</span>
+            <span class="project-label">Digital Heritage</span>
+          </div>
+          <h1 class="text-lg md:text-xl font-bold font-serif tracking-wide text-white">Dr. B.R. Ambedkar Digital Heritage Archive</h1>
+          <p class="text-xs text-slate-400 hidden sm:block">Dr. Ambedkar International Centre</p>
+        </div>
+      </div>
+
+      <!-- Kiosk Mode / Accessibility Controls -->
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="icon-control theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><i class="fa-regular fa-moon" aria-hidden="true"></i></button>
+        <div class="bg-slate-800/80 rounded-lg p-1 border border-slate-700 flex text-xs">
+          <button id="langSelectEn" class="px-2.5 py-1 rounded bg-amber-600 text-white font-medium" aria-pressed="true" onclick="setUiLanguage('en')">EN</button>
+          <button id="langSelectHi" class="px-2.5 py-1 rounded text-slate-300 hover:text-white" aria-pressed="false" onclick="setUiLanguage('hi')">हिंदी</button>
+          <button id="langSelectMr" class="px-2.5 py-1 rounded text-slate-300 hover:text-white" aria-pressed="false" onclick="setUiLanguage('mr')">मराठी</button>
+        </div>
+        <button id="kioskToggleBtn" onclick="toggleFullScreen()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-medium flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-expand text-amber-400"></i>
+          <span class="hidden md:inline">Kiosk Mode</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="border-t border-slate-800/80 bg-slate-900/60 px-4">
+      <div class="max-w-7xl mx-auto flex overflow-x-auto space-x-1 sm:space-x-4 text-sm font-medium">
+        <button onclick="switchTab('searchTab')" id="tab-searchTab" class="nav-tab active-tab">
+          <i class="fa-solid fa-magnifying-glass"></i> <span>Archive</span>
+        </button>
+        <button onclick="switchTab('timelineTab')" id="tab-timelineTab" class="nav-tab">
+          <i class="fa-solid fa-timeline"></i> <span>Timeline</span>
+        </button>
+        <button onclick="switchTab('aiAssistantTab')" id="tab-aiAssistantTab" class="nav-tab">
+          <i class="fa-solid fa-robot"></i> <span>Research</span>
+        </button>
+        <button onclick="switchTab('analyticsTab')" id="tab-analyticsTab" class="nav-tab">
+          <i class="fa-solid fa-chart-pie"></i> <span>About</span>
+        </button>
+        <button onclick="switchTab('ingestTab')" id="tab-ingestTab" class="nav-tab">
+          <i class="fa-solid fa-cloud-arrow-up"></i> <span>Contribute</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 space-y-6">
+
+    <!-- TAB 1: SEARCH & DISCOVERY -->
+    <section id="searchTab" class="tab-pane active space-y-6">
+      <!-- Search Banner -->
+      <div class="hero-banner rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950/70 border border-amber-900/30 relative overflow-hidden shadow-2xl">
+        <div class="hero-content relative z-10">
+          <div class="hero-intro">
+            <span class="hero-eyebrow">
+              <span class="status-dot" aria-hidden="true"></span> A living record of ideas that shaped a nation
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
+              Preserving the intellectual legacy of Dr. B. R. Ambedkar.
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300">
+              Explore writings, speeches, constitutional debates and historical records through a searchable digital heritage archive.
+            </p>
+            <figure class="hero-portrait">
+              <img src="/static/assets/ambedkar-portrait.png" alt="Dr. B. R. Ambedkar holding a copy of the Constitution of India" fetchpriority="high">
+              <figcaption>Dr. B. R. Ambedkar <span>1891—1956</span></figcaption>
+            </figure>
+          </div>
+          <div class="hero-stats" aria-label="Archive at a glance">
+            <div><strong id="heroRecordCount">530+</strong><span>digitized records</span></div>
+            <div><strong id="heroLanguageCount">10</strong><span>languages</span></div>
+            <div><strong>1947—56</strong><span>founding debates</span></div>
+          </div>
+
+          <!-- Search Input Box -->
+          <div class="relative pt-2">
+            <div class="flex flex-col sm:flex-row gap-2 bg-slate-900/90 p-2 rounded-xl border border-slate-700 shadow-xl focus-within:border-amber-500 transition">
+              <div class="flex-1 flex items-center px-3 gap-3">
+                <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg"></i>
+                <input type="text" id="searchInput" aria-label="Search the digital archive" placeholder="Search writings, speeches, debates, or ideas…"
+                  class="w-full bg-transparent text-white placeholder-slate-400 focus:outline-none text-sm sm:text-base"
+                  onkeyup="if(event.key === 'Enter') executeSearch()">
+                <button class="search-clear" type="button" aria-label="Clear search" title="Clear search" onclick="clearArchiveSearch()"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+              <kbd class="search-shortcut" aria-hidden="true">⌘ K / Ctrl K</kbd>
+              <button onclick="executeSearch()" class="px-6 py-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition">
+                <span>Search</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Filters -->
+          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs">
+            <span class="text-slate-400">Quick Filters:</span>
+            <button onclick="quickFilter('Constituent Assembly')" class="filter-chip">CAD Debates</button>
+            <button onclick="quickFilter('Annihilation of Caste')" class="filter-chip">Annihilation of Caste</button>
+            <button onclick="quickFilter('Directive Principles')" class="filter-chip">Directive Principles</button>
+            <button onclick="quickFilter('Untouchability')" class="filter-chip">Untouchability</button>
+            <button onclick="quickFilter('Rupee')" class="filter-chip">Economics & RBI</button>
+            <button onclick="quickFilter('Buddhism')" class="filter-chip">Buddhism & Dhamma</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Controls Bar -->
+      <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex flex-wrap gap-4 items-center justify-between text-xs sm:text-sm filter-bar">
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="flex items-center gap-1.5">
+            <label class="text-slate-400 font-medium"><i class="fa-solid fa-language text-amber-400"></i> Record language:</label>
+            <select id="filterLanguage" class="filter-select" onchange="handleArchiveLanguageChange()">
+              <option value="">All (10 Languages)</option>
+              <option value="en">English (410)</option>
+              <option value="hi">Hindi (42)</option>
+              <option value="te">Telugu (27)</option>
+              <option value="mr">Marathi (18)</option>
+              <option value="bn">Bengali (11)</option>
+              <option value="ta">Tamil (9)</option>
+              <option value="gu">Gujarati (9)</option>
+              <option value="pa">Punjabi (2)</option>
+              <option value="ml">Malayalam (1)</option>
+              <option value="ka">Kannada (1)</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-1.5">
+            <label class="text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark text-amber-400"></i> Type:</label>
+            <select id="filterType" class="filter-select" onchange="executeSearch()">
+              <option value="">All Document Types</option>
+              <option value="publication">Publications (423)</option>
+              <option value="speech">Speeches (63)</option>
+              <option value="debate">CAD Debates (20)</option>
+              <option value="manuscript">Manuscripts (4)</option>
+              <option value="other">Historical Records (20)</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-1.5">
+            <label class="text-slate-400 font-medium"><i class="fa-solid fa-landmark text-amber-400"></i> Source:</label>
+            <select id="filterSource" class="filter-select" onchange="executeSearch()">
+              <option value="">All Repositories</option>
+              <option value="IA">Internet Archive (510)</option>
+              <option value="CAD">Constituent Assembly (10)</option>
+              <option value="Foundation">Dr. Ambedkar Foundation (10)</option>
+            </select>
+          </div>
+        </div>
+
+        <p id="sourceAvailability" class="source-availability" aria-live="polite">Choose a record language to see its available sources.</p>
+
+        <div id="searchResultsMeta" class="text-slate-400 text-xs font-mono">
+          Showing 530 documents
+        </div>
+      </div>
+
+      <!-- Results Grid -->
+      <div id="resultsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+      <div id="resultsPagination" class="flex items-center justify-between gap-3 mt-5" aria-live="polite"></div>
+    </section>
+
+    <!-- TAB 2: INTERACTIVE TIMELINE -->
+    <section id="timelineTab" class="tab-pane hidden space-y-6">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+        <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-timeline text-amber-400"></i> Chronological Heritage Timeline
+        </h2>
+        <p class="text-sm text-slate-300">
+          Trace Dr. B.R. Ambedkar's landmark milestones, constitutional debates, and social justice struggles through verified archival evidence.
+        </p>
+      </div>
+
+      <div id="timelineContainer" class="relative border-l-2 border-amber-600/40 ml-4 sm:ml-8 pl-6 sm:pl-8 space-y-8">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- TAB 3: CONSTITUTIONAL AI RESEARCH ASSISTANT -->
+    <section id="aiAssistantTab" class="tab-pane hidden space-y-6">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-scale-balanced text-amber-400"></i> Ambedkar Archive Research Assistant
+          </h2>
+          <span class="px-2.5 py-1 text-xs font-semibold bg-emerald-900/60 text-emerald-300 border border-emerald-500/30 rounded-full flex items-center gap-1">
+            <i class="fa-solid fa-shield-halved"></i> Archive Sources
+          </span>
+        </div>
+        <p class="text-sm text-slate-300">
+          Search indexed archival records for relevant passages and citations. Answers are limited to available archive content; verify important details against the cited source.
+        </p>
+
+        <!-- Prompt Suggestions -->
+        <div class="flex flex-wrap gap-2 pt-2 text-xs">
+          <span class="text-slate-400">Try asking:</span>
+          <button onclick="askPresetQuestion('What did Ambedkar warn about hero worship and Bhakti in politics?')" class="filter-chip">
+            Hero Worship / Bhakti in Politics
+          </button>
+          <button onclick="askPresetQuestion('Why did India choose a Parliamentary executive instead of Presidential?')" class="filter-chip">
+            Parliamentary vs Presidential System
+          </button>
+          <button onclick="askPresetQuestion('What was Ambedkar\\'s interpretation of Article 356 and President\\'s Rule?')" class="filter-chip">
+            Article 356 as 'Dead Letter'
+          </button>
+          <button onclick="askPresetQuestion('Why is caste not merely a division of labour?')" class="filter-chip">
+            Caste as Division of Labourers
+          </button>
+        </div>
+
+        <!-- Chat Box -->
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 min-h-[350px] flex flex-col justify-between">
+          <div id="aiChatThread" class="space-y-4 max-h-[450px] overflow-y-auto pr-2">
+            <!-- Messages rendered dynamically -->
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-amber-600/30 border border-amber-500/40 flex items-center justify-center text-amber-400 text-sm">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="bg-slate-900 p-3.5 rounded-xl border border-slate-800 text-sm max-w-2xl">
+                <p class="text-amber-300 font-semibold text-xs mb-1">Archival Constitutional Assistant</p>
+                <p class="text-slate-200">
+                  Ask about Ambedkar's life, writings, speeches, or historical context. Answers are based on indexed archive records and include source excerpts when available.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800 flex flex-wrap gap-2">
+            <input type="text" id="aiInput" placeholder="Ask about Ambedkar's life, writings, speeches, or ideas..."
+              class="min-w-0 flex-1 bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-amber-500"
+              onkeyup="if(event.key === 'Enter') handleAiSubmit()">
+            <button id="aiVoiceBtn" type="button" onclick="toggleAiVoiceInput()" aria-label="Ask by voice" aria-pressed="false" title="Ask by voice"
+              class="w-11 h-11 rounded-lg border border-slate-700 bg-slate-900 text-slate-200 hover:border-amber-500 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
+              <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+            </button>
+            <button onclick="handleAiSubmit()" class="px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-sm flex items-center gap-1.5 transition">
+              <span>Ask</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p id="aiVoiceStatus" class="basis-full text-xs text-slate-400" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: INSTITUTIONAL ANALYTICS -->
+    <section id="analyticsTab" class="tab-pane hidden space-y-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="stat-card">
+          <div class="flex justify-between items-center text-slate-400 text-xs uppercase tracking-wider font-semibold">
+            <span>Total Digitize Items</span>
+            <i class="fa-solid fa-file-lines text-amber-400 text-lg"></i>
+          </div>
+          <div class="text-3xl font-bold font-serif text-white mt-2" id="statTotalDocs">530</div>
+          <p class="text-xs text-emerald-400 mt-1"><i class="fa-solid fa-check"></i> Standardized to Part 7 Schema</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="flex justify-between items-center text-slate-400 text-xs uppercase tracking-wider font-semibold">
+            <span>Words Indexed (FTS5)</span>
+            <i class="fa-solid fa-font text-amber-400 text-lg"></i>
+          </div>
+          <div class="text-3xl font-bold font-serif text-white mt-2" id="statTotalWords">86,624</div>
+          <p class="text-xs text-slate-400 mt-1">Sub-2ms Full-Text Retrieval</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="flex justify-between items-center text-slate-400 text-xs uppercase tracking-wider font-semibold">
+            <span>Vector RAG Chunks</span>
+            <i class="fa-solid fa-brain text-amber-400 text-lg"></i>
+          </div>
+          <div class="text-3xl font-bold font-serif text-white mt-2" id="statTotalChunks">835</div>
+          <p class="text-xs text-slate-400 mt-1">Ready for Milvus / ChromaDB</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="flex justify-between items-center text-slate-400 text-xs uppercase tracking-wider font-semibold">
+            <span>Indian Languages</span>
+            <i class="fa-solid fa-language text-amber-400 text-lg"></i>
+          </div>
+          <div class="text-3xl font-bold font-serif text-white mt-2">10 Languages</div>
+          <p class="text-xs text-amber-400 mt-1">Inclusive Multilingual Access</p>
+        </div>
+      </div>
+
+      <!-- Charts & Breakdown -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+          <h3 class="font-serif font-bold text-lg text-white flex items-center gap-2">
+            <i class="fa-solid fa-globe text-amber-400"></i> Ingested Language Distribution
+          </h3>
+          <div id="languageBreakdownList" class="space-y-2.5 text-xs">
+            <!-- Dynamically filled -->
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+          <h3 class="font-serif font-bold text-lg text-white flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-amber-400"></i> Archival Source Provenance
+          </h3>
+          <div id="sourcesBreakdownList" class="space-y-2.5 text-xs">
+            <!-- Dynamically filled -->
+          </div>
+          <div class="pt-4 border-t border-slate-800 flex gap-3">
+            <a href="/api/export/registry" download class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded-lg border border-slate-600 flex items-center gap-2 transition">
+              <i class="fa-solid fa-download text-amber-400"></i> Download registry.json
+            </a>
+            <a href="/api/export/csv" download class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded-lg border border-slate-600 flex items-center gap-2 transition">
+              <i class="fa-solid fa-table text-amber-400"></i> Download metadata.csv
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: INGESTION PIPELINE -->
+    <section id="ingestTab" class="tab-pane hidden space-y-6">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+        <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-cloud-arrow-up text-amber-400"></i> Ingestion of Pipeline & Institutional Upload
+        </h2>
+        <p class="text-sm text-slate-300">
+          Memorial staff and institutional nodes can ingest newly scanned manuscripts, speeches, or debate records directly into the archive pipeline with automated FTS5 indexing.
+        </p>
+
+        <!-- Form for Ingesting Document -->
+        <form id="ingestForm" onsubmit="handleManualIngest(event)" class="space-y-4 bg-slate-950 p-6 rounded-xl border border-slate-800">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Document Title *</label>
+              <input type="text" id="ingestTitle" required placeholder="e.g. Speech at All India Depressed Classes Conference"
+                class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Author / Speaker *</label>
+              <input type="text" id="ingestAuthor" required value="Dr. B.R. Ambedkar"
+                class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Historical Date (YYYY-MM-DD)</label>
+              <input type="date" id="ingestDate" value="1942-07-20"
+                class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Document Type *</label>
+              <select id="ingestType" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-amber-500">
+                <option value="speech">Speech / Address</option>
+                <option value="debate">Constituent Assembly Debate</option>
+                <option value="publication">Publication / Treatise</option>
+                <option value="manuscript">Manuscript / Letter</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Language *</label>
+              <select id="ingestLanguage" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-amber-500">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="mr">Marathi</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Tags (Comma-separated)</label>
+              <input type="text" id="ingestTags" value="constitutional, social_justice, labor_rights, equality"
+                class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-amber-500">
+            </div>
+          </div>
+
+          <div>
+            <label for="ocrFile" class="block text-slate-400 font-semibold text-xs mb-1">Scan a PDF or image for OCR</label>
+            <label for="ocrMode" class="block text-slate-400 font-semibold text-xs mb-1">OCR mode</label>
+            <select id="ocrMode" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white mb-2">
+              <option value="printed">Printed text (multilingual)</option>
+              <option value="handwritten">Handwriting (Ambedkar custom model)</option>
+            </select>
+            <p id="handwritingModelStatus" class="text-xs text-slate-400 mb-2" aria-live="polite">Checking custom handwriting model…</p>
+            <div class="flex flex-col sm:flex-row gap-2">
+              <input type="file" id="ocrFile" accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,application/pdf,image/*"
+                class="flex-1 bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white file:mr-3 file:rounded file:border-0 file:bg-slate-700 file:px-3 file:py-1.5 file:text-white">
+              <button type="button" onclick="handleOcrUpload()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-lg border border-slate-600 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Extract Text
+              </button>
+            </div>
+            <p id="ocrStatusMsg" class="text-xs text-slate-400 mt-2" aria-live="polite">OCR text will be placed below for review before ingestion.</p>
+          </div>
+
+          <div>
+            <label class="block text-slate-400 font-semibold text-xs mb-1">Full Text Content *</label>
+            <textarea id="ingestContent" rows="4" required placeholder="Paste full transcribed text or OCR excerpt here..."
+              class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-amber-500"></textarea>
+          </div>
+
+          <div class="flex items-center justify-between pt-2">
+            <span id="ingestStatusMsg" class="text-xs text-slate-400"></span>
+            <button type="submit" class="px-6 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs rounded-lg shadow-lg flex items-center gap-2 transition">
+              <i class="fa-solid fa-plus"></i> Ingest Document Into Pipeline
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DOCUMENT DETAIL MODAL WITH AUDIO NARRATION -->
+  <div id="docModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 max-w-3xl w-full max-h-[85vh] rounded-2xl flex flex-col shadow-2xl overflow-hidden animate-fadeIn">
+      <!-- Modal Header -->
+      <div class="p-6 border-b border-slate-800 bg-slate-950 flex items-start justify-between">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2">
+            <span id="modalTypeBadge" class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30"></span>
+            <span id="modalSourceBadge" class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-slate-800 text-slate-300"></span>
+            <span id="modalDateBadge" class="text-xs text-slate-400"></span>
+          </div>
+          <h3 id="modalTitle" class="text-xl font-serif font-bold text-white"></h3>
+          <p id="modalAuthor" class="text-xs text-slate-400"></p>
+        </div>
+        <button onclick="closeDocModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6 text-sm flex-1">
+        <!-- Audio Narration Bar -->
+        <div class="p-3.5 rounded-xl bg-amber-950/30 border border-amber-600/30 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <button id="ttsPlayBtn" onclick="toggleAudioNarration()" class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-base hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
+              <i class="fa-solid fa-play" id="ttsPlayIcon"></i>
+            </button>
+            <div>
+              <p class="font-semibold text-amber-200 text-xs">Audio Narration (Text-to-Speech)</p>
+              <p class="text-[11px] text-slate-400">Accessible readout for visually impaired and low-literacy visitors</p>
+            </div>
+          </div>
+          <span id="ttsStatus" class="text-xs text-amber-400 font-mono">Ready</span>
+        </div>
+
+        <!-- Summary -->
+        <div class="space-y-1.5">
+          <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Executive Summary</h4>
+          <p id="modalSummary" class="text-slate-200 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 leading-relaxed"></p>
+        </div>
+
+        <!-- Key Quotes -->
+        <div id="modalQuotesSection" class="space-y-1.5">
+          <h4 class="text-xs uppercase tracking-wider font-semibold text-amber-400">Key Historical Quotes</h4>
+          <div id="modalQuotesList" class="space-y-2"></div>
+        </div>
+
+        <!-- Full Text -->
+        <div class="space-y-1.5">
+          <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Archival Full Text / Excerpt</h4>
+          <div id="modalFullText" class="text-slate-300 bg-slate-950 p-4 rounded-xl border border-slate-800 leading-relaxed whitespace-pre-line max-h-60 overflow-y-auto text-xs font-mono"></div>
+        </div>
+
+        <!-- Metadata & Provenance -->
+        <div class="space-y-2 pt-2 border-t border-slate-800 text-xs">
+          <h4 class="uppercase tracking-wider font-semibold text-slate-400">Dublin Core Archival Metadata</h4>
+          <div id="modalMetaGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-slate-300"></div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end items-center text-xs">
+        <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="hidden px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 flex items-center gap-2 font-semibold">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> View Primary Source
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-4 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p>Problem Statement ID: 26096 — Digital Heritage Archive for Memorials & Dr. B.R. Ambedkar</p>
+      <p>Developed for Smart India Hackathon • Smart Education Theme</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

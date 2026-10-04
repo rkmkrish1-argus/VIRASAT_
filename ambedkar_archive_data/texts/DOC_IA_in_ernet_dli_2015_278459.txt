@@ -1,0 +1,5 @@
+Title: What Congress And Gandhi Have Done To The Untouchables
+Author: B.r. Ambedkar
+Date: 1950-01-26
+
+Book Source: Digital Library of India Item 2015.278459 dc.contributor.author: B.r. Ambedkar dc.date.accessioned: 2015-08-04T15:39:06Z dc.date.available: 2015-08-04T15:39:06Z dc.identifier.barcode: 05990010898580 dc.identifier.origpath: /data58/upload/0100/297 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/278459 dc.description.scannerno: 20003492 dc.description.scanningcentre: IIIT, Allahabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 409 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Thacker And Co. Bombay dc.rights: In Public Domain dc.source.library: Indian Institute Of Public Administration New Delhi dc.title: What Congress And Gandhi Have Done To The Untouchables dc.type: ptiff dc.type: pdf

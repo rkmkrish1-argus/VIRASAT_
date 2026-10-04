@@ -1,0 +1,70 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL07_19481209",
+    "title": "Constituent Assembly Debates: Debate on Religious Freedom and Social Reform",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1948-12-09",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "The religious conceptions in this country are so vast that they cover every aspect of life from birth to death. There is nothing which is not religion. If we agree that religious freedom covers all actions claimed as religious, then the legislature would be disabled from enacting any social reform legislation whatsoever.\n\nWe must claim the right to separate religious belief and faith from secular activities associated with religion. The State must retain paramount power under Article 25(2) to regulate secular activities and provide for social welfare and reform, including throwing open Hindu religious institutions of a public character to all classes and sections of society.",
+      "summary": "Dr. Ambedkar defends the state's power to legislate social reform and eradicate caste discrimination in religious institutions, demarcating genuine spiritual faith from discriminatory secular practices.",
+      "key_quotes": [
+        "If we agree that religious freedom covers all actions claimed as religious, then the legislature would be disabled from enacting any social reform legislation whatsoever."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume VII-890-895",
+      "collection": "Constituent Assembly of India Debates (Volume VII)",
+      "pages": 12,
+      "word_count": 106,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume VII",
+      "page_reference": "890-895",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "article_25",
+      "constitutional",
+      "religious_freedom",
+      "secularism",
+      "social_justice",
+      "social_reform",
+      "temple_entry"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481209"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Debate on Religious Freedom and Social Reform",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar defends the state's power to legislate social reform and eradicate caste discrimination in religious institutions, demarcating genuine spiritual faith from discriminatory secular practices.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Debate on Religious Freedom and Social Reform",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar defends the state's power to legislate social reform and eradicate caste discrimination in religious institutions, demarcating genuine spiritual faith from discriminatory secular practices.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

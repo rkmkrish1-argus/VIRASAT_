@@ -1,0 +1,5 @@
+Title: Pakistan Or The Partition Of India
+Author: B R_ambedkar
+Date: 1940-01-01
+
+Book Source: Digital Library of India Item 2015.76596 dc.contributor.author: B R_ambedkar dc.date.accessioned: 2015-06-30T15:30:40Z dc.date.available: 2015-06-30T15:30:40Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1940 dc.identifier.barcode: 2020050018203 dc.identifier.origpath: /data7/upload/0184/076 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76596 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 518 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Thacker_and_co dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Pakistan Or The Partition Of India

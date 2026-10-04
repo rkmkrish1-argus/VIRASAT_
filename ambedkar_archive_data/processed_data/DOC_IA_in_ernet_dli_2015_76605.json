@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76605",
+    "title": "The Times",
+    "author": "Not Available",
+    "date": "1932-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76605 dc.contributor.author: Not Available dc.date.accessioned: 2015-06-30T15:30:54Z dc.date.available: 2015-06-30T15:30:54Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1932 dc.identifier.barcode: 2020050018214 dc.identifier.origpath: /data7/upload/0184/084 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76605 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 80 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: At_the_office_of_the_times dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: The Times",
+      "summary": "Book Source: Digital Library of India Item 2015.76605 dc.contributor.author: Not Available dc.date.accessioned: 2015-06-30T15:30:54Z dc.date.available: 2015-06-30T15:30:54Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1932 dc.identifier.barcode: 2020050018214 dc.i...",
+      "key_quotes": [
+        "Archival record preserved: The Times",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76605",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 58,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 437,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76605",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76605/in.ernet.dli.2015.76605.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "The Times (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: The Times",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76605"
+      },
+      "mr": {
+        "title": "The Times (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: The Times",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76605"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

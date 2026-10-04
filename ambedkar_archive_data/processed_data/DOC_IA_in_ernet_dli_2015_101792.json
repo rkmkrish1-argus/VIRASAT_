@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_101792",
+    "title": "Ancient India",
+    "author": "Upendra_nathball",
+    "date": "1921-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.101792 dc.contributor.author: Upendra_nathball dc.date.accessioned: 2015-07-01T17:46:47Z dc.date.available: 2015-07-01T17:46:47Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1921 dc.identifier.barcode: 2020050017871 dc.identifier.origpath: /data8/upload/0209/122 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/101792 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 292 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Sudha_bindu_biswas dc.rights: Out_of_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Ancient India",
+      "summary": "Book Source: Digital Library of India Item 2015.101792 dc.contributor.author: Upendra_nathball dc.date.accessioned: 2015-07-01T17:46:47Z dc.date.available: 2015-07-01T17:46:47Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1921 dc.identifier.barcode: 2020050017871 ...",
+      "key_quotes": [
+        "Archival record preserved: Ancient India",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.101792",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 57,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 963,
+      "url": "https://archive.org/details/in.ernet.dli.2015.101792",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.101792/in.ernet.dli.2015.101792.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Ancient India (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Ancient India",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.101792"
+      },
+      "mr": {
+        "title": "Ancient India (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Ancient India",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.101792"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

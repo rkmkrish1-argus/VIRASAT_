@@ -1,0 +1,5 @@
+Title: Ancient India
+Author: Upendra_nathball
+Date: 1921-01-01
+
+Book Source: Digital Library of India Item 2015.101792 dc.contributor.author: Upendra_nathball dc.date.accessioned: 2015-07-01T17:46:47Z dc.date.available: 2015-07-01T17:46:47Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1921 dc.identifier.barcode: 2020050017871 dc.identifier.origpath: /data8/upload/0209/122 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/101792 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 292 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Sudha_bindu_biswas dc.rights: Out_of_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Ancient India

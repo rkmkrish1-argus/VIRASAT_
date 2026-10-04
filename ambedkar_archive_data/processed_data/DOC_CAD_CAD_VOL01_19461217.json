@@ -1,0 +1,69 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL01_19461217",
+    "title": "Constituent Assembly Debates: Intervention on the Objectives Resolution",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1946-12-17",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "Mr. Chairman, I am indeed very grateful to you for giving me this opportunity to express my views on this Resolution. To be candid, I have arrived here with a heavy heart. My mind is full of anxiety about the future of this country. I know today we are divided politically, socially, and economically. We are a group of warring camps and I am probably one of the leaders of such a camp. But, Sir, with all our differences, I am entirely convinced that given time and given goodwill, there is nothing in the world that will prevent this country from becoming one. With all our cultural differences, economic differences and linguistic differences, nothing can prevent people of this country from being one united nation.\n\nOur difficulty is not about the ultimate goal. Our difficulty is how to get together, how to reconcile our differences so that we may march along that road. What I plead for is statesmanship, patience, and mutual accommodation. You cannot force people into a constitutional union by coercion; unity must emerge from justice and voluntary consent of all communities.",
+      "summary": "Dr. Ambedkar's maiden intervention in the Constituent Assembly urging national unity, goodwill towards minorities, and consensus-building rather than political coercion.",
+      "key_quotes": [
+        "With all our differences, I am entirely convinced that given time and given goodwill, there is nothing in the world that will prevent this country from becoming one.",
+        "Unity must emerge from justice and voluntary consent of all communities."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume I-99-104",
+      "collection": "Constituent Assembly of India Debates (Volume I)",
+      "pages": 12,
+      "word_count": 184,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume I",
+      "page_reference": "99-104",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "constitutional",
+      "minority_rights",
+      "national_unity",
+      "objectives_resolution",
+      "social_justice"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL01_19461217"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Intervention on the Objectives Resolution",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar's maiden intervention in the Constituent Assembly urging national unity, goodwill towards minorities, and consensus-building rather than political coercion.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Intervention on the Objectives Resolution",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar's maiden intervention in the Constituent Assembly urging national unity, goodwill towards minorities, and consensus-building rather than political coercion.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}

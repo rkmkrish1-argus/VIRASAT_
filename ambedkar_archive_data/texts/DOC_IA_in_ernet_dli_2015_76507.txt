@@ -1,0 +1,5 @@
+Title: An Imperial History Of India
+Author: K P Jayaswal
+Date: 1934-01-01
+
+Book Source: Digital Library of India Item 2015.76507 dc.contributor.author: K P Jayaswal dc.date.accessioned: 2015-06-30T15:28:15Z dc.date.available: 2015-06-30T15:28:15Z dc.date.digitalpublicationdate: 2005-03-18 dc.date.citation: 1934 dc.identifier.barcode: 2020050017862 dc.identifier.origpath: /data7/upload/0183/996 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76507 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 206 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Motilal Banarsi Dass dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: An Imperial History Of India

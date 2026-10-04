@@ -1,0 +1,41 @@
+{
+  "document": {
+    "id": "DOC_TEST_001",
+    "title": "Test Landmark Speech on Fundamental Rights",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1947-04-29",
+    "type": "speech",
+    "language": "en",
+    "content": {
+      "full_text": "This is a test speech on fundamental rights and equality of opportunity for all citizens.",
+      "summary": "Test summary on equality of opportunity.",
+      "key_quotes": [
+        "Equality of opportunity is vital."
+      ]
+    },
+    "metadata": {
+      "source": "Foundation",
+      "archive_reference": "DAF-TEST-001",
+      "collection": "Constituent Assembly Records",
+      "pages": 2,
+      "word_count": 16,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 0,
+      "url": "",
+      "pdf_url": ""
+    },
+    "tags": [
+      "constitutional",
+      "equality",
+      "rights"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [],
+      "debates": []
+    },
+    "translations": {},
+    "media": {}
+  }
+}

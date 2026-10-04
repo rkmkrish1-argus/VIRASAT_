@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_MarxAmbedkar",
+    "title": "Marx Ambedkar Manava Vimochana Drukpathalu",
+    "author": "Anand Teltumbde",
+    "date": "2016-01-01",
+    "type": "publication",
+    "language": "te",
+    "content": {
+      "full_text": "A book on Marx and Ambedkar and their thoughts on Human liberation",
+      "summary": "A book on Marx and Ambedkar and their thoughts on Human liberation",
+      "key_quotes": [
+        "Archival record preserved: Marx Ambedkar Manava Vimochana Drukpathalu",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "MarxAmbedkar",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 12,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 848,
+      "url": "https://archive.org/details/MarxAmbedkar",
+      "pdf_url": "https://archive.org/download/MarxAmbedkar/MarxAmbedkar.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Marx Ambedkar Manava Vimochana Drukpathalu (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Marx Ambedkar Manava Vimochana Drukpathalu",
+        "text_url": "https://archive.org/details/MarxAmbedkar"
+      },
+      "mr": {
+        "title": "Marx Ambedkar Manava Vimochana Drukpathalu (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Marx Ambedkar Manava Vimochana Drukpathalu",
+        "text_url": "https://archive.org/details/MarxAmbedkar"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

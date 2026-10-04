@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_AnandTeltumbdeArticles",
+    "title": "Anand Teltumbde Articles",
+    "author": "Anand Teltumbde",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Collected articles of Anand Teltumbde",
+      "summary": "Collected articles of Anand Teltumbde",
+      "key_quotes": [
+        "Archival record preserved: Anand Teltumbde Articles",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "AnandTeltumbdeArticles",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 5,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 8260,
+      "url": "https://archive.org/details/AnandTeltumbdeArticles",
+      "pdf_url": "https://archive.org/download/AnandTeltumbdeArticles/AnandTeltumbdeArticles.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Anand Teltumbde Articles (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Anand Teltumbde Articles",
+        "text_url": "https://archive.org/details/AnandTeltumbdeArticles"
+      },
+      "mr": {
+        "title": "Anand Teltumbde Articles (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Anand Teltumbde Articles",
+        "text_url": "https://archive.org/details/AnandTeltumbdeArticles"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

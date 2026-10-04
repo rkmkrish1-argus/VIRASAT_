@@ -1,0 +1,5 @@
+Title: The Problem Of The Rupee
+Author: Ambedkar, B.R
+Date: 1923-01-01
+
+Source: West Bengal Public Library Network Source Identifier: handle/10689/8549 Field Value Lang dc.contributor.author Ambedkar, B.R - dc.date.accessioned 2010-04-07T13:52:09Z - dc.date.available 2010-04-07T13:52:09Z - dc.date.issued 1923 - dc.identifier.uri http://hdl.handle.net/10689/8549 - dc.language.iso en en_US dc.publisher P.S. King And Son, London en_US dc.rights In Public Domain en_US dc.source State Central Library,Kolkata en_US dc.subject ECONOMICS en_US dc.title The Problem Of The Rupee en_US dc.title.alternative Its Origin And Its Solution en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber SCL_01 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2006-01-02 - dc.scl.totalpages 346p. en_US dc.scl.Keywords India - Money Discount rate en_US dc.scl.Keywords India - Relative Value, Gold en_US

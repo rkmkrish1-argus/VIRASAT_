@@ -1,0 +1,5 @@
+Title: Thoughts On Pakistan
+Author: Ambedkar B.r/
+Date: 1941-01-01
+
+Book Source: Digital Library of India Item 2015.505233 dc.contributor.author: Ambedkar B.r/ dc.coverage.spatial: bombay dc.date.accessioned: 2015-09-27T11:44:57Z dc.date.available: 2015-09-27T11:44:57Z dc.date.copyright: 1941 dc.date.citation: 1941 dc.identifier.barcode: 99999990265344 dc.identifier.origpath: /data4/upload/0118/148 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/505233 dc.description: 380 dc.description.scanningcentre: UOD, Delhi dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 394 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher: Thacker And Company dc.rights: not available dc.source.library: Central Library, Delhi University dc.subject.classification: India-history dc.subject.classification: India-social Caditions dc.title: Thoughts On Pakistan

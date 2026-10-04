@@ -1,0 +1,5 @@
+Title: Dr. Babasahab Ambedkar
+Author: Muun Vasant
+Date: 2000-01-01
+
+Book Source: Digital Library of India Item 2015.448152 dc.contributor.author: Muun Vasant dc.date.accessioned: 2015-09-18T14:12:36Z dc.date.available: 2015-09-18T14:12:36Z dc.date.copyright: 2000 dc.date.digitalpublicationdate: 2004/10/13 dc.date.citation: 2000 dc.identifier.barcode: 99999990129407 dc.identifier.origpath: /rawdataupload1/upload/0128/069 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/448152 dc.description.scannerno: Cdac-1 dc.description.scanningcentre: C-DAC, Noida dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 240 dc.format.mimetype: application/pdf dc.language.iso: Punjabi dc.publisher.digitalrepublisher: Digital Library of India dc.publisher: National Book Trust dc.rights: National Book Trust dc.source.library: Nbt dc.subject.classification: Geography Biography History dc.title: Dr. Babasahab Ambedkar dc.type: Print - Paper dc.type: Book

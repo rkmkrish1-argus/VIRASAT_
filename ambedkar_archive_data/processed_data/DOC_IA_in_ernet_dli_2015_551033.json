@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_551033",
+    "title": "Balak Ambedkar",
+    "author": "Dharma Veer",
+    "date": "1990-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.551033 dc.contributor.author: Dharma Veer dc.date.accessioned: 2015-10-14T21:56:06Z dc.date.available: 2015-10-14T21:56:06Z dc.date.copyright: 1990 dc.date.digitalpublicationdate: 2011/03 dc.date.citation: 1990 dc.identifier.barcode: 04990010031814 dc.identifier.origpath: /data8/upload/0229/096 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/551033 dc.description.scanningcentre: C-DAK, Kolkata dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 76 dc.format.mimetype: application/pdf dc.language.iso: Sanskrit dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Sesha Sahitya Prakashan Shahadara Dehli dc.source.library: Shree Jubilee Naagari Bhandar Bikaner dc.subject.classification: Literature dc.title: Balak Ambedkar dc.type: Print - Paper",
+      "summary": "Book Source: Digital Library of India Item 2015.551033 dc.contributor.author: Dharma Veer dc.date.accessioned: 2015-10-14T21:56:06Z dc.date.available: 2015-10-14T21:56:06Z dc.date.copyright: 1990 dc.date.digitalpublicationdate: 2011/03 dc.date.citation: 1990 dc.identifier.barcode...",
+      "key_quotes": [
+        "Archival record preserved: Balak Ambedkar",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.551033",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 68,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 872,
+      "url": "https://archive.org/details/in.ernet.dli.2015.551033",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.551033/in.ernet.dli.2015.551033.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Balak Ambedkar (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Balak Ambedkar",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.551033"
+      },
+      "mr": {
+        "title": "Balak Ambedkar (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Balak Ambedkar",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.551033"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

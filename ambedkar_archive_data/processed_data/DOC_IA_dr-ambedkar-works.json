@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_dr-ambedkar-works",
+    "title": "Dr Ambedkar Works",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1950-01-26",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Writings and Speeches of Dr. Ambedkar ",
+      "summary": "Writings and Speeches of Dr. Ambedkar ",
+      "key_quotes": [
+        "Archival record preserved: Dr Ambedkar Works",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "dr-ambedkar-works",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 6,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 5774,
+      "url": "https://archive.org/details/dr-ambedkar-works",
+      "pdf_url": "https://archive.org/download/dr-ambedkar-works/dr-ambedkar-works.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Dr Ambedkar Works (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Dr Ambedkar Works",
+        "text_url": "https://archive.org/details/dr-ambedkar-works"
+      },
+      "mr": {
+        "title": "Dr Ambedkar Works (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Dr Ambedkar Works",
+        "text_url": "https://archive.org/details/dr-ambedkar-works"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

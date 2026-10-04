@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "DOC_IA_in_ernet_dli_2015_76607",
+    "title": "Library Hand Book And Index",
+    "author": "R_g_kande",
+    "date": "1931-01-01",
+    "type": "publication",
+    "language": "en",
+    "content": {
+      "full_text": "Book Source: Digital Library of India Item 2015.76607 dc.contributor.author: R_g_kande dc.date.accessioned: 2015-06-30T15:30:57Z dc.date.available: 2015-06-30T15:30:57Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1931 dc.identifier.barcode: 2020050018217 dc.identifier.origpath: /data7/upload/0184/086 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/76607 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 194 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: S_v_parulekar_at_the_bombay_vaibhav_press dc.rights: In_copyright dc.source.library: Dr Br Ambedkar dc.subject.classification: Generalities dc.title: Library Hand Book And Index",
+      "summary": "Book Source: Digital Library of India Item 2015.76607 dc.contributor.author: R_g_kande dc.date.accessioned: 2015-06-30T15:30:57Z dc.date.available: 2015-06-30T15:30:57Z dc.date.digitalpublicationdate: 2005-03-19 dc.date.citation: 1931 dc.identifier.barcode: 2020050018217 dc.ident...",
+      "key_quotes": [
+        "Archival record preserved: Library Hand Book And Index",
+        "Educate, Agitate, Organize - Dr. B.R. Ambedkar"
+      ]
+    },
+    "metadata": {
+      "source": "IA",
+      "archive_reference": "in.ernet.dli.2015.76607",
+      "collection": "Internet Archive Ambedkar Collection",
+      "pages": 1,
+      "word_count": 60,
+      "condition": "good",
+      "accessibility": "public",
+      "downloads": 2074,
+      "url": "https://archive.org/details/in.ernet.dli.2015.76607",
+      "pdf_url": "https://archive.org/download/in.ernet.dli.2015.76607/in.ernet.dli.2015.76607.pdf"
+    },
+    "tags": [
+      "social_justice"
+    ],
+    "relations": {
+      "references": [],
+      "related_to": [
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": []
+    },
+    "translations": {
+      "hi": {
+        "title": "Library Hand Book And Index (अभिलेखागार प्रति)",
+        "summary": "डॉ. बी.आर. अंबेडकर अभिलेखागार डिजिटल संग्रह: Library Hand Book And Index",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76607"
+      },
+      "mr": {
+        "title": "Library Hand Book And Index (डिजिटल संग्रह प्रत)",
+        "summary": "डॉ. बाबासाहेब आंबेडकर डिजिटल अभिलेखागार संग्रह: Library Hand Book And Index",
+        "text_url": "https://archive.org/details/in.ernet.dli.2015.76607"
+      }
+    },
+    "media": {
+      "images": [],
+      "audio": null,
+      "video": null
+    }
+  }
+}

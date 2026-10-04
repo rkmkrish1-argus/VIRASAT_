@@ -1,0 +1,5 @@
+Title: The Problem Of The Rupee Its Origin And Its Solution
+Author: Dr. Ambedkar. B. R
+Date: 1923-01-01
+
+Book Source: Digital Library of India Item 2015.84521 dc.contributor.author: Dr. Ambedkar. B. R dc.date.accessioned: 2015-06-30T18:53:40Z dc.date.available: 2015-06-30T18:53:40Z dc.date.digitalpublicationdate: 2005-03-30 dc.date.citation: 1923 dc.identifier.barcode: 2030020001032 dc.identifier.origpath: /data7/upload/0169/009 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/84521 dc.description.scannerno: 1 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 348 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: P.s. King And Son, Limited dc.rights: Not Available dc.source.library: Osmania University dc.subject.classification: Social Sciences dc.subject.classification: Economics dc.subject.classification: Finance dc.title: The Problem Of The Rupee Its Origin And Its Solution

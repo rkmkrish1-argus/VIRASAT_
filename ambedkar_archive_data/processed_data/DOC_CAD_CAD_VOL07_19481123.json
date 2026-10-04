@@ -1,0 +1,68 @@
+{
+  "document": {
+    "id": "DOC_CAD_CAD_VOL07_19481123",
+    "title": "Constituent Assembly Debates: Debate on Uniform Civil Code (Article 44)",
+    "author": "Dr. B.R. Ambedkar",
+    "date": "1948-11-23",
+    "type": "debate",
+    "language": "en",
+    "content": {
+      "full_text": "We have in this country a uniform civil code in almost every aspect of civil life except personal laws: we have a uniform law of crimes under the Indian Penal Code, Civil Procedure Code, Transfer of Property Act, Contract Act, and Sale of Goods Act. The only little corner which has remained untouched is personal law relating to marriage and succession.\n\nI do not propose that the State shall immediately enforce a code upon all communities irrespective of their willingness. The article merely declares it to be the duty of the State to endeavor towards it, while providing ample room for voluntary application and evolutionary consensus.",
+      "summary": "Dr. Ambedkar argues for Article 44 (Uniform Civil Code) in the Directive Principles, demonstrating that India already had unified criminal and commercial codes, advocating progressive alignment through legislative consensus.",
+      "key_quotes": [
+        "We have a uniform law of crimes, property, and contracts throughout India; the only little corner remaining untouched is marriage and succession."
+      ]
+    },
+    "metadata": {
+      "source": "CAD",
+      "archive_reference": "CAD-LS-Volume VII-548-552",
+      "collection": "Constituent Assembly of India Debates (Volume VII)",
+      "pages": 12,
+      "word_count": 106,
+      "condition": "good",
+      "accessibility": "public",
+      "volume": "Volume VII",
+      "page_reference": "548-552",
+      "speaker_role": "Chairman, Drafting Committee"
+    },
+    "tags": [
+      "article_44",
+      "constitutional",
+      "gender_justice",
+      "personal_law",
+      "uniform_civil_code"
+    ],
+    "relations": {
+      "references": [
+        "BAWS_PUB_1936_AOC",
+        "BAWS_PUB_1947_SAM"
+      ],
+      "related_to": [
+        "DOC_CAD_CAD_VOL07_19481104",
+        "DOC_CAD_CAD_VOL11_19491125"
+      ],
+      "debates": [
+        "CAD_VOL07_19481123"
+      ]
+    },
+    "translations": {
+      "hi": {
+        "title": "संविधान सभा वाद-विवाद: Debate on Uniform Civil Code (Article 44)",
+        "summary": "डॉ. बी.आर. अंबेडकर द्वारा संविधान सभा में वक्तव्य: Dr. Ambedkar argues for Article 44 (Uniform Civil Code) in the Directive Principles, demonstrating that India already had unified criminal and commercial codes, advocating progressive alignment through legislative consensus.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      },
+      "mr": {
+        "title": "घटना समिती वादविवाद: Debate on Uniform Civil Code (Article 44)",
+        "summary": "डॉ. बाबासाहेब आंबेडकरांचे घटना समितीमधील ऐतिहासिक भाषण: Dr. Ambedkar argues for Article 44 (Uniform Civil Code) in the Directive Principles, demonstrating that India already had unified criminal and commercial codes, advocating progressive alignment through legislative consensus.",
+        "text_url": "https://www.loksabha.gov.in/DisplayCAD"
+      }
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._B._R._Ambedkar_delivering_a_speech_to_the_Constituent_Assembly.jpg"
+      ],
+      "audio": null,
+      "video": null
+    }
+  }
+}
