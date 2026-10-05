@@ -22,15 +22,19 @@
         <div>
           <div class="flex items-center gap-2">
             <span class="institution-label">Government of India · MoSJE</span>
-            <span class="project-label">Digital Heritage</span>
+            <span class="project-label font-mono text-[10px] uppercase tracking-widest bg-amber-950/80 px-1.5 py-0.5 rounded border border-amber-600/30 text-amber-300">Digital Heritage Kiosk</span>
           </div>
           <h1 class="text-lg md:text-xl font-bold font-serif tracking-wide text-white">Dr. B.R. Ambedkar Digital Heritage Archive</h1>
-          <p class="text-xs text-slate-400 hidden sm:block">Dr. Ambedkar International Centre</p>
+          <p class="text-xs text-slate-400 hidden sm:block">Dr. Ambedkar International Centre (DAIC), New Delhi</p>
         </div>
       </div>
 
-      <!-- Kiosk Mode / Accessibility Controls -->
-      <div class="flex items-center gap-3">
+      <!-- Kiosk Mode / Authentication / Accessibility Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button id="userRoleBadgeBtn" onclick="openAuthModal()" class="px-3 py-1.5 rounded-lg bg-amber-950/80 border border-amber-600/50 text-amber-300 text-xs font-semibold flex items-center gap-1.5 hover:bg-amber-900 transition shadow">
+          <i class="fa-solid fa-user-shield text-amber-400"></i>
+          <span id="headerRoleLabel">Visitor Access</span>
+        </button>
         <button id="themeToggle" class="icon-control theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><i class="fa-regular fa-moon" aria-hidden="true"></i></button>
         <div class="bg-slate-800/80 rounded-lg p-1 border border-slate-700 flex text-xs">
           <button id="langSelectEn" class="px-2.5 py-1 rounded bg-amber-600 text-white font-medium" aria-pressed="true" onclick="setUiLanguage('en')">EN</button>
@@ -46,21 +50,27 @@
 
     <!-- Navigation Tabs -->
     <nav class="border-t border-slate-800/80 bg-slate-900/60 px-4">
-      <div class="max-w-7xl mx-auto flex overflow-x-auto space-x-1 sm:space-x-4 text-sm font-medium">
+      <div class="max-w-7xl mx-auto flex overflow-x-auto space-x-1 sm:space-x-3 text-sm font-medium">
         <button onclick="switchTab('searchTab')" id="tab-searchTab" class="nav-tab active-tab">
-          <i class="fa-solid fa-magnifying-glass"></i> <span>Archive</span>
+          <i class="fa-solid fa-magnifying-glass text-amber-400"></i> <span>Archive</span>
         </button>
         <button onclick="switchTab('timelineTab')" id="tab-timelineTab" class="nav-tab">
-          <i class="fa-solid fa-timeline"></i> <span>Timeline</span>
+          <i class="fa-solid fa-timeline text-amber-400"></i> <span>Timeline</span>
+        </button>
+        <button onclick="switchTab('ideasTab')" id="tab-ideasTab" class="nav-tab">
+          <i class="fa-solid fa-lightbulb text-amber-400"></i> <span>Constitutional Ideas</span>
+        </button>
+        <button onclick="switchTab('studentNotebookTab')" id="tab-studentNotebookTab" class="nav-tab">
+          <i class="fa-solid fa-book-bookmark text-amber-400"></i> <span>NotebookLM Studio</span>
         </button>
         <button onclick="switchTab('aiAssistantTab')" id="tab-aiAssistantTab" class="nav-tab">
-          <i class="fa-solid fa-robot"></i> <span>Research</span>
+          <i class="fa-solid fa-robot text-amber-400"></i> <span>Research Assistant</span>
         </button>
         <button onclick="switchTab('analyticsTab')" id="tab-analyticsTab" class="nav-tab">
-          <i class="fa-solid fa-chart-pie"></i> <span>About</span>
+          <i class="fa-solid fa-chart-pie text-amber-400"></i> <span>About</span>
         </button>
         <button onclick="switchTab('ingestTab')" id="tab-ingestTab" class="nav-tab">
-          <i class="fa-solid fa-cloud-arrow-up"></i> <span>Contribute</span>
+          <i class="fa-solid fa-cloud-arrow-up text-amber-400"></i> <span>OCR & Contribute</span>
         </button>
       </div>
     </nav>
@@ -69,57 +79,95 @@
   <!-- MAIN CONTAINER -->
   <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 space-y-6">
 
-    <!-- TAB 1: SEARCH & DISCOVERY -->
+    <!-- TAB 1: HOMEPAGE / SEARCH & DISCOVERY (ENHANCED ATTRACTIVE FRONT PAGE) -->
     <section id="searchTab" class="tab-pane active space-y-6">
-      <!-- Search Banner -->
-      <div class="hero-banner rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950/70 border border-amber-900/30 relative overflow-hidden shadow-2xl">
-        <div class="hero-content relative z-10">
+      <!-- High-Impact Hero Banner -->
+      <div class="hero-banner rounded-3xl p-6 sm:p-10 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950/80 border border-amber-600/30 relative overflow-hidden shadow-2xl">
+        <div class="hero-content relative z-10 space-y-6">
           <div class="hero-intro">
-            <span class="hero-eyebrow">
-              <span class="status-dot" aria-hidden="true"></span> A living record of ideas that shaped a nation
+            <span class="hero-eyebrow bg-amber-950/80 text-amber-300 border border-amber-600/40 px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center gap-2">
+              <span class="status-dot bg-amber-400" aria-hidden="true"></span> Problem Statement ID 26096 · Institutional Knowledge Platform
             </span>
-            <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
-              Preserving the intellectual legacy of Dr. B. R. Ambedkar.
+            <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white tracking-tight leading-tight mt-2">
+              Preserving the Intellectual Legacy of <span class="text-amber-400">Dr. B. R. Ambedkar</span>.
             </h2>
-            <p class="text-sm sm:text-base text-slate-300">
-              Explore writings, speeches, constitutional debates and historical records through a searchable digital heritage archive.
+            <p class="text-sm sm:text-lg text-slate-300 max-w-3xl leading-relaxed mt-2">
+              Explore 21 Volumes of Babasaheb Ambedkar Writings and Speeches (BAWS), Constituent Assembly Debates (CAD), landmark economic treatises, and historical cursive manuscripts with AI-powered hybrid search.
             </p>
             <figure class="hero-portrait">
               <img src="/static/assets/ambedkar-portrait.png" alt="Dr. B. R. Ambedkar holding a copy of the Constitution of India" fetchpriority="high">
               <figcaption>Dr. B. R. Ambedkar <span>1891—1956</span></figcaption>
             </figure>
           </div>
-          <div class="hero-stats" aria-label="Archive at a glance">
-            <div><strong id="heroRecordCount">530+</strong><span>digitized records</span></div>
-            <div><strong id="heroLanguageCount">10</strong><span>languages</span></div>
-            <div><strong>1947—56</strong><span>founding debates</span></div>
+
+          <!-- Feature Action Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+            <div onclick="switchTab('ideasTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
+              <div class="w-10 h-10 rounded-xl bg-amber-600/20 text-amber-400 flex items-center justify-center text-lg group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-white group-hover:text-amber-300">Constitutional Ideas</h4>
+                <p class="text-[10px] text-slate-400">7 Core Pillars & Links</p>
+              </div>
+            </div>
+
+            <div onclick="switchTab('studentNotebookTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
+              <div class="w-10 h-10 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center text-lg group-hover:bg-indigo-500 group-hover:text-slate-950 transition">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-white group-hover:text-indigo-300">NotebookLM Studio</h4>
+                <p class="text-[10px] text-slate-400">Evidence Prompts</p>
+              </div>
+            </div>
+
+            <div onclick="switchTab('timelineTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
+              <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-lg group-hover:bg-emerald-500 group-hover:text-slate-950 transition">
+                <i class="fa-solid fa-timeline"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-white group-hover:text-emerald-300">Historical Timeline</h4>
+                <p class="text-[10px] text-slate-400">1916—1956 Milestones</p>
+              </div>
+            </div>
+
+            <div onclick="switchTab('ingestTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
+              <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-lg group-hover:bg-purple-500 group-hover:text-slate-950 transition">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-white group-hover:text-purple-300">Kraken & Qwen HTR</h4>
+                <p class="text-[10px] text-slate-400">Handwritten OCR Studio</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Search Input Box -->
+          <!-- Hero Search Box -->
           <div class="relative pt-2">
-            <div class="flex flex-col sm:flex-row gap-2 bg-slate-900/90 p-2 rounded-xl border border-slate-700 shadow-xl focus-within:border-amber-500 transition">
-              <div class="flex-1 flex items-center px-3 gap-3">
-                <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg"></i>
-                <input type="text" id="searchInput" aria-label="Search the digital archive" placeholder="Search writings, speeches, debates, or ideas…"
-                  class="w-full bg-transparent text-white placeholder-slate-400 focus:outline-none text-sm sm:text-base"
+            <div class="flex flex-col sm:flex-row gap-2 bg-slate-900/95 p-2.5 rounded-2xl border border-slate-700 shadow-2xl focus-within:border-amber-500 transition">
+              <div class="flex-1 flex items-center px-4 gap-3">
+                <i class="fa-solid fa-magnifying-glass text-amber-400 text-xl"></i>
+                <input type="text" id="searchInput" aria-label="Search the digital archive" placeholder="Search writings, speeches, CAD debates, or ideas…"
+                  class="w-full bg-transparent text-white placeholder-slate-400 focus:outline-none text-base sm:text-lg"
                   onkeyup="if(event.key === 'Enter') executeSearch()">
                 <button class="search-clear" type="button" aria-label="Clear search" title="Clear search" onclick="clearArchiveSearch()"><i class="fa-solid fa-xmark"></i></button>
               </div>
-              <kbd class="search-shortcut" aria-hidden="true">⌘ K / Ctrl K</kbd>
-              <button onclick="executeSearch()" class="px-6 py-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition">
-                <span>Search</span>
+              <kbd class="search-shortcut text-xs text-slate-400 font-mono" aria-hidden="true">⌘ K / Ctrl K</kbd>
+              <button onclick="executeSearch()" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-base flex items-center justify-center gap-2 shadow-xl transition">
+                <span>Search Archive</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>
 
           <!-- Quick Filters -->
-          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs">
-            <span class="text-slate-400">Quick Filters:</span>
+          <div class="flex flex-wrap items-center gap-2 text-xs pt-1">
+            <span class="text-slate-400 font-medium">Quick Filters:</span>
             <button onclick="quickFilter('Constituent Assembly')" class="filter-chip">CAD Debates</button>
             <button onclick="quickFilter('Annihilation of Caste')" class="filter-chip">Annihilation of Caste</button>
             <button onclick="quickFilter('Directive Principles')" class="filter-chip">Directive Principles</button>
-            <button onclick="quickFilter('Untouchability')" class="filter-chip">Untouchability</button>
+            <button onclick="quickFilter('Untouchability')" class="filter-chip">Untouchability & Mahad</button>
             <button onclick="quickFilter('Rupee')" class="filter-chip">Economics & RBI</button>
             <button onclick="quickFilter('Buddhism')" class="filter-chip">Buddhism & Dhamma</button>
           </div>
@@ -127,7 +175,7 @@
       </div>
 
       <!-- Filter Controls Bar -->
-      <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex flex-wrap gap-4 items-center justify-between text-xs sm:text-sm filter-bar">
+      <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 flex flex-wrap gap-4 items-center justify-between text-xs sm:text-sm filter-bar shadow-md">
         <div class="flex flex-wrap items-center gap-3">
           <div class="flex items-center gap-1.5">
             <label class="text-slate-400 font-medium"><i class="fa-solid fa-language text-amber-400"></i> Record language:</label>
@@ -199,7 +247,133 @@
       </div>
     </section>
 
-    <!-- TAB 3: CONSTITUTIONAL AI RESEARCH ASSISTANT -->
+    <!-- TAB 3: CONSTITUTIONAL IDEAS & RESEARCH GRAPH -->
+    <section id="ideasTab" class="tab-pane hidden space-y-6">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-lightbulb text-amber-400"></i> Constitutional Ideas & Database Relations
+            </h2>
+            <p class="text-sm text-slate-300 mt-1">
+              Research Dr. B.R. Ambedkar's core constitutional principles and explore inter-document relationships linked in the database.
+            </p>
+          </div>
+          <span class="px-3 py-1 bg-amber-950 text-amber-400 border border-amber-600/40 text-xs font-semibold rounded-full self-start sm:self-auto flex items-center gap-1.5">
+            <i class="fa-solid fa-diagram-project"></i> Relational Database Core
+          </span>
+        </div>
+      </div>
+
+      <!-- Constitutional Ideas Grid -->
+      <div id="constitutionalIdeasGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Dynamically rendered -->
+      </div>
+
+      <!-- Database Document Relationships Section -->
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+          <h3 class="font-serif font-bold text-lg text-white flex items-center gap-2">
+            <i class="fa-solid fa-link text-amber-400"></i> Primary Document Cross-References & Database Links
+          </h3>
+          <span class="text-xs text-slate-400 font-mono">Linked Records in SQLite Engine</span>
+        </div>
+
+        <div id="documentRelationsContainer" class="space-y-3">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Researcher Relation Builder Form -->
+        <div id="researcherRelationBuilder" class="pt-4 border-t border-slate-800">
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-semibold text-amber-300 flex items-center gap-2">
+                <i class="fa-solid fa-plus-circle"></i> Add Database Document Relation (Researcher Tool)
+              </h4>
+              <span id="relationAuthBadge" class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                Visitor Mode (Auth Required to Submit)
+              </span>
+            </div>
+
+            <form id="addRelationForm" onsubmit="handleCreateRelation(event)" class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+              <div>
+                <label class="block text-slate-400 mb-1">Source Document ID *</label>
+                <input type="text" id="relSourceDocId" required placeholder="e.g. DOC_CAD_CAD_VOL11_19491125"
+                  class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-white">
+              </div>
+
+              <div>
+                <label class="block text-slate-400 mb-1">Target Document ID *</label>
+                <input type="text" id="relTargetDocId" required placeholder="e.g. DOC_DAF_BAWS_PUB_1916_CII"
+                  class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-white">
+              </div>
+
+              <div>
+                <label class="block text-slate-400 mb-1">Relation Type *</label>
+                <select id="relType" class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-white">
+                  <option value="expands_on">expands_on (Historical Development)</option>
+                  <option value="constitutional_realization">constitutional_realization (Legal Enactment)</option>
+                  <option value="theoretical_foundation">theoretical_foundation (Economic/Social Base)</option>
+                  <option value="critique_of">critique_of (Philosophical Assessment)</option>
+                  <option value="references">references (Direct Citation)</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block text-slate-400 mb-1">Relation Description / Archival Finding Note *</label>
+                <input type="text" id="relDescription" required placeholder="Describe how these documents relate historically or constitutionally..."
+                  class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-white">
+              </div>
+
+              <div class="flex items-end">
+                <button type="submit" class="w-full py-2 bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold rounded text-xs flex items-center justify-center gap-1.5 transition">
+                  <i class="fa-solid fa-floppy-disk"></i> Save Relation
+                </button>
+              </div>
+            </form>
+            <p id="relationStatusMsg" class="text-xs text-slate-400 font-mono"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: STUDENT NOTEBOOKLM EVIDENCE STUDIO (NEW FEATURE REQUEST) -->
+    <section id="studentNotebookTab" class="tab-pane hidden space-y-6">
+      <div class="p-6 rounded-3xl bg-slate-900 border border-amber-600/30 space-y-4 shadow-xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              Student Research Tool
+            </span>
+            <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2 mt-1">
+              <i class="fa-solid fa-book-bookmark text-amber-400"></i> NotebookLM Evidence & Prompt Studio
+            </h2>
+            <p class="text-sm text-slate-300 mt-1">
+              Select landmark historical topics to generate precise, citation-backed prompts for Google NotebookLM. Explains how events unfolded from <strong>Backstory to Frontstory</strong> with volume & page references.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 self-start sm:self-auto">
+            <span class="px-3 py-1 bg-emerald-950 text-emerald-300 border border-emerald-500/40 text-xs font-semibold rounded-full flex items-center gap-1.5 font-mono shadow-sm">
+              <i class="fa-solid fa-language text-emerald-400"></i> Language: English
+            </span>
+            <span class="px-3 py-1 bg-indigo-950 text-indigo-300 border border-indigo-500/30 text-xs font-semibold rounded-full flex items-center gap-1.5 font-mono">
+              <i class="fa-solid fa-robot"></i> NotebookLM Ready
+            </span>
+            <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer"
+               class="px-3 py-1 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold rounded-full flex items-center gap-1.5 shadow transition">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Google NotebookLM
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prompts Container -->
+      <div id="studentNotebookContainer" class="space-y-6">
+        <!-- Dynamically rendered -->
+      </div>
+    </section>
+
+    <!-- TAB 5: CONSTITUTIONAL AI RESEARCH ASSISTANT -->
     <section id="aiAssistantTab" class="tab-pane hidden space-y-6">
       <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
         <div class="flex items-center justify-between">
@@ -266,7 +440,7 @@
       </div>
     </section>
 
-    <!-- TAB 4: INSTITUTIONAL ANALYTICS -->
+    <!-- TAB 6: INSTITUTIONAL ANALYTICS -->
     <section id="analyticsTab" class="tab-pane hidden space-y-6">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="stat-card">
@@ -336,18 +510,126 @@
       </div>
     </section>
 
-    <!-- TAB 5: INGESTION PIPELINE -->
+    <!-- TAB 7: INGESTION PIPELINE & OCR STUDIO (MULTIMODAL WITH KRAKEN & QWEN2.5-VL) -->
     <section id="ingestTab" class="tab-pane hidden space-y-6">
       <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-        <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2">
-          <i class="fa-solid fa-cloud-arrow-up text-amber-400"></i> Ingestion of Pipeline & Institutional Upload
-        </h2>
-        <p class="text-sm text-slate-300">
-          Memorial staff and institutional nodes can ingest newly scanned manuscripts, speeches, or debate records directly into the archive pipeline with automated FTS5 indexing.
-        </p>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-serif font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-cloud-arrow-up text-amber-400"></i> OCR Contribution Studio & Ingestion Pipeline
+            </h2>
+            <p class="text-sm text-slate-300 mt-1">
+              Extract manuscript text using Standard OCR (Students) or Kraken / Qwen2.5-VL HTR Models (Researchers), with mandatory 5MB file limits and Source Description metadata labels.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span id="activeRoleIndicator" class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-amber-300 text-xs font-mono font-semibold">
+              Role: Student Access ({STUDENT})
+            </span>
+          </div>
+        </div>
 
-        <!-- Form for Ingesting Document -->
-        <form id="ingestForm" onsubmit="handleManualIngest(event)" class="space-y-4 bg-slate-950 p-6 rounded-xl border border-slate-800">
+        <!-- 5MB File Limit Warning Card -->
+        <div class="p-3.5 rounded-xl bg-amber-950/40 border border-amber-600/40 flex items-center justify-between text-xs">
+          <div class="flex items-center gap-2.5 text-amber-200">
+            <i class="fa-solid fa-shield-cat text-amber-400 text-base"></i>
+            <span><strong>Contribution Safeguard Enforced:</strong> Strictly 5 MB maximum file limit per upload. Includes automatic Source Description provenance labeling.</span>
+          </div>
+          <span class="px-2 py-0.5 rounded bg-amber-900 text-amber-200 font-mono font-bold">5 MB Max</span>
+        </div>
+
+        <!-- Form for Ingesting Document & OCR Studio -->
+        <form id="ingestForm" onsubmit="handleManualIngest(event)" class="space-y-5 bg-slate-950 p-6 rounded-xl border border-slate-800">
+          
+          <!-- Section A: Source Description Metadata Labels -->
+          <div class="p-4 rounded-lg bg-slate-900/80 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xs uppercase tracking-wider font-bold text-amber-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-tag"></i> Mandatory Source Description Metadata
+              </h4>
+              <span class="text-[11px] text-slate-400">e.g. Dt: 18/09/1967 | Source: Hindustan Times | Author: XXXXXXXX | Researcher: XXXXXXXX</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+              <div>
+                <label class="block text-slate-400 font-semibold mb-1">Date (Dt) *</label>
+                <input type="text" id="sourceDateInput" required placeholder="e.g. 18/09/1967" value="18/09/1967"
+                  class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div>
+                <label class="block text-slate-400 font-semibold mb-1">Source Name *</label>
+                <input type="text" id="sourceNameInput" required placeholder="e.g. Hindustan Times Report" value="Hindustan Times Report"
+                  class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div>
+                <label class="block text-slate-400 font-semibold mb-1">Author *</label>
+                <input type="text" id="sourceAuthorInput" required placeholder="e.g. Dr. B.R. Ambedkar" value="Dr. B.R. Ambedkar"
+                  class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white focus:outline-none focus:border-amber-500">
+              </div>
+
+              <div>
+                <label class="block text-slate-400 font-semibold mb-1">Researcher / Contributor *</label>
+                <input type="text" id="researcherNameInput" required placeholder="e.g. Research Cell" value="DAIC Researcher"
+                  class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-white focus:outline-none focus:border-amber-500">
+              </div>
+            </div>
+
+            <!-- Formatted Label Live Preview -->
+            <div class="text-[11px] font-mono text-slate-300 bg-slate-950 p-2.5 rounded border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-400">Generated Label:</span>
+              <span id="sourceLabelPreview" class="text-amber-300 font-bold truncate ml-2">Dt: 18/09/1967 | Source: Hindustan Times Report | Author: Dr. B.R. Ambedkar | Researcher: DAIC Researcher</span>
+            </div>
+          </div>
+
+          <!-- Section B: OCR Processing Controls -->
+          <div class="p-4 rounded-lg bg-slate-900/80 border border-slate-800 space-y-3">
+            <h4 class="text-xs uppercase tracking-wider font-bold text-amber-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Select OCR Engine & Upload File (Max 5 MB)
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+              <div>
+                <label class="block text-slate-400 font-semibold mb-1">OCR Processing Engine / Model *</label>
+                <select id="ocrMode" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-amber-500" onchange="handleOcrModeChange()">
+                  <option value="printed">Printed Gazette & Book Text (Tesseract Standard Engine - Kiosk Visitors & Students)</option>
+                  <option value="handwritten">Tesseract Handwritten Model (Ambedkar Custom v2 - Kiosk Students)</option>
+                  <option value="kraken_handwritten">Kraken HTR Engine (backend/kraken_ocr.py - Offline Kiosk Researchers & Archivists)</option>
+                  <option value="qwen_vl_handwritten">Qwen2.5-VL / Qwen3-VL Vision HTR (Open-Weight Vision Model - Researchers)</option>
+                </select>
+              </div>
+
+              <div id="krakenModelSelectorBox" class="hidden">
+                <label class="block text-slate-400 font-semibold mb-1">Kraken Neural Model Checkpoint</label>
+                <select id="krakenModelSelect" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-amber-300 focus:outline-none focus:border-amber-500">
+                  <option value="kraken_ambedkar_handwritten_v1">Dr. Ambedkar Historical Cursive (Kraken Neural v1)</option>
+                  <option value="kraken_devanagari_manuscript_v2">Devanagari Historical Manuscripts (Kraken HTR v2)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Role Access Warning Banner if Student tries Kraken/Qwen -->
+            <div id="krakenRoleWarning" class="hidden p-2.5 rounded bg-red-950/60 border border-red-600/40 text-red-300 text-xs flex items-center gap-2">
+              <i class="fa-solid fa-lock text-red-400"></i>
+              <span><strong>Access Policy:</strong> Kiosk Visitors & Students use <strong>Tesseract / Standard OCR</strong> for fast printed gazette and book scanning. <strong>Kraken HTR</strong> (integrated in <code>backend/kraken_ocr.py</code>) with local fine-tuned weights for historical manuscripts is reserved for <strong>Researchers & Archivists</strong>. Click 'Visitor Access' in the header to authenticate as Researcher.</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-1">
+              <input type="file" id="ocrFile" accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,application/pdf,image/*"
+                class="flex-1 bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-white file:mr-3 file:rounded file:border-0 file:bg-slate-700 file:px-3 file:py-1.5 file:text-white"
+                onchange="validateOcrFileSize(this)">
+              <button type="button" onclick="handleOcrUpload()" class="px-5 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 text-xs font-bold rounded-lg flex items-center justify-center gap-2 shadow transition">
+                <i class="fa-solid fa-microchip text-slate-950"></i> Run OCR Extraction
+              </button>
+            </div>
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span id="ocrStatusMsg">Select a file (Max 5 MB) and click Run OCR Extraction.</span>
+              <span id="fileSizeBadge" class="font-mono text-slate-400">Size: 0 MB / 5 MB</span>
+            </div>
+          </div>
+
+          <!-- Section C: Metadata & Full Text for Archive Ingestion -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
             <div>
               <label class="block text-slate-400 font-semibold mb-1">Document Title *</label>
@@ -396,33 +678,15 @@
           </div>
 
           <div>
-            <label for="ocrFile" class="block text-slate-400 font-semibold text-xs mb-1">Scan a PDF or image for OCR</label>
-            <label for="ocrMode" class="block text-slate-400 font-semibold text-xs mb-1">OCR mode</label>
-            <select id="ocrMode" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white mb-2">
-              <option value="printed">Printed text (multilingual)</option>
-              <option value="handwritten">Handwriting (Ambedkar custom model)</option>
-            </select>
-            <p id="handwritingModelStatus" class="text-xs text-slate-400 mb-2" aria-live="polite">Checking custom handwriting model…</p>
-            <div class="flex flex-col sm:flex-row gap-2">
-              <input type="file" id="ocrFile" accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,application/pdf,image/*"
-                class="flex-1 bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white file:mr-3 file:rounded file:border-0 file:bg-slate-700 file:px-3 file:py-1.5 file:text-white">
-              <button type="button" onclick="handleOcrUpload()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-lg border border-slate-600 flex items-center justify-center gap-2">
-                <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Extract Text
-              </button>
-            </div>
-            <p id="ocrStatusMsg" class="text-xs text-slate-400 mt-2" aria-live="polite">OCR text will be placed below for review before ingestion.</p>
-          </div>
-
-          <div>
-            <label class="block text-slate-400 font-semibold text-xs mb-1">Full Text Content *</label>
-            <textarea id="ingestContent" rows="4" required placeholder="Paste full transcribed text or OCR excerpt here..."
-              class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-amber-500"></textarea>
+            <label class="block text-slate-400 font-semibold text-xs mb-1">Full Extracted OCR Text / Manuscript Transcript *</label>
+            <textarea id="ingestContent" rows="5" required placeholder="Extracted OCR text with Source Description label will automatically appear here..."
+              class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-amber-500 font-mono"></textarea>
           </div>
 
           <div class="flex items-center justify-between pt-2">
-            <span id="ingestStatusMsg" class="text-xs text-slate-400"></span>
+            <span id="ingestStatusMsg" class="text-xs text-slate-400 font-mono"></span>
             <button type="submit" class="px-6 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs rounded-lg shadow-lg flex items-center gap-2 transition">
-              <i class="fa-solid fa-plus"></i> Ingest Document Into Pipeline
+              <i class="fa-solid fa-plus"></i> Ingest Record Into Archive Database
             </button>
           </div>
         </form>
@@ -431,10 +695,70 @@
 
   </main>
 
+  <!-- ROLE AUTHENTICATION MODAL -->
+  <div id="authModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-amber-600/40 max-w-md w-full rounded-2xl flex flex-col shadow-2xl overflow-hidden animate-fadeIn">
+      <div class="p-5 border-b border-slate-800 bg-slate-950 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <i class="fa-solid fa-user-shield text-amber-400 text-lg"></i>
+          <div>
+            <h3 class="text-base font-serif font-bold text-white">Archive Role Authentication</h3>
+            <p class="text-xs text-slate-400">Select your archive access level</p>
+          </div>
+        </div>
+        <button onclick="closeAuthModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4 text-xs">
+        <div class="space-y-2">
+          <label class="block text-slate-300 font-semibold">Select Role:</label>
+          <div class="grid grid-cols-3 gap-2">
+            <button type="button" id="roleBtnVisitor" onclick="selectAuthRole('visitor')" class="p-2.5 rounded-lg border border-slate-700 bg-slate-800 text-slate-200 text-center font-semibold focus:outline-none transition">
+              <i class="fa-solid fa-eye block text-amber-400 mb-1 text-base"></i> Visitor
+            </button>
+            <button type="button" id="roleBtnStudent" onclick="selectAuthRole('student')" class="p-2.5 rounded-lg border border-slate-700 bg-slate-900 text-slate-300 text-center font-semibold focus:outline-none transition">
+              <i class="fa-solid fa-graduation-cap block text-amber-400 mb-1 text-base"></i> Student
+            </button>
+            <button type="button" id="roleBtnResearcher" onclick="selectAuthRole('researcher')" class="p-2.5 rounded-lg border border-slate-700 bg-slate-900 text-slate-300 text-center font-semibold focus:outline-none transition">
+              <i class="fa-solid fa-flask-vial block text-amber-400 mb-1 text-base"></i> Researcher
+            </button>
+          </div>
+        </div>
+
+        <div id="passcodeBox" class="space-y-2 hidden">
+          <label class="block text-slate-300 font-semibold" id="passcodePromptLabel">Passcode Required:</label>
+          <input type="password" id="authPasscodeInput" placeholder="Enter passcode..."
+            class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-white font-mono text-sm focus:outline-none focus:border-amber-500">
+          <p id="passcodeHint" class="text-[11px] text-amber-400/90 font-mono">Students write: {STUDENT}</p>
+        </div>
+
+        <div class="p-3 rounded-lg bg-slate-950 border border-slate-800 space-y-1.5 text-[11px]">
+          <p class="font-bold text-amber-300" id="roleCapTitle">Visitor Capabilities:</p>
+          <ul class="list-disc list-inside text-slate-300 space-y-1" id="roleCapList">
+            <li>Search & browse full digital archive</li>
+            <li>Explore timeline & constitutional ideas</li>
+            <li>Use AI Assistant & audio narration</li>
+            <li class="text-slate-400">OCR & Document relations require Student or Researcher role</li>
+          </ul>
+        </div>
+
+        <p id="authStatusMsg" class="text-xs text-red-400 font-mono min-h-[1rem]"></p>
+      </div>
+
+      <div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end gap-2">
+        <button onclick="closeAuthModal()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold">Cancel</button>
+        <button onclick="submitAuthentication()" class="px-5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold flex items-center gap-1.5 shadow">
+          <i class="fa-solid fa-right-to-bracket"></i> Authenticate
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- DOCUMENT DETAIL MODAL WITH AUDIO NARRATION -->
   <div id="docModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-700 max-w-3xl w-full max-h-[85vh] rounded-2xl flex flex-col shadow-2xl overflow-hidden animate-fadeIn">
-      <!-- Modal Header -->
       <div class="p-6 border-b border-slate-800 bg-slate-950 flex items-start justify-between">
         <div class="space-y-1">
           <div class="flex items-center gap-2">
@@ -450,9 +774,7 @@
         </button>
       </div>
 
-      <!-- Modal Body -->
       <div class="p-6 overflow-y-auto space-y-6 text-sm flex-1">
-        <!-- Audio Narration Bar -->
         <div class="p-3.5 rounded-xl bg-amber-950/30 border border-amber-600/30 flex items-center justify-between">
           <div class="flex items-center gap-3">
             <button id="ttsPlayBtn" onclick="toggleAudioNarration()" class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-base hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">
@@ -466,38 +788,39 @@
           <span id="ttsStatus" class="text-xs text-amber-400 font-mono">Ready</span>
         </div>
 
-        <!-- Summary -->
         <div class="space-y-1.5">
           <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Executive Summary</h4>
           <p id="modalSummary" class="text-slate-200 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 leading-relaxed"></p>
         </div>
 
-        <!-- Key Quotes -->
         <div id="modalQuotesSection" class="space-y-1.5">
           <h4 class="text-xs uppercase tracking-wider font-semibold text-amber-400">Key Historical Quotes</h4>
           <div id="modalQuotesList" class="space-y-2"></div>
         </div>
 
-        <!-- Full Text -->
         <div class="space-y-1.5">
           <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Archival Full Text / Excerpt</h4>
           <div id="modalFullText" class="text-slate-300 bg-slate-950 p-4 rounded-xl border border-slate-800 leading-relaxed whitespace-pre-line max-h-60 overflow-y-auto text-xs font-mono"></div>
         </div>
 
-        <!-- Metadata & Provenance -->
         <div class="space-y-2 pt-2 border-t border-slate-800 text-xs">
           <h4 class="uppercase tracking-wider font-semibold text-slate-400">Dublin Core Archival Metadata</h4>
           <div id="modalMetaGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-slate-300"></div>
         </div>
       </div>
 
-      <!-- Modal Footer -->
       <div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end items-center text-xs">
         <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="hidden px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 flex items-center gap-2 font-semibold">
           <i class="fa-solid fa-arrow-up-right-from-square"></i> View Primary Source
         </a>
       </div>
     </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-emerald-950 border border-emerald-500 text-emerald-200 text-xs px-4 py-3 rounded-xl shadow-2xl hidden flex items-center gap-2 animate-fadeIn font-mono">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+    <span id="toastMsg">Prompt copied to clipboard for NotebookLM!</span>
   </div>
 
   <!-- FOOTER -->

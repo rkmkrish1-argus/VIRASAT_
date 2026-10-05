@@ -2004,3 +2004,584 @@ function applyUiTranslations() {
     });
   });
 }
+
+
+/* ==========================================================================
+   EXTENDED ARCHIVE ENGINE: AUTHENTICATION, CONSTITUTIONAL IDEAS & KRAKEN OCR
+   ========================================================================== */
+
+let currentUserRole = "visitor"; // "visitor", "student", or "researcher"
+let userPasscode = "";
+let selectedAuthRole = "visitor";
+
+// Modal & Authentication Management
+function openAuthModal() {
+  const modal = document.getElementById("authModal");
+  if (modal) {
+    modal.classList.remove("hidden");
+    selectAuthRole(currentUserRole);
+  }
+}
+
+function closeAuthModal() {
+  const modal = document.getElementById("authModal");
+  if (modal) modal.classList.add("hidden");
+  const msg = document.getElementById("authStatusMsg");
+  if (msg) msg.innerText = "";
+}
+
+function selectAuthRole(role) {
+  selectedAuthRole = role;
+  const btnVisitor = document.getElementById("roleBtnVisitor");
+  const btnStudent = document.getElementById("roleBtnStudent");
+  const btnResearcher = document.getElementById("roleBtnResearcher");
+  const passcodeBox = document.getElementById("passcodeBox");
+  const passcodeHint = document.getElementById("passcodeHint");
+  const roleCapTitle = document.getElementById("roleCapTitle");
+  const roleCapList = document.getElementById("roleCapList");
+
+  if (btnVisitor) btnVisitor.className = role === "visitor"
+    ? "p-2.5 rounded-lg border border-amber-500 bg-amber-950/80 text-amber-300 font-bold text-center"
+    : "p-2.5 rounded-lg border border-slate-700 bg-slate-900 text-slate-300 text-center";
+  if (btnStudent) btnStudent.className = role === "student"
+    ? "p-2.5 rounded-lg border border-amber-500 bg-amber-950/80 text-amber-300 font-bold text-center"
+    : "p-2.5 rounded-lg border border-slate-700 bg-slate-900 text-slate-300 text-center";
+  if (btnResearcher) btnResearcher.className = role === "researcher"
+    ? "p-2.5 rounded-lg border border-amber-500 bg-amber-950/80 text-amber-300 font-bold text-center"
+    : "p-2.5 rounded-lg border border-slate-700 bg-slate-900 text-slate-300 text-center";
+
+  if (role === "visitor") {
+    if (passcodeBox) passcodeBox.classList.add("hidden");
+    if (roleCapTitle) roleCapTitle.innerText = "Visitor Capabilities:";
+    if (roleCapList) roleCapList.innerHTML = `
+      <li>Search & browse full digital archive</li>
+      <li>Explore chronological timeline & constitutional ideas</li>
+      <li>Use AI Assistant & audio narration</li>
+      <li class="text-slate-400">OCR & Document relations require Student or Researcher role</li>
+    `;
+  } else if (role === "student") {
+    if (passcodeBox) passcodeBox.classList.remove("hidden");
+    if (passcodeHint) passcodeHint.innerText = "Students write: {STUDENT}";
+    if (roleCapTitle) roleCapTitle.innerText = "Student Capabilities:";
+    if (roleCapList) roleCapList.innerHTML = `
+      <li>Full access to Archive Search, Timeline & Ideas</li>
+      <li>Standard Printed Text OCR Studio access</li>
+      <li>5 MB file limit per contribution</li>
+      <li class="text-slate-400">Kraken Handwritten OCR & Database relations reserved for Researchers</li>
+    `;
+  } else if (role === "researcher") {
+    if (passcodeBox) passcodeBox.classList.remove("hidden");
+    if (passcodeHint) passcodeHint.innerText = "Researchers enter scholar passcode (RESEARCHER)";
+    if (roleCapTitle) roleCapTitle.innerText = "Researcher Capabilities:";
+    if (roleCapList) roleCapList.innerHTML = `
+      <li>Full access to Archive Search, Timeline & Ideas</li>
+      <li>Full access to Kraken HTR Neural Model for Handwritten OCR</li>
+      <li>Ability to create & edit Database Document Relations</li>
+      <li>5 MB file limit per contribution with Source Description</li>
+    `;
+  }
+}
+
+async function submitAuthentication() {
+  const input = document.getElementById("authPasscodeInput");
+  const statusMsg = document.getElementById("authStatusMsg");
+  const passcode = input ? input.value.trim() : "";
+  if (statusMsg) statusMsg.innerText = "Authenticating...";
+
+  try {
+    const res = await fetch(`${API_BASE}/api/auth/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ passcode: passcode, role: selectedAuthRole })
+    });
+    const data = await res.json();
+    if (res.ok && data.authenticated) {
+      currentUserRole = data.role;
+      userPasscode = passcode;
+      try {
+        sessionStorage.setItem("ambedkar_auth_role", data.role);
+        sessionStorage.setItem("ambedkar_auth_passcode", passcode);
+      } catch (_) {}
+      updateUserRoleUI();
+      closeAuthModal();
+      showToast(`Authenticated successfully as ${data.role_display || data.role}!`);
+    } else {
+      if (statusMsg) statusMsg.innerText = data.detail || data.error || "Invalid passcode.";
+    }
+  } catch (err) {
+    if (statusMsg) statusMsg.innerText = "Authentication request failed.";
+  }
+}
+
+function updateUserRoleUI() {
+  const headerRoleLabel = document.getElementById("headerRoleLabel");
+  const activeRoleIndicator = document.getElementById("activeRoleIndicator");
+  const relationAuthBadge = document.getElementById("relationAuthBadge");
+
+  if (currentUserRole === "researcher") {
+    if (headerRoleLabel) headerRoleLabel.innerText = "Researcher Access";
+    if (activeRoleIndicator) {
+      activeRoleIndicator.innerText = "Role: Researcher (Kraken HTR Unlocked)";
+      activeRoleIndicator.className = "px-3 py-1.5 rounded-lg bg-emerald-950 border border-emerald-600/50 text-emerald-300 text-xs font-mono font-semibold";
+    }
+    if (relationAuthBadge) {
+      relationAuthBadge.innerText = "Researcher Mode (Unlocked)";
+      relationAuthBadge.className = "text-xs font-mono px-2 py-0.5 rounded bg-emerald-900 text-emerald-300";
+    }
+  } else if (currentUserRole === "student") {
+    if (headerRoleLabel) headerRoleLabel.innerText = "Student Access ({STUDENT})";
+    if (activeRoleIndicator) {
+      activeRoleIndicator.innerText = "Role: Student Access ({STUDENT})";
+      activeRoleIndicator.className = "px-3 py-1.5 rounded-lg bg-amber-950 border border-amber-600/50 text-amber-300 text-xs font-mono font-semibold";
+    }
+    if (relationAuthBadge) {
+      relationAuthBadge.innerText = "Student Mode (Auth as Researcher to add links)";
+      relationAuthBadge.className = "text-xs font-mono px-2 py-0.5 rounded bg-amber-900 text-amber-300";
+    }
+  } else {
+    if (headerRoleLabel) headerRoleLabel.innerText = "Visitor Access";
+    if (activeRoleIndicator) {
+      activeRoleIndicator.innerText = "Role: Visitor (Read-Only)";
+      activeRoleIndicator.className = "px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-xs font-mono font-semibold";
+    }
+    if (relationAuthBadge) {
+      relationAuthBadge.innerText = "Visitor Mode (Auth Required)";
+      relationAuthBadge.className = "text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400";
+    }
+  }
+  handleOcrModeChange();
+}
+
+// Constitutional Ideas & Database Relations Engine
+async function loadConstitutionalIdeas() {
+  const container = document.getElementById("constitutionalIdeasGrid");
+  if (!container) return;
+  container.innerHTML = `<p class="text-xs text-amber-400 col-span-full font-mono"><i class="fa-solid fa-spinner fa-spin"></i> Loading Constitutional Ideas & Relations...</p>`;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/constitutional-ideas`);
+    const data = await res.json();
+    if (res.ok && data.ideas) {
+      renderConstitutionalIdeasGrid(data.ideas);
+    }
+  } catch (err) {
+    container.innerHTML = `<p class="text-xs text-rose-400 col-span-full">Could not load constitutional ideas.</p>`;
+  }
+}
+
+function renderConstitutionalIdeasGrid(ideas) {
+  const container = document.getElementById("constitutionalIdeasGrid");
+  if (!container) return;
+
+  container.innerHTML = ideas.map(idea => `
+    <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-amber-600/40 transition shadow-lg">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            ${idea.category}
+          </span>
+          <i class="fa-solid ${idea.icon || 'fa-lightbulb'} text-amber-400 text-lg"></i>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-white">${idea.title}</h3>
+        <p class="text-xs text-slate-300 leading-relaxed">${idea.description}</p>
+      </div>
+
+      <div class="space-y-3 pt-2 border-t border-slate-800">
+        <blockquote class="italic text-[11px] text-amber-200 bg-amber-950/40 p-3 rounded-lg border border-amber-600/30">
+          "${idea.famous_quote}"
+        </blockquote>
+        <div class="text-[11px] text-slate-400 flex items-center justify-between">
+          <span>Key Articles: <strong class="text-white">${idea.key_articles}</strong></span>
+          <span class="font-mono text-amber-400">${(idea.linked_documents || []).length} Linked Docs</span>
+        </div>
+      </div>
+    </div>
+  `).join("");
+
+  loadDocumentRelations();
+}
+
+async function loadDocumentRelations() {
+  const container = document.getElementById("documentRelationsContainer");
+  if (!container) return;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/relations/DOC_CAD_CAD_VOL11_19491125`);
+    const data = await res.json();
+    if (res.ok && data.relations) {
+      container.innerHTML = data.relations.map(rel => `
+        <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-indigo-950 text-indigo-300 border border-indigo-500/30">
+                ${rel.relation_type}
+              </span>
+              <span class="text-slate-400">Researcher: ${rel.researcher}</span>
+            </div>
+            <p class="text-slate-200 font-medium">${rel.source_title} <i class="fa-solid fa-arrow-right text-amber-400 mx-1"></i> ${rel.target_title}</p>
+            <p class="text-[11px] text-slate-400">${rel.description}</p>
+          </div>
+          <button onclick="viewDocument('${rel.source_doc_id}')" class="px-3 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-semibold flex items-center gap-1 self-start sm:self-auto">
+            <i class="fa-solid fa-eye text-amber-400"></i> View Record
+          </button>
+        </div>
+      `).join("");
+    }
+  } catch (err) {
+    container.innerHTML = `<p class="text-xs text-slate-400">No external relations loaded.</p>`;
+  }
+}
+
+async function handleCreateRelation(e) {
+  e.preventDefault();
+  if (currentUserRole !== "researcher") {
+    alert("Establishing document relationships in the database requires Researcher role. Click 'Visitor Access' in the header to authenticate as Researcher.");
+    openAuthModal();
+    return;
+  }
+
+  const statusMsg = document.getElementById("relationStatusMsg");
+  if (statusMsg) {
+    statusMsg.innerText = "Saving relationship to database...";
+    statusMsg.className = "text-xs text-amber-400 font-mono";
+  }
+
+  const payload = {
+    source_doc_id: document.getElementById("relSourceDocId").value.trim(),
+    target_doc_id: document.getElementById("relTargetDocId").value.trim(),
+    relation_type: document.getElementById("relType").value,
+    description: document.getElementById("relDescription").value.trim(),
+    researcher: "DAIC Researcher",
+    passcode: userPasscode
+  };
+
+  try {
+    const res = await fetch(`${API_BASE}/api/relations`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    if (res.ok) {
+      if (statusMsg) {
+        statusMsg.innerText = "✓ Relation created successfully in SQLite database!";
+        statusMsg.className = "text-xs text-emerald-400 font-bold font-mono";
+      }
+      document.getElementById("addRelationForm").reset();
+      loadDocumentRelations();
+    } else {
+      if (statusMsg) {
+        statusMsg.innerText = "Error: " + (data.detail || "Could not save relation.");
+        statusMsg.className = "text-xs text-rose-400 font-mono";
+      }
+    }
+  } catch (err) {
+    if (statusMsg) {
+      statusMsg.innerText = "Failed to connect to backend database.";
+      statusMsg.className = "text-xs text-rose-400 font-mono";
+    }
+  }
+}
+
+// Source Description Metadata Label Preview & OCR Safeguards
+function updateSourceLabelPreview() {
+  const dt = document.getElementById("sourceDateInput")?.value || "18/09/1967";
+  const src = document.getElementById("sourceNameInput")?.value || "Hindustan Times Report";
+  const auth = document.getElementById("sourceAuthorInput")?.value || "Dr. B.R. Ambedkar";
+  const res = document.getElementById("researcherNameInput")?.value || "DAIC Researcher";
+
+  const label = `Dt: ${dt} | Source: ${src} | Author: ${auth} | Researcher: ${res}`;
+  const preview = document.getElementById("sourceLabelPreview");
+  if (preview) preview.innerText = label;
+}
+
+function handleOcrModeChange() {
+  const ocrModeSelect = document.getElementById("ocrMode");
+  const krakenBox = document.getElementById("krakenModelSelectorBox");
+  const warning = document.getElementById("krakenRoleWarning");
+  if (!ocrModeSelect) return;
+
+  if (ocrModeSelect.value === "kraken_handwritten") {
+    if (currentUserRole !== "researcher") {
+      if (warning) warning.classList.remove("hidden");
+      if (krakenBox) krakenBox.classList.add("hidden");
+    } else {
+      if (warning) warning.classList.add("hidden");
+      if (krakenBox) krakenBox.classList.remove("hidden");
+    }
+  } else {
+    if (warning) warning.classList.add("hidden");
+    if (krakenBox) krakenBox.classList.add("hidden");
+  }
+}
+
+function validateOcrFileSize(input) {
+  const status = document.getElementById("ocrStatusMsg");
+  const badge = document.getElementById("fileSizeBadge");
+  if (!input.files || input.files.length === 0) return;
+
+  const file = input.files[0];
+  const sizeMb = (file.size / (1024 * 1024)).toFixed(2);
+  if (badge) badge.innerText = `Size: ${sizeMb} MB / 5 MB`;
+
+  if (file.size > 5 * 1024 * 1024) {
+    input.value = "";
+    if (status) {
+      status.innerText = "❌ File size limit exceeded! Uploads are strictly limited to 5 MB per file.";
+      status.className = "text-xs text-rose-400 font-bold";
+    }
+    if (badge) badge.innerText = `Size: Exceeded! / 5 MB`;
+    alert("File limit exceeded: The selected file is " + sizeMb + " MB. Contributions are strictly limited to 5 MB per file.");
+  } else {
+    if (status) {
+      status.innerText = `Ready to process file "${file.name}" (${sizeMb} MB).`;
+      status.className = "text-xs text-slate-300";
+    }
+  }
+}
+
+async function handleOcrUpload() {
+  const fileInput = document.getElementById("ocrFile");
+  const modeSelect = document.getElementById("ocrMode");
+  const krakenSelect = document.getElementById("krakenModelSelect");
+  const langSelect = document.getElementById("ingestLanguage");
+  const status = document.getElementById("ocrStatusMsg");
+  const contentTextarea = document.getElementById("ingestContent");
+
+  if (!fileInput.files || fileInput.files.length === 0) {
+    if (status) {
+      status.innerText = "Please select a document file (Max 5 MB) first.";
+      status.className = "text-xs text-amber-400 font-bold";
+    }
+    return;
+  }
+
+  const file = fileInput.files[0];
+  if (file.size > 5 * 1024 * 1024) {
+    if (status) {
+      status.innerText = "❌ File size exceeds 5 MB limit.";
+      status.className = "text-xs text-rose-400 font-bold";
+    }
+    return;
+  }
+
+  const mode = modeSelect ? modeSelect.value : "printed";
+  if (mode === "kraken_handwritten" && currentUserRole !== "researcher") {
+    alert("Kraken Handwritten OCR model access is restricted to Researchers. Authenticate as Researcher to unlock Kraken.");
+    openAuthModal();
+    return;
+  }
+
+  updateSourceLabelPreview();
+  const dt = document.getElementById("sourceDateInput")?.value || "";
+  const src = document.getElementById("sourceNameInput")?.value || "";
+  const auth = document.getElementById("sourceAuthorInput")?.value || "";
+  const resName = document.getElementById("researcherNameInput")?.value || "";
+
+  if (status) {
+    status.innerText = mode === "kraken_handwritten"
+      ? "Running Kraken HTR Neural Model on manuscript..."
+      : "Processing Tesseract OCR extraction...";
+    status.className = "text-xs text-amber-400 font-bold";
+  }
+
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("language", langSelect ? langSelect.value : "en");
+  formData.append("mode", mode);
+  formData.append("user_role", currentUserRole);
+  formData.append("passcode", userPasscode);
+  formData.append("kraken_model_id", krakenSelect ? krakenSelect.value : "kraken_ambedkar_handwritten_v1");
+  formData.append("source_date", dt);
+  formData.append("source_name", src);
+  formData.append("source_author", auth);
+  formData.append("researcher_name", resName);
+
+  try {
+    const res = await fetch(`${API_BASE}/api/ocr`, {
+      method: "POST",
+      body: formData
+    });
+    const result = await res.json();
+    if (!res.ok) {
+      if (status) {
+        status.innerText = "OCR Failed: " + (result.detail || "Upload error.");
+        status.className = "text-xs text-rose-400 font-bold";
+      }
+      return;
+    }
+
+    if (status) {
+      status.innerText = `✓ OCR Extracted (${result.engine} - ${result.model})! Review below.`;
+      status.className = "text-xs text-emerald-400 font-bold";
+    }
+    if (contentTextarea) contentTextarea.value = result.text;
+    lastOcrMetadata = result;
+  } catch (err) {
+    if (status) {
+      status.innerText = "OCR service error. Check backend connection.";
+      status.className = "text-xs text-rose-400 font-bold";
+    }
+  }
+}
+
+// Hook tab switching & event listeners
+const originalSwitchTab = switchTab;
+switchTab = function(tabId) {
+  originalSwitchTab(tabId);
+  if (tabId === "ideasTab") {
+    loadConstitutionalIdeas();
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  try {
+    const savedRole = sessionStorage.getItem("ambedkar_auth_role");
+    const savedPasscode = sessionStorage.getItem("ambedkar_auth_passcode");
+    if (savedRole) {
+      currentUserRole = savedRole;
+      userPasscode = savedPasscode || "";
+      updateUserRoleUI();
+    } else {
+      updateUserRoleUI();
+      setTimeout(openAuthModal, 600);
+    }
+  } catch (_) {
+    updateUserRoleUI();
+  }
+
+  ["sourceDateInput", "sourceNameInput", "sourceAuthorInput", "researcherNameInput"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener("input", updateSourceLabelPreview);
+  });
+  updateSourceLabelPreview();
+});
+
+
+/* ==========================================================================
+   STUDENT NOTEBOOKLM PROMPTS ENGINE (BACKSTORY -> FRONTSTORY NARRATIVE)
+   ========================================================================== */
+
+let studentPromptsCache = [];
+
+async function loadStudentNotebookPrompts() {
+  const container = document.getElementById("studentNotebookContainer");
+  if (!container) return;
+  container.innerHTML = `<p class="text-xs text-amber-400 font-mono"><i class="fa-solid fa-spinner fa-spin"></i> Loading NotebookLM Evidence Prompts...</p>`;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/student-notebook-prompts`);
+    const data = await res.json();
+    if (res.ok && data.prompts) {
+      studentPromptsCache = data.prompts;
+      renderStudentNotebookPrompts(data.prompts);
+    }
+  } catch (err) {
+    container.innerHTML = `<p class="text-xs text-rose-400">Could not load NotebookLM prompts from backend.</p>`;
+  }
+}
+
+function renderStudentNotebookPrompts(prompts) {
+  const container = document.getElementById("studentNotebookContainer");
+  if (!container) return;
+
+  container.innerHTML = prompts.map((item, idx) => `
+    <div class="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-5 shadow-xl hover:border-amber-600/40 transition">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-950 text-emerald-300 border border-emerald-500/40 font-mono">
+              <i class="fa-solid fa-language text-emerald-400"></i> English
+            </span>
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              ${item.theme}
+            </span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-white mt-1">${item.title}</h3>
+        </div>
+        <button onclick="copyNotebookPromptByIndex(${idx}, this)" class="px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5 self-start sm:self-auto transition">
+          <i class="fa-solid fa-copy"></i> Copy English Prompt for NotebookLM
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+        <div class="p-4 rounded-2xl bg-slate-950 border border-amber-900/40 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-950 text-amber-300 border border-amber-600/40">
+              <i class="fa-solid fa-clock-rotate-left"></i> BACKSTORY (${item.backstory.year})
+            </span>
+            <span class="text-slate-400 font-mono text-[11px]">${item.backstory.date}</span>
+          </div>
+          <h4 class="font-semibold text-amber-200 text-sm">${item.backstory.title}</h4>
+          <p class="text-slate-300 leading-relaxed">${item.backstory.details}</p>
+          <div class="pt-2 border-t border-slate-900 space-y-1">
+            <span class="text-slate-400 font-semibold block text-[10px] uppercase">Primary Citations:</span>
+            ${(item.backstory.citations || []).map(c => `<div class="text-[11px] text-amber-400 font-mono">▸ ${c}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-950 border border-emerald-900/40 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-950 text-emerald-300 border border-emerald-600/40">
+              <i class="fa-solid fa-building-columns"></i> FRONTSTORY (${item.frontstory.year})
+            </span>
+            <span class="text-slate-400 font-mono text-[11px]">${item.frontstory.date}</span>
+          </div>
+          <h4 class="font-semibold text-emerald-200 text-sm">${item.frontstory.title}</h4>
+          <p class="text-slate-300 leading-relaxed">${item.frontstory.details}</p>
+          <div class="pt-2 border-t border-slate-900 space-y-1">
+            <span class="text-slate-400 font-semibold block text-[10px] uppercase">Constitutional Citations:</span>
+            ${(item.frontstory.citations || []).map(c => `<div class="text-[11px] text-emerald-400 font-mono">▸ ${c}</div>`).join('')}
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-1.5">
+        <label class="text-[11px] uppercase tracking-wider font-semibold text-slate-400 flex items-center justify-between">
+          <span>Formatted NotebookLM Deep-Dive Prompt (English)</span>
+          <span class="text-emerald-400 font-mono text-[10px]"><i class="fa-solid fa-check"></i> Output: English Guaranteed</span>
+        </label>
+        <pre class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-[11px] font-mono text-slate-300 whitespace-pre-wrap leading-relaxed max-h-48 overflow-y-auto">${item.notebooklm_prompt}</pre>
+      </div>
+    </div>
+  `).join("");
+}
+
+function copyNotebookPromptByIndex(idx, btn) {
+  if (!studentPromptsCache[idx]) return;
+  const promptText = studentPromptsCache[idx].notebooklm_prompt;
+  
+  navigator.clipboard.writeText(promptText).then(() => {
+    const origText = btn.innerHTML;
+    btn.innerHTML = `<i class="fa-solid fa-check text-slate-950"></i> ✓ Copied English Prompt!`;
+    btn.className = "px-4 py-2 bg-emerald-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5 self-start sm:self-auto transition";
+    
+    showToast("English NotebookLM prompt copied to clipboard!");
+    
+    setTimeout(() => {
+      btn.innerHTML = origText;
+      btn.className = "px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5 self-start sm:self-auto transition";
+    }, 2500);
+  }).catch(() => {
+    alert("Could not copy to clipboard. Select text manually.");
+  });
+}
+
+function showToast(msg) {
+  const toast = document.getElementById("toastNotification");
+  const msgSpan = document.getElementById("toastMsg");
+  if (!toast || !msgSpan) return;
+  
+  msgSpan.innerText = msg;
+  toast.classList.remove("hidden");
+  setTimeout(() => {
+    toast.classList.add("hidden");
+  }, 3000);
+}
+
+const existingSwitchTab = switchTab;
+switchTab = function(tabId) {
+  existingSwitchTab(tabId);
+  if (tabId === "ideasTab") loadConstitutionalIdeas();
+  if (tabId === "studentNotebookTab") loadStudentNotebookPrompts();
+};

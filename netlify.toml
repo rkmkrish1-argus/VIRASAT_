@@ -1,0 +1,18 @@
+# Netlify Build & Deployment Configuration
+# Dr. B.R. Ambedkar Digital Heritage Archive
+
+[build]
+  # Folder containing HTML, CSS, JS and assets
+  publish = "frontend"
+
+# Cache control headers for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+# Single-Page fallback redirect for web navigation
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
