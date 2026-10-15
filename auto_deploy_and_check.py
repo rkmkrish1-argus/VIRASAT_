@@ -26,7 +26,7 @@ if sys.platform == "win32":
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 NETLIFY_URL = "https://virasatstarkx.netlify.app"
-RENDER_URL = "https://ambedkar-api.onrender.com"
+RENDER_URL = "https://ambedkar-api-81k6.onrender.com"
 DB_PATH = PROJECT_ROOT / "ambedkar_archive_data" / "database" / "ambedkar_archive.db"
 
 def print_header(title: str):
