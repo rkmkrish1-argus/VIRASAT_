@@ -766,10 +766,12 @@ function initializeArchiveTheme() {
 }
 
 function setArchiveTheme(theme, persist = true) {
-  document.body.dataset.theme = theme;
+  const chosenTheme = theme === "light" ? "light" : "dark";
+  document.body.dataset.theme = chosenTheme;
+  document.documentElement.dataset.theme = chosenTheme;
   const button = document.getElementById("themeToggle");
   if (button) {
-    const dark = theme === "dark";
+    const dark = chosenTheme === "dark";
     const englishLabel = dark ? "Switch to light theme" : "Switch to dark theme";
     const label = ({ ...(UI_TRANSLATIONS[currentLanguage] || {}) })[englishLabel] || englishLabel;
     button.setAttribute("aria-label", label);
@@ -777,12 +779,17 @@ function setArchiveTheme(theme, persist = true) {
     button.innerHTML = `<i class="fa-regular ${dark ? "fa-sun" : "fa-moon"}" aria-hidden="true"></i>`;
   }
   if (persist) {
-    try { localStorage.setItem("ambedkar-archive-theme", theme); } catch (_) { /* Keep the current session usable without storage. */ }
+    try { localStorage.setItem("ambedkar-archive-theme", chosenTheme); } catch (_) { /* Keep session usable without storage */ }
+  }
+  if (typeof updateSpecs3DTheme === "function") {
+    updateSpecs3DTheme(chosenTheme);
   }
 }
 
 function toggleArchiveTheme() {
-  setArchiveTheme(document.body.dataset.theme === "dark" ? "light" : "dark");
+  const current = document.body.dataset.theme || "dark";
+  const nextTheme = current === "dark" ? "light" : "dark";
+  setArchiveTheme(nextTheme, true);
 }
 
 function clearArchiveSearch() {
@@ -2888,10 +2895,39 @@ function selectLawCraft(lawKey) {
 
 let spatialScene, spatialCamera, spatialRenderer, spatialSpecsGroup;
 let spatialLeftLens, spatialRightLens;
+let spatialAmbientLight, spatialKeyLight, spatialRimLight;
 let spatialTargetRotX = 0, spatialTargetRotY = 0;
 let spatialCurrentRotX = 0, spatialCurrentRotY = 0;
 let spatialIsDragging = false, spatialPrevMouseX = 0, spatialPrevMouseY = 0;
 let lensPulseTime = 0;
+
+function updateSpecs3DTheme(theme) {
+  if (!spatialAmbientLight) return;
+  const isLight = theme === "light";
+  if (isLight) {
+    spatialAmbientLight.color.setHex(0xffffff);
+    spatialAmbientLight.intensity = 1.25;
+    if (spatialKeyLight) {
+      spatialKeyLight.color.setHex(0xb45309);
+      spatialKeyLight.intensity = 2.8;
+    }
+    if (spatialRimLight) {
+      spatialRimLight.color.setHex(0x0284c7);
+      spatialRimLight.intensity = 2.2;
+    }
+  } else {
+    spatialAmbientLight.color.setHex(0xffeedd);
+    spatialAmbientLight.intensity = 0.95;
+    if (spatialKeyLight) {
+      spatialKeyLight.color.setHex(0xffd700);
+      spatialKeyLight.intensity = 3.4;
+    }
+    if (spatialRimLight) {
+      spatialRimLight.color.setHex(0x38bdf8);
+      spatialRimLight.intensity = 2.8;
+    }
+  }
+}
 
 function pulseSpecsLens() {
   lensPulseTime = 1.0;
@@ -2927,18 +2963,24 @@ function initAmbedkarSpecs() {
   // 3. Studio Lighting Rig (Warm Bronze Key, Cyan Rim, Focused Spot)
   const ambientLight = new THREE.AmbientLight(0xffeedd, 0.95);
   spatialScene.add(ambientLight);
+  spatialAmbientLight = ambientLight;
 
   const keyLight = new THREE.DirectionalLight(0xffd700, 3.4);
   keyLight.position.set(3, 4, 4);
   spatialScene.add(keyLight);
+  spatialKeyLight = keyLight;
 
   const rimLight = new THREE.DirectionalLight(0x38bdf8, 2.8);
   rimLight.position.set(-4, -3, -2);
   spatialScene.add(rimLight);
+  spatialRimLight = rimLight;
 
   const frontSpot = new THREE.PointLight(0xfff5e6, 2.2, 10);
   frontSpot.position.set(0, 1.5, 3.5);
   spatialScene.add(frontSpot);
+
+  // Synchronize 3D lighting with active theme
+  updateSpecs3DTheme(document.body.dataset.theme || "dark");
 
   // 4. Procedural 3D Ambedkar Spectacles Model
   const specsGroup = new THREE.Group();
