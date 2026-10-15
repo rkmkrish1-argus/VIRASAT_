@@ -169,6 +169,13 @@ async def serve_css():
 async def serve_js():
     return FileResponse(FRONTEND_DIR / "app.js", media_type="application/javascript")
 
+@app.get("/archive_documents.json", include_in_schema=False)
+async def serve_archive_documents():
+    doc_file = FRONTEND_DIR / "archive_documents.json"
+    if doc_file.exists():
+        return FileResponse(doc_file, media_type="application/json")
+    raise HTTPException(status_code=404, detail="Archive catalog file not found")
+
 @app.get("/", tags=["Health & UI"])
 async def root():
     index_file = FRONTEND_DIR / "index.html"
