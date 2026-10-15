@@ -2775,15 +2775,132 @@ switchTab = function(tabId) {
 
 
 /* ==========================================================================
-   LIVING 3D SPATIAL MONOLITH ENGINE (THREE.JS × CURSOR GYROSCOPE)
+   AMBEDKAR LAW CRAFTING SPECIFICATIONS (BACKSTORY TO FRONTSTORY)
    ========================================================================== */
 
-let spatialScene, spatialCamera, spatialRenderer, spatialMonolith, spatialWheel;
+const AMBEDKAR_LAW_SPECS = {
+  art17: {
+    title: "Article 17 — Abolition of Untouchability",
+    article: "Article 17 & The Protection of Civil Rights Framework",
+    backstory: "Mahad Satyagraha (1927) & Kalaram Temple Entry (1930): Millions of Dalits were forbidden from public drinking water, public roads, and schools under religious orthodoxy of ritual pollution, treated as less than human.",
+    dilemma: "Orthodox assembly delegates argued 'Untouchability' was merely a religious and social custom that should be left to gradual social reform or optional provincial police statutes, without constitutional compulsion.",
+    craft: "Dr. Ambedkar rejected voluntary compromise. He insisted Article 17 be an unbending Fundamental Right with immediate penal teeth: 'the enforcement of any disability arising out of Untouchability shall be an offence punishable in accordance with law'. Uniquely, it directly penalizes private discrimination, not just state action.",
+    quote: "Rights are protected not by law, but by the social and moral conscience of society.",
+    promptIndex: 0
+  },
+  art32: {
+    title: "Article 32 — Writs & Constitutional Remedies",
+    article: "Article 32: The 'Heart & Soul' of the Constitution",
+    backstory: "Under British rule, ordinary citizens and marginalized classes were crushed by police and zamindars because courts required costly, prolonged civil suits with zero immediate judicial relief against state despotism.",
+    dilemma: "Multiple drafting members proposed that fundamental rights could be declared on paper, but remedies should be left to ordinary civil procedures, allowing executive decrees to suspend them whenever politically convenient.",
+    craft: "Ambedkar made the Right to Constitutional Remedies ITSELF a Fundamental Right: 'If I was asked to name any particular article as the most important—without which this Constitution would be a nullity—I could not refer to any other article except this one. It is the very soul of the Constitution and the very heart of it.' He armed every citizen with the 5 Prerogative Writs directly to the Supreme Court.",
+    quote: "It is the very soul of the Constitution and the very heart of it.",
+    promptIndex: 2
+  },
+  hindu_code: {
+    title: "Hindu Code Bill & Article 39(d) — Gender Justice",
+    article: "Hindu Code Bill (1951) & Articles 14, 15(3), 39(d)",
+    backstory: "Ancient Mitakshara & Dayabhaga doctrines denied women equal property inheritance, banned divorce even under severe cruelty, and reduced widows to financial destitution and male servitude.",
+    dilemma: "Conservative MPs and orthodox factions launched massive protests in 1949–1951, claiming ancient scriptures were sacrosanct and that granting women divorce and property would disintegrate Hindu society.",
+    craft: "Ambedkar boldly drafted the unified Hindu Code Bill establishing civil divorce, monogamy, and absolute female inheritance. When political hesitation stalled the bill, Ambedkar resigned as Law Minister in principled protest, forcing reforms later enacted in the Hindu Marriage Act (1955) and Succession Act (1956). In the Constitution, he embedded Article 39(d) (Equal pay for equal work) and Article 15(3) (Protective affirmative discrimination for women).",
+    quote: "I measure the progress of a community by the degree of progress which women have achieved.",
+    promptIndex: 3
+  },
+  art356: {
+    title: "Article 356 — President's Rule as a 'Dead Letter'",
+    article: "Article 356: Emergency Governance & Federal Safeguards",
+    backstory: "The traumatic memory of the British Governor-General's arbitrary section 93 powers under the 1935 Act, where colonial governors routinely dismissed elected provincial ministries at will.",
+    dilemma: "Drafting delegates feared regional secessionism during partition upheaval, demanding emergency executive intervention, while others warned it would turn India into a centralized autocracy.",
+    craft: "Ambedkar designed Article 356 as an extreme safety valve, giving the Constituent Assembly his solemn pledge: 'I hope the first thing that will be done is to issue a warning... These articles, I hope, will remain a dead letter. They will never be brought into operation except as a last resort.' His exact parliamentary words became the decisive foundation of the landmark S.R. Bommai (1994) judgment restricting central overreach.",
+    quote: "I hope that these articles will remain a dead letter. They will never be brought into operation.",
+    promptIndex: 1
+  },
+  rbi_1934: {
+    title: "RBI Act 1934 & 'The Problem of the Rupee'",
+    article: "Reserve Bank of India Act (1934) & Currency Sovereignty",
+    backstory: "Colonial monetary manipulation pegged the rupee to the British pound sterling at high artificial ratios, triggering devastating agricultural deflation, ruinous debt for Indian farmers, and gold drain to London.",
+    dilemma: "British authorities favored the private Imperial Bank of India, which prioritized British mercantile finance and London exchange stability over Indian domestic industrial welfare.",
+    craft: "In his 1923 London School of Economics D.Sc. thesis 'The Problem of the Rupee', Ambedkar established that domestic price stability, not foreign exchange-rate defense, must anchor national currency, advocating an autonomous central bank. When the Hilton Young Commission convened in 1925, each commissioner cited Ambedkar's work; his precise guidelines directly structured the Reserve Bank of India Act, 1934.",
+    quote: "The problem of the rupee is not merely monetary; it is the problem of India's economic survival.",
+    promptIndex: 4
+  }
+};
+
+let currentSelectedLawKey = "art17";
+
+function selectLawCraft(lawKey) {
+  const data = AMBEDKAR_LAW_SPECS[lawKey];
+  if (!data) return;
+
+  currentSelectedLawKey = lawKey;
+
+  // Update button active state
+  const buttons = document.querySelectorAll("#specsLawSelectorBar .specs-law-pill");
+  buttons.forEach(btn => {
+    const isThis = btn.getAttribute("onclick")?.includes(lawKey);
+    btn.classList.toggle("active", Boolean(isThis));
+  });
+
+  // Render 3-Phase Process Breakdown
+  const container = document.getElementById("specsCraftContent");
+  if (container) {
+    container.innerHTML = `
+      <!-- Phase 1: Lived Injustice -->
+      <div class="specs-phase-card">
+        <div class="specs-phase-badge phase-backstory">
+          <i class="fa-solid fa-triangle-exclamation"></i> 1. Lived Injustice (The Backstory)
+        </div>
+        <p class="text-slate-300 leading-relaxed text-[11px]">${data.backstory}</p>
+      </div>
+
+      <!-- Phase 2: Drafting Dilemma -->
+      <div class="specs-phase-card">
+        <div class="specs-phase-badge phase-dilemma">
+          <i class="fa-solid fa-scale-unbalanced"></i> 2. Drafting Conflict (Orthodoxy Clash)
+        </div>
+        <p class="text-slate-300 leading-relaxed text-[11px]">${data.dilemma}</p>
+      </div>
+
+      <!-- Phase 3: Legislative Craft -->
+      <div class="specs-phase-card border-amber-500/30">
+        <div class="specs-phase-badge phase-craft">
+          <i class="fa-solid fa-scroll"></i> 3. The Legislative Craft (Ambedkar's Solution)
+        </div>
+        <p class="text-slate-200 leading-relaxed text-[11px] font-medium">${data.craft}</p>
+        
+        <div class="mt-2.5 pt-2 border-t border-slate-800 flex items-center justify-between gap-2">
+          <span class="text-[10px] text-amber-400/90 italic truncate">"${data.quote}"</span>
+          <button onclick="switchTab('studentNotebookTab')" class="text-[10px] font-mono text-cyan-400 hover:text-cyan-300 underline flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> NotebookLM Studio
+          </button>
+        </div>
+      </div>
+    `;
+  }
+
+  // Trigger 3D Specs interactive lens pulse
+  pulseSpecsLens();
+}
+
+/* ==========================================================================
+   LIVING 3D AMBEDKAR SPECTACLES ENGINE (THREE.JS × CURSOR GYROSCOPE)
+   ========================================================================== */
+
+let spatialScene, spatialCamera, spatialRenderer, spatialSpecsGroup;
+let spatialLeftLens, spatialRightLens;
 let spatialTargetRotX = 0, spatialTargetRotY = 0;
 let spatialCurrentRotX = 0, spatialCurrentRotY = 0;
 let spatialIsDragging = false, spatialPrevMouseX = 0, spatialPrevMouseY = 0;
+let lensPulseTime = 0;
 
-function initSpatialMonolith() {
+function pulseSpecsLens() {
+  lensPulseTime = 1.0;
+  if (spatialSpecsGroup) {
+    spatialSpecsGroup.position.z = 0.25; // Gentle forward nudge
+  }
+}
+
+function initAmbedkarSpecs() {
   const container = document.getElementById("spatialCanvasContainer");
   if (!container || typeof THREE === "undefined") return;
 
@@ -2792,12 +2909,12 @@ function initSpatialMonolith() {
   if (existingCanvas) existingCanvas.remove();
 
   const width = container.clientWidth || 400;
-  const height = container.clientHeight || 380;
+  const height = container.clientHeight || 250;
 
   // 1. Scene & Camera Setup
   spatialScene = new THREE.Scene();
-  spatialCamera = new THREE.PerspectiveCamera(42, width / height, 0.1, 100);
-  spatialCamera.position.set(0, 0, 6.2);
+  spatialCamera = new THREE.PerspectiveCamera(38, width / height, 0.1, 100);
+  spatialCamera.position.set(0, 0, 4.6);
 
   // 2. WebGL Renderer with High-Performance Settings
   spatialRenderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
@@ -2807,104 +2924,184 @@ function initSpatialMonolith() {
   spatialRenderer.shadowMap.type = THREE.PCFSoftShadowMap;
   container.appendChild(spatialRenderer.domElement);
 
-  // 3. Studio Lighting Rig (Key Warm Bronze, Rim Cyan, Ambient Fill)
-  const ambientLight = new THREE.AmbientLight(0xfff3d6, 0.85);
+  // 3. Studio Lighting Rig (Warm Bronze Key, Cyan Rim, Focused Spot)
+  const ambientLight = new THREE.AmbientLight(0xffeedd, 0.95);
   spatialScene.add(ambientLight);
 
-  const keyLight = new THREE.DirectionalLight(0xffd700, 3.2);
-  keyLight.position.set(4, 5, 5);
+  const keyLight = new THREE.DirectionalLight(0xffd700, 3.4);
+  keyLight.position.set(3, 4, 4);
   spatialScene.add(keyLight);
 
   const rimLight = new THREE.DirectionalLight(0x38bdf8, 2.8);
-  rimLight.position.set(-5, -4, -3);
+  rimLight.position.set(-4, -3, -2);
   spatialScene.add(rimLight);
 
-  const topSpot = new THREE.PointLight(0xffffff, 1.6, 12);
-  topSpot.position.set(0, 4, 3);
-  spatialScene.add(topSpot);
+  const frontSpot = new THREE.PointLight(0xfff5e6, 2.2, 10);
+  frontSpot.position.set(0, 1.5, 3.5);
+  spatialScene.add(frontSpot);
 
-  // 4. Procedural 3D Constitution Monolith
-  const monolithGroup = new THREE.Group();
+  // 4. Procedural 3D Ambedkar Spectacles Model
+  const specsGroup = new THREE.Group();
 
-  // Core Monolith Tablet
-  const tabletGeo = new THREE.BoxGeometry(2.1, 3.1, 0.38, 4, 4, 4);
-  const tabletMat = new THREE.MeshStandardMaterial({
-    color: 0x0c0f16,
-    metalness: 0.85,
-    roughness: 0.18,
-    envMapIntensity: 1.5
-  });
-  const tabletMesh = new THREE.Mesh(tabletGeo, tabletMat);
-  monolithGroup.add(tabletMesh);
-
-  // Imperial Gold Laser Beveled Frame
-  const frameGeo = new THREE.BoxGeometry(2.16, 3.16, 0.4, 2, 2, 2);
-  const frameMat = new THREE.MeshStandardMaterial({
-    color: 0xc89b3c,
-    metalness: 0.95,
-    roughness: 0.12,
-    wireframe: true,
-    emissive: 0x4a3410
-  });
-  const frameMesh = new THREE.Mesh(frameGeo, frameMat);
-  monolithGroup.add(frameMesh);
-
-  // Inner Ashok Chakra Geometric Wheel
-  const chakraGroup = new THREE.Group();
-  const ringGeo = new THREE.TorusGeometry(0.55, 0.03, 16, 64);
-  const ringMat = new THREE.MeshStandardMaterial({
+  // Materials
+  const goldWireMat = new THREE.MeshStandardMaterial({
     color: 0xd4af37,
-    metalness: 0.9,
-    roughness: 0.15,
-    emissive: 0x5a3e0c
+    metalness: 0.92,
+    roughness: 0.16,
+    emissive: 0x3a2908
   });
-  const ringMesh = new THREE.Mesh(ringGeo, ringMat);
-  chakraGroup.add(ringMesh);
 
-  // 24 Radial Spokes
-  const spokeGeo = new THREE.CylinderGeometry(0.012, 0.012, 1.08, 8);
-  for (let i = 0; i < 12; i++) {
-    const spoke = new THREE.Mesh(spokeGeo, ringMat);
-    spoke.rotation.z = (i * Math.PI) / 12;
-    chakraGroup.add(spoke);
-  }
-  chakraGroup.position.set(0, 0.3, 0.22);
-  monolithGroup.add(chakraGroup);
-  spatialWheel = chakraGroup;
-
-  // Front Preamble Emblem Accent
-  const emblemGeo = new THREE.OctahedronGeometry(0.18, 0);
-  const emblemMat = new THREE.MeshStandardMaterial({
-    color: 0x38bdf8,
-    metalness: 0.95,
-    roughness: 0.1,
-    emissive: 0x0284c7
+  const hornRimMat = new THREE.MeshStandardMaterial({
+    color: 0x1a1410,
+    metalness: 0.75,
+    roughness: 0.35,
+    emissive: 0x080604
   });
-  const emblemMesh = new THREE.Mesh(emblemGeo, emblemMat);
-  emblemMesh.position.set(0, -0.65, 0.24);
-  monolithGroup.add(emblemMesh);
 
-  // Base Pedestal
-  const pedestalGeo = new THREE.CylinderGeometry(1.4, 1.6, 0.22, 32);
-  const pedestalMat = new THREE.MeshStandardMaterial({
-    color: 0x07090e,
-    metalness: 0.9,
-    roughness: 0.3
+  const lensGlassMat = new THREE.MeshStandardMaterial({
+    color: 0xbae6fd,
+    transparent: true,
+    opacity: 0.42,
+    roughness: 0.04,
+    metalness: 0.15,
+    emissive: 0x0369a1,
+    emissiveIntensity: 0.2
   });
-  const pedestalMesh = new THREE.Mesh(pedestalGeo, pedestalMat);
-  pedestalMesh.position.set(0, -1.75, 0);
-  monolithGroup.add(pedestalMesh);
 
-  spatialScene.add(monolithGroup);
-  spatialMonolith = monolithGroup;
+  // --- Left Eye Assembly (x = -0.88) ---
+  const leftEyeGroup = new THREE.Group();
+  leftEyeGroup.position.set(-0.88, 0, 0);
+
+  // Outer Circular Rim
+  const outerRimGeo = new THREE.TorusGeometry(0.70, 0.045, 20, 64);
+  const leftOuterRim = new THREE.Mesh(outerRimGeo, hornRimMat);
+  leftEyeGroup.add(leftOuterRim);
+
+  // Inner Gold Wire Inlay
+  const innerWireGeo = new THREE.TorusGeometry(0.66, 0.018, 16, 64);
+  const leftInnerWire = new THREE.Mesh(innerWireGeo, goldWireMat);
+  leftEyeGroup.add(leftInnerWire);
+
+  // Optical Convex Glass Lens
+  const lensGeo = new THREE.CylinderGeometry(0.65, 0.65, 0.015, 48);
+  const leftLens = new THREE.Mesh(lensGeo, lensGlassMat.clone());
+  leftLens.rotation.x = Math.PI / 2;
+  leftEyeGroup.add(leftLens);
+  spatialLeftLens = leftLens;
+
+  specsGroup.add(leftEyeGroup);
+
+  // --- Right Eye Assembly (x = +0.88) ---
+  const rightEyeGroup = new THREE.Group();
+  rightEyeGroup.position.set(0.88, 0, 0);
+
+  const rightOuterRim = new THREE.Mesh(outerRimGeo, hornRimMat);
+  rightEyeGroup.add(rightOuterRim);
+
+  const rightInnerWire = new THREE.Mesh(innerWireGeo, goldWireMat);
+  rightEyeGroup.add(rightInnerWire);
+
+  const rightLens = new THREE.Mesh(lensGeo, lensGlassMat.clone());
+  rightLens.rotation.x = Math.PI / 2;
+  rightEyeGroup.add(rightLens);
+  spatialRightLens = rightLens;
+
+  specsGroup.add(rightEyeGroup);
+
+  // --- Saddle Nose Bridge (Center Connection) ---
+  const bridgeArchGeo = new THREE.TorusGeometry(0.24, 0.024, 16, 32, Math.PI * 0.75);
+  const bridgeArch = new THREE.Mesh(bridgeArchGeo, goldWireMat);
+  bridgeArch.rotation.z = Math.PI * 0.125;
+  bridgeArch.position.set(0, 0.10, 0.01);
+  specsGroup.add(bridgeArch);
+
+  const bridgeBraceGeo = new THREE.CylinderGeometry(0.018, 0.018, 0.44, 12);
+  const bridgeBrace = new THREE.Mesh(bridgeBraceGeo, goldWireMat);
+  bridgeBrace.rotation.z = Math.PI / 2;
+  bridgeBrace.position.set(0, 0.02, 0);
+  specsGroup.add(bridgeBrace);
+
+  // --- Nose Pads & Golden Struts ---
+  const padStrutGeo = new THREE.CylinderGeometry(0.012, 0.012, 0.22, 8);
+  const padGeo = new THREE.SphereGeometry(0.045, 12, 12);
+  padGeo.scale(0.8, 1.4, 0.5);
+
+  const leftPadGroup = new THREE.Group();
+  leftPadGroup.position.set(-0.26, -0.15, -0.06);
+  const leftStrut = new THREE.Mesh(padStrutGeo, goldWireMat);
+  leftStrut.rotation.z = -0.4;
+  leftPadGroup.add(leftStrut);
+  const leftPad = new THREE.Mesh(padGeo, goldWireMat);
+  leftPad.position.set(0.04, -0.08, 0);
+  leftPadGroup.add(leftPad);
+  specsGroup.add(leftPadGroup);
+
+  const rightPadGroup = new THREE.Group();
+  rightPadGroup.position.set(0.26, -0.15, -0.06);
+  const rightStrut = new THREE.Mesh(padStrutGeo, goldWireMat);
+  rightStrut.rotation.z = 0.4;
+  rightPadGroup.add(rightStrut);
+  const rightPad = new THREE.Mesh(padGeo, goldWireMat);
+  rightPad.position.set(-0.04, -0.08, 0);
+  rightPadGroup.add(rightPad);
+  specsGroup.add(rightPadGroup);
+
+  // --- Outer Hinges & Temple Arms (Ear Pieces Extending Backwards) ---
+  const hingeGeo = new THREE.CylinderGeometry(0.032, 0.032, 0.08, 12);
+  
+  // Left Hinge
+  const leftHinge = new THREE.Mesh(hingeGeo, goldWireMat);
+  leftHinge.position.set(-1.62, 0.02, 0);
+  specsGroup.add(leftHinge);
+
+  // Left Temple Arm
+  const armGeo = new THREE.CylinderGeometry(0.018, 0.015, 2.3, 12);
+  const leftArm = new THREE.Mesh(armGeo, goldWireMat);
+  leftArm.rotation.x = Math.PI / 2;
+  leftArm.rotation.y = -0.05;
+  leftArm.position.set(-1.68, 0.02, -1.15);
+  specsGroup.add(leftArm);
+
+  // Left Ear Curve
+  const earCurveGeo = new THREE.TorusGeometry(0.22, 0.022, 12, 24, Math.PI * 0.65);
+  const leftEarCurve = new THREE.Mesh(earCurveGeo, hornRimMat);
+  leftEarCurve.rotation.y = Math.PI / 2;
+  leftEarCurve.rotation.z = -Math.PI * 0.6;
+  leftEarCurve.position.set(-1.74, -0.14, -2.3);
+  specsGroup.add(leftEarCurve);
+
+  // Right Hinge
+  const rightHinge = new THREE.Mesh(hingeGeo, goldWireMat);
+  rightHinge.position.set(1.62, 0.02, 0);
+  specsGroup.add(rightHinge);
+
+  // Right Temple Arm
+  const rightArm = new THREE.Mesh(armGeo, goldWireMat);
+  rightArm.rotation.x = Math.PI / 2;
+  rightArm.rotation.y = 0.05;
+  rightArm.position.set(1.68, 0.02, -1.15);
+  specsGroup.add(rightArm);
+
+  // Right Ear Curve
+  const rightEarCurve = new THREE.Mesh(earCurveGeo, hornRimMat);
+  rightEarCurve.rotation.y = Math.PI / 2;
+  rightEarCurve.rotation.z = -Math.PI * 0.6;
+  rightEarCurve.position.set(1.74, -0.14, -2.3);
+  specsGroup.add(rightEarCurve);
+
+  // Position and Scale Specs Group
+  specsGroup.position.set(0, 0, 0);
+  specsGroup.scale.set(0.92, 0.92, 0.92);
+  spatialScene.add(specsGroup);
+  spatialSpecsGroup = specsGroup;
 
   // 5. Cursor & Touch Gyroscopic Tracking
   container.addEventListener("mousemove", (e) => {
     const rect = container.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    spatialTargetRotY = x * 1.25;
-    spatialTargetRotX = -y * 0.9;
+    spatialTargetRotY = x * 1.35;
+    spatialTargetRotX = -y * 0.85;
   });
 
   container.addEventListener("mouseleave", () => {
@@ -2925,8 +3122,8 @@ function initSpatialMonolith() {
     if (spatialIsDragging && e.touches.length > 0) {
       const deltaX = e.touches[0].clientX - spatialPrevMouseX;
       const deltaY = e.touches[0].clientY - spatialPrevMouseY;
-      spatialTargetRotY += deltaX * 0.01;
-      spatialTargetRotX += deltaY * 0.01;
+      spatialTargetRotY += deltaX * 0.012;
+      spatialTargetRotX += deltaY * 0.012;
       spatialPrevMouseX = e.touches[0].clientX;
       spatialPrevMouseY = e.touches[0].clientY;
     }
@@ -2947,38 +3144,46 @@ function initSpatialMonolith() {
   };
   window.addEventListener("resize", handleResize);
 
-  // 7. Render Loop with Organic Physics Spring Damping
+  // 7. Render Loop with Organic Physics Spring Damping & Lens Pulse
   let clock = new THREE.Clock();
   const animate = () => {
     requestAnimationFrame(animate);
 
     const delta = clock.getDelta();
+    const elapsedTime = clock.getElapsedTime();
 
-    // Constant slow celestial rotation
-    if (!spatialIsDragging) {
-      spatialMonolith.rotation.y += 0.005;
+    // Natural breathing levitation when idle
+    const floatOffset = Math.sin(elapsedTime * 1.6) * 0.06;
+    spatialSpecsGroup.position.y = floatOffset;
+
+    // Handle Lens Pulse from law selection
+    if (lensPulseTime > 0) {
+      lensPulseTime = Math.max(0, lensPulseTime - delta * 2.2);
+      const intensity = Math.sin(lensPulseTime * Math.PI);
+      if (spatialLeftLens && spatialRightLens) {
+        spatialLeftLens.material.emissiveIntensity = 0.2 + intensity * 1.4;
+        spatialRightLens.material.emissiveIntensity = 0.2 + intensity * 1.4;
+      }
+      spatialSpecsGroup.position.z += (0 - spatialSpecsGroup.position.z) * 0.1;
     }
 
     // Spring damping interpolation
-    spatialCurrentRotX += (spatialTargetRotX - spatialCurrentRotX) * 0.065;
-    spatialCurrentRotY += (spatialTargetRotY - spatialCurrentRotY) * 0.065;
+    spatialCurrentRotX += (spatialTargetRotX - spatialCurrentRotX) * 0.075;
+    spatialCurrentRotY += (spatialTargetRotY - spatialCurrentRotY) * 0.075;
 
-    spatialMonolith.rotation.x = spatialCurrentRotX;
-    spatialMonolith.rotation.y += (spatialCurrentRotY * 0.05);
-
-    // Inner Ashoka Wheel slow counter-spin
-    if (spatialWheel) {
-      spatialWheel.rotation.z -= 0.01;
-    }
+    spatialSpecsGroup.rotation.x = spatialCurrentRotX + Math.sin(elapsedTime * 1.2) * 0.02;
+    spatialSpecsGroup.rotation.y = spatialCurrentRotY;
 
     spatialRenderer.render(spatialScene, spatialCamera);
   };
   animate();
 }
 
-// Auto-initialize 3D Monolith on DOM readiness
+// Auto-initialize 3D Ambedkar Specs & default Law Craft view on DOM readiness
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
-    initSpatialMonolith();
+    initAmbedkarSpecs();
+    selectLawCraft("art17");
   }, 350);
 });
+

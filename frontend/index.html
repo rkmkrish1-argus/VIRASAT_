@@ -153,20 +153,51 @@
           </div>
         </div>
 
-        <!-- Right Bento Column: 3D Spatial Monolith Viewport (Span 5) -->
-        <div class="lg:col-span-5 bento-hud-card p-2 flex flex-col justify-between relative overflow-hidden">
+        <!-- Right Bento Column: 3D Ambedkar Specs & Law Crafting Studio (Span 5) -->
+        <div class="lg:col-span-5 bento-hud-card p-3 flex flex-col justify-between relative overflow-hidden gap-3">
+          
+          <!-- 3D Specs Canvas Viewport -->
           <div class="spatial-canvas-container" id="spatialCanvasContainer">
             <div class="spatial-badge">
-              <i class="fa-solid fa-cube text-amber-400"></i> SPATIAL_ARTIFACT // 3D_CONSTITUTION
+              <i class="fa-solid fa-glasses text-amber-400"></i> SPATIAL_LENS // AMBEDKAR_SPECS
             </div>
             <div class="spatial-hint">
-              <i class="fa-solid fa-hand-pointer text-amber-400"></i> DRAG OR HOVER TO TILT 3D MONOLITH
+              <i class="fa-solid fa-arrows-up-down-left-right text-amber-400"></i> DRAG/HOVER SPECS · SELECT LAW BELOW
             </div>
             <!-- Canvas is mounted here dynamically via Three.js -->
           </div>
 
-          <!-- Portrait & Archival Citation Card below Canvas -->
-          <div class="p-3.5 mt-2 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center gap-3">
+          <!-- Through Ambedkar's Specs: The Architectural Mind -->
+          <div class="rounded-xl bg-slate-950/90 border border-slate-800 p-3 flex flex-col gap-2.5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                <span class="text-[10px] font-mono tracking-widest text-amber-400 uppercase font-bold">THROUGH AMBEDKAR'S SPECS</span>
+              </div>
+              <span class="text-[9px] font-mono text-cyan-400">WHY THIS LAW WAS CRAFTED</span>
+            </div>
+            
+            <p class="text-[11px] text-slate-300">
+              Understand the lived injustice, drafting conflict, and exact constitutional craft:
+            </p>
+
+            <!-- Law Selector Tabs -->
+            <div class="flex flex-wrap gap-1.5" id="specsLawSelectorBar">
+              <button class="specs-law-pill active" onclick="selectLawCraft('art17')">Art. 17 (Untouchability)</button>
+              <button class="specs-law-pill" onclick="selectLawCraft('art32')">Art. 32 (Writs & Remedies)</button>
+              <button class="specs-law-pill" onclick="selectLawCraft('hindu_code')">Hindu Code / Art. 39(d)</button>
+              <button class="specs-law-pill" onclick="selectLawCraft('art356')">Art. 356 ('Dead Letter')</button>
+              <button class="specs-law-pill" onclick="selectLawCraft('rbi_1934')">RBI Act (Rupee Problem)</button>
+            </div>
+
+            <!-- Dynamic Law Crafting Process Display Container -->
+            <div id="specsCraftContent" class="space-y-2 mt-1 min-h-[160px] text-xs">
+              <!-- Rendered dynamically by selectLawCraft() in app.js -->
+            </div>
+          </div>
+
+          <!-- Portrait & Archival Citation Card below Specs -->
+          <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center gap-3">
             <img src="/static/assets/ambedkar-portrait.png" alt="Dr. B. R. Ambedkar" class="w-12 h-12 rounded-lg object-cover object-top border border-amber-600/30">
             <div class="flex-1 min-w-0">
               <h4 class="text-xs font-bold text-white truncate">Dr. Bhimrao Ramji Ambedkar</h4>

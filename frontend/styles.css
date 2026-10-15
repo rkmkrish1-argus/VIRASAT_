@@ -319,12 +319,12 @@ footer { background: transparent !important; border-color: var(--border) !import
 .spatial-canvas-container {
   position: relative;
   width: 100%;
-  height: 380px;
-  border-radius: 1.5rem;
+  height: 250px;
+  border-radius: 1.25rem;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 50%, rgba(200, 155, 60, 0.12) 0%, rgba(4, 5, 7, 0.8) 75%);
-  border: 1px solid rgba(200, 155, 60, 0.25);
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8), 0 20px 50px rgba(0, 0, 0, 0.6);
+  background: radial-gradient(circle at 50% 50%, rgba(200, 155, 60, 0.15) 0%, rgba(10, 13, 20, 0.95) 75%);
+  border: 1px solid rgba(200, 155, 60, 0.3);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.9), 0 20px 45px rgba(0, 0, 0, 0.7);
 }
 
 .spatial-canvas-container canvas {
@@ -434,3 +434,81 @@ footer { background: transparent !important; border-color: var(--border) !import
   letter-spacing: -0.04em !important;
   line-height: 1.05 !important;
 }
+
+/* ==========================================================================
+   AMBEDKAR SPECS LAW CRAFTING HUD
+   ========================================================================== */
+
+.specs-law-pill {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.68rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.specs-law-pill:hover {
+  background: rgba(200, 155, 60, 0.15);
+  border-color: rgba(200, 155, 60, 0.45);
+  color: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.specs-law-pill.active {
+  background: linear-gradient(135deg, rgba(200, 155, 60, 0.28), rgba(200, 155, 60, 0.1));
+  border-color: #c89b3c;
+  color: #ffd700;
+  box-shadow: 0 0 12px rgba(200, 155, 60, 0.28);
+}
+
+.specs-phase-card {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(10, 14, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.specs-phase-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.specs-phase-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.45rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.specs-phase-badge.phase-backstory {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+}
+
+.specs-phase-badge.phase-dilemma {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+}
+
+.specs-phase-badge.phase-craft {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+}
+
