@@ -2585,3 +2585,213 @@ switchTab = function(tabId) {
   if (tabId === "ideasTab") loadConstitutionalIdeas();
   if (tabId === "studentNotebookTab") loadStudentNotebookPrompts();
 };
+
+
+/* ==========================================================================
+   LIVING 3D SPATIAL MONOLITH ENGINE (THREE.JS × CURSOR GYROSCOPE)
+   ========================================================================== */
+
+let spatialScene, spatialCamera, spatialRenderer, spatialMonolith, spatialWheel;
+let spatialTargetRotX = 0, spatialTargetRotY = 0;
+let spatialCurrentRotX = 0, spatialCurrentRotY = 0;
+let spatialIsDragging = false, spatialPrevMouseX = 0, spatialPrevMouseY = 0;
+
+function initSpatialMonolith() {
+  const container = document.getElementById("spatialCanvasContainer");
+  if (!container || typeof THREE === "undefined") return;
+
+  // Clear previous canvas if exists
+  const existingCanvas = container.querySelector("canvas");
+  if (existingCanvas) existingCanvas.remove();
+
+  const width = container.clientWidth || 400;
+  const height = container.clientHeight || 380;
+
+  // 1. Scene & Camera Setup
+  spatialScene = new THREE.Scene();
+  spatialCamera = new THREE.PerspectiveCamera(42, width / height, 0.1, 100);
+  spatialCamera.position.set(0, 0, 6.2);
+
+  // 2. WebGL Renderer with High-Performance Settings
+  spatialRenderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+  spatialRenderer.setSize(width, height);
+  spatialRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  spatialRenderer.shadowMap.enabled = true;
+  spatialRenderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  container.appendChild(spatialRenderer.domElement);
+
+  // 3. Studio Lighting Rig (Key Warm Bronze, Rim Cyan, Ambient Fill)
+  const ambientLight = new THREE.AmbientLight(0xfff3d6, 0.85);
+  spatialScene.add(ambientLight);
+
+  const keyLight = new THREE.DirectionalLight(0xffd700, 3.2);
+  keyLight.position.set(4, 5, 5);
+  spatialScene.add(keyLight);
+
+  const rimLight = new THREE.DirectionalLight(0x38bdf8, 2.8);
+  rimLight.position.set(-5, -4, -3);
+  spatialScene.add(rimLight);
+
+  const topSpot = new THREE.PointLight(0xffffff, 1.6, 12);
+  topSpot.position.set(0, 4, 3);
+  spatialScene.add(topSpot);
+
+  // 4. Procedural 3D Constitution Monolith
+  const monolithGroup = new THREE.Group();
+
+  // Core Monolith Tablet
+  const tabletGeo = new THREE.BoxGeometry(2.1, 3.1, 0.38, 4, 4, 4);
+  const tabletMat = new THREE.MeshStandardMaterial({
+    color: 0x0c0f16,
+    metalness: 0.85,
+    roughness: 0.18,
+    envMapIntensity: 1.5
+  });
+  const tabletMesh = new THREE.Mesh(tabletGeo, tabletMat);
+  monolithGroup.add(tabletMesh);
+
+  // Imperial Gold Laser Beveled Frame
+  const frameGeo = new THREE.BoxGeometry(2.16, 3.16, 0.4, 2, 2, 2);
+  const frameMat = new THREE.MeshStandardMaterial({
+    color: 0xc89b3c,
+    metalness: 0.95,
+    roughness: 0.12,
+    wireframe: true,
+    emissive: 0x4a3410
+  });
+  const frameMesh = new THREE.Mesh(frameGeo, frameMat);
+  monolithGroup.add(frameMesh);
+
+  // Inner Ashok Chakra Geometric Wheel
+  const chakraGroup = new THREE.Group();
+  const ringGeo = new THREE.TorusGeometry(0.55, 0.03, 16, 64);
+  const ringMat = new THREE.MeshStandardMaterial({
+    color: 0xd4af37,
+    metalness: 0.9,
+    roughness: 0.15,
+    emissive: 0x5a3e0c
+  });
+  const ringMesh = new THREE.Mesh(ringGeo, ringMat);
+  chakraGroup.add(ringMesh);
+
+  // 24 Radial Spokes
+  const spokeGeo = new THREE.CylinderGeometry(0.012, 0.012, 1.08, 8);
+  for (let i = 0; i < 12; i++) {
+    const spoke = new THREE.Mesh(spokeGeo, ringMat);
+    spoke.rotation.z = (i * Math.PI) / 12;
+    chakraGroup.add(spoke);
+  }
+  chakraGroup.position.set(0, 0.3, 0.22);
+  monolithGroup.add(chakraGroup);
+  spatialWheel = chakraGroup;
+
+  // Front Preamble Emblem Accent
+  const emblemGeo = new THREE.OctahedronGeometry(0.18, 0);
+  const emblemMat = new THREE.MeshStandardMaterial({
+    color: 0x38bdf8,
+    metalness: 0.95,
+    roughness: 0.1,
+    emissive: 0x0284c7
+  });
+  const emblemMesh = new THREE.Mesh(emblemGeo, emblemMat);
+  emblemMesh.position.set(0, -0.65, 0.24);
+  monolithGroup.add(emblemMesh);
+
+  // Base Pedestal
+  const pedestalGeo = new THREE.CylinderGeometry(1.4, 1.6, 0.22, 32);
+  const pedestalMat = new THREE.MeshStandardMaterial({
+    color: 0x07090e,
+    metalness: 0.9,
+    roughness: 0.3
+  });
+  const pedestalMesh = new THREE.Mesh(pedestalGeo, pedestalMat);
+  pedestalMesh.position.set(0, -1.75, 0);
+  monolithGroup.add(pedestalMesh);
+
+  spatialScene.add(monolithGroup);
+  spatialMonolith = monolithGroup;
+
+  // 5. Cursor & Touch Gyroscopic Tracking
+  container.addEventListener("mousemove", (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    spatialTargetRotY = x * 1.25;
+    spatialTargetRotX = -y * 0.9;
+  });
+
+  container.addEventListener("mouseleave", () => {
+    spatialTargetRotX = 0;
+    spatialTargetRotY = 0;
+  });
+
+  // Touch support for Memorial Touch Kiosks
+  container.addEventListener("touchstart", (e) => {
+    if (e.touches.length > 0) {
+      spatialIsDragging = true;
+      spatialPrevMouseX = e.touches[0].clientX;
+      spatialPrevMouseY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  container.addEventListener("touchmove", (e) => {
+    if (spatialIsDragging && e.touches.length > 0) {
+      const deltaX = e.touches[0].clientX - spatialPrevMouseX;
+      const deltaY = e.touches[0].clientY - spatialPrevMouseY;
+      spatialTargetRotY += deltaX * 0.01;
+      spatialTargetRotX += deltaY * 0.01;
+      spatialPrevMouseX = e.touches[0].clientX;
+      spatialPrevMouseY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  container.addEventListener("touchend", () => {
+    spatialIsDragging = false;
+  });
+
+  // 6. Responsive Viewport Resize Handler
+  const handleResize = () => {
+    if (!container || !spatialRenderer || !spatialCamera) return;
+    const w = container.clientWidth;
+    const h = container.clientHeight;
+    spatialCamera.aspect = w / h;
+    spatialCamera.updateProjectionMatrix();
+    spatialRenderer.setSize(w, h);
+  };
+  window.addEventListener("resize", handleResize);
+
+  // 7. Render Loop with Organic Physics Spring Damping
+  let clock = new THREE.Clock();
+  const animate = () => {
+    requestAnimationFrame(animate);
+
+    const delta = clock.getDelta();
+
+    // Constant slow celestial rotation
+    if (!spatialIsDragging) {
+      spatialMonolith.rotation.y += 0.005;
+    }
+
+    // Spring damping interpolation
+    spatialCurrentRotX += (spatialTargetRotX - spatialCurrentRotX) * 0.065;
+    spatialCurrentRotY += (spatialTargetRotY - spatialCurrentRotY) * 0.065;
+
+    spatialMonolith.rotation.x = spatialCurrentRotX;
+    spatialMonolith.rotation.y += (spatialCurrentRotY * 0.05);
+
+    // Inner Ashoka Wheel slow counter-spin
+    if (spatialWheel) {
+      spatialWheel.rotation.z -= 0.01;
+    }
+
+    spatialRenderer.render(spatialScene, spatialCamera);
+  };
+  animate();
+}
+
+// Auto-initialize 3D Monolith on DOM readiness
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    initSpatialMonolith();
+  }, 350);
+});

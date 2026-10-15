@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Tailwind CSS CDN for instant styling without build step -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Three.js for Interactive 3D Spatial Monolith (Living Interface) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col" data-theme="light">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col" data-theme="dark">
 
   <!-- TOP EMBLEM & HEADER BAR -->
   <header class="gov-header border-b border-amber-900/40 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
@@ -79,100 +81,161 @@
   <!-- MAIN CONTAINER -->
   <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 space-y-6">
 
-    <!-- TAB 1: HOMEPAGE / SEARCH & DISCOVERY (ENHANCED ATTRACTIVE FRONT PAGE) -->
+    <!-- TAB 1: HOMEPAGE / SEARCH & DISCOVERY (SPATIAL BENTO HUD) -->
     <section id="searchTab" class="tab-pane active space-y-6">
-      <!-- High-Impact Hero Banner -->
-      <div class="hero-banner rounded-3xl p-6 sm:p-10 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950/80 border border-amber-600/30 relative overflow-hidden shadow-2xl">
-        <div class="hero-content relative z-10 space-y-6">
-          <div class="hero-intro">
-            <span class="hero-eyebrow bg-amber-950/80 text-amber-300 border border-amber-600/40 px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center gap-2">
-              <span class="status-dot bg-amber-400" aria-hidden="true"></span> Problem Statement ID 26096 · Institutional Knowledge Platform
-            </span>
-            <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white tracking-tight leading-tight mt-2">
+      
+      <!-- Top Bento Tier: Monumental Command & 3D Spatial Artifact -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        
+        <!-- Left Bento Column: Command HUD & Search (Span 7) -->
+        <div class="lg:col-span-7 bento-hud-card p-6 sm:p-8 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="telemetry-chip">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span> PS_26096 // LIVING_HERITAGE
+              </span>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono tracking-widest uppercase bg-amber-950/80 text-amber-300 border border-amber-600/30">
+                MoSJE · DAIC ARCHIVE
+              </span>
+            </div>
+
+            <h2 class="hero-monument-title text-3xl sm:text-5xl font-serif font-bold text-white tracking-tight leading-tight">
               Preserving the Intellectual Legacy of <span class="text-amber-400">Dr. B. R. Ambedkar</span>.
             </h2>
-            <p class="text-sm sm:text-lg text-slate-300 max-w-3xl leading-relaxed mt-2">
-              Explore 21 Volumes of Babasaheb Ambedkar Writings and Speeches (BAWS), Constituent Assembly Debates (CAD), landmark economic treatises, and historical cursive manuscripts with AI-powered hybrid search.
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+              National institutional repository of 21 BAWS Volumes, Constituent Assembly verbatim debates, and historical cursive manuscripts indexed via SQLite FTS5 and multimodal neural HTR.
             </p>
-            <figure class="hero-portrait">
-              <img src="/static/assets/ambedkar-portrait.png" alt="Dr. B. R. Ambedkar holding a copy of the Constitution of India" fetchpriority="high">
-              <figcaption>Dr. B. R. Ambedkar <span>1891—1956</span></figcaption>
-            </figure>
           </div>
 
-          <!-- Feature Action Cards -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
-            <div onclick="switchTab('ideasTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
-              <div class="w-10 h-10 rounded-xl bg-amber-600/20 text-amber-400 flex items-center justify-center text-lg group-hover:bg-amber-500 group-hover:text-slate-950 transition">
-                <i class="fa-solid fa-lightbulb"></i>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold text-white group-hover:text-amber-300">Constitutional Ideas</h4>
-                <p class="text-[10px] text-slate-400">7 Core Pillars & Links</p>
-              </div>
-            </div>
-
-            <div onclick="switchTab('studentNotebookTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
-              <div class="w-10 h-10 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center text-lg group-hover:bg-indigo-500 group-hover:text-slate-950 transition">
-                <i class="fa-solid fa-book-bookmark"></i>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold text-white group-hover:text-indigo-300">NotebookLM Studio</h4>
-                <p class="text-[10px] text-slate-400">Evidence Prompts</p>
-              </div>
-            </div>
-
-            <div onclick="switchTab('timelineTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
-              <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-lg group-hover:bg-emerald-500 group-hover:text-slate-950 transition">
-                <i class="fa-solid fa-timeline"></i>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold text-white group-hover:text-emerald-300">Historical Timeline</h4>
-                <p class="text-[10px] text-slate-400">1916—1956 Milestones</p>
-              </div>
-            </div>
-
-            <div onclick="switchTab('ingestTab')" class="p-3.5 rounded-2xl bg-slate-900/90 border border-amber-600/30 hover:border-amber-500 cursor-pointer transition flex items-center gap-3 group">
-              <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-lg group-hover:bg-purple-500 group-hover:text-slate-950 transition">
-                <i class="fa-solid fa-microchip"></i>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold text-white group-hover:text-purple-300">Kraken & Qwen HTR</h4>
-                <p class="text-[10px] text-slate-400">Handwritten OCR Studio</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hero Search Box -->
-          <div class="relative pt-2">
-            <div class="flex flex-col sm:flex-row gap-2 bg-slate-900/95 p-2.5 rounded-2xl border border-slate-700 shadow-2xl focus-within:border-amber-500 transition">
+          <!-- Hero Search Box with Ambient Glow -->
+          <div class="space-y-3 pt-2">
+            <div class="relative flex flex-col sm:flex-row gap-2 bg-slate-950/90 p-2 rounded-2xl border border-slate-700/80 shadow-2xl focus-within:border-amber-500 focus-within:shadow-[0_0_30px_rgba(200,155,60,0.2)] transition">
               <div class="flex-1 flex items-center px-4 gap-3">
-                <i class="fa-solid fa-magnifying-glass text-amber-400 text-xl"></i>
-                <input type="text" id="searchInput" aria-label="Search the digital archive" placeholder="Search writings, speeches, CAD debates, or ideas…"
-                  class="w-full bg-transparent text-white placeholder-slate-400 focus:outline-none text-base sm:text-lg"
+                <i class="fa-solid fa-magnifying-glass text-amber-400 text-lg"></i>
+                <input type="text" id="searchInput" aria-label="Search the digital archive" placeholder="Search writings, speeches, CAD debates, or constitutional concepts…"
+                  class="w-full bg-transparent text-white placeholder-slate-500 focus:outline-none text-sm sm:text-base"
                   onkeyup="if(event.key === 'Enter') executeSearch()">
                 <button class="search-clear" type="button" aria-label="Clear search" title="Clear search" onclick="clearArchiveSearch()"><i class="fa-solid fa-xmark"></i></button>
               </div>
-              <kbd class="search-shortcut text-xs text-slate-400 font-mono" aria-hidden="true">⌘ K / Ctrl K</kbd>
-              <button onclick="executeSearch()" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-base flex items-center justify-center gap-2 shadow-xl transition">
-                <span>Search Archive</span>
+              <kbd class="search-shortcut text-xs text-slate-500 font-mono hidden sm:inline-flex items-center" aria-hidden="true">⌘ K / Ctrl K</kbd>
+              <button onclick="executeSearch()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm flex items-center justify-center gap-2 shadow-xl transition transform active:scale-95">
+                <span>Search</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
+
+            <!-- Quick Filter Chips -->
+            <div class="flex flex-wrap items-center gap-1.5 text-xs pt-1">
+              <span class="text-slate-400 font-mono text-[11px] mr-1">QUICK JUMP:</span>
+              <button onclick="quickFilter('Constituent Assembly')" class="filter-chip">CAD Debates</button>
+              <button onclick="quickFilter('Annihilation of Caste')" class="filter-chip">Annihilation of Caste</button>
+              <button onclick="quickFilter('Directive Principles')" class="filter-chip">Directive Principles</button>
+              <button onclick="quickFilter('Untouchability')" class="filter-chip">Untouchability</button>
+              <button onclick="quickFilter('Rupee')" class="filter-chip">Economics & RBI</button>
+            </div>
           </div>
 
-          <!-- Quick Filters -->
-          <div class="flex flex-wrap items-center gap-2 text-xs pt-1">
-            <span class="text-slate-400 font-medium">Quick Filters:</span>
-            <button onclick="quickFilter('Constituent Assembly')" class="filter-chip">CAD Debates</button>
-            <button onclick="quickFilter('Annihilation of Caste')" class="filter-chip">Annihilation of Caste</button>
-            <button onclick="quickFilter('Directive Principles')" class="filter-chip">Directive Principles</button>
-            <button onclick="quickFilter('Untouchability')" class="filter-chip">Untouchability & Mahad</button>
-            <button onclick="quickFilter('Rupee')" class="filter-chip">Economics & RBI</button>
-            <button onclick="quickFilter('Buddhism')" class="filter-chip">Buddhism & Dhamma</button>
+          <!-- Bottom Telemetry Counters -->
+          <div class="pt-3 border-t border-slate-800/80 grid grid-cols-3 gap-3 text-xs">
+            <div>
+              <p class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Digital Records</p>
+              <p class="text-base sm:text-lg font-bold font-serif text-white"><span id="heroRecordCount">530+</span> <span class="text-[10px] text-amber-400 font-mono font-normal">ITEMS</span></p>
+            </div>
+            <div>
+              <p class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Indexed Words</p>
+              <p class="text-base sm:text-lg font-bold font-serif text-white">86,624 <span class="text-[10px] text-cyan-400 font-mono font-normal">WORDS</span></p>
+            </div>
+            <div>
+              <p class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Languages</p>
+              <p class="text-base sm:text-lg font-bold font-serif text-white"><span id="heroLanguageCount">10</span> <span class="text-[10px] text-emerald-400 font-mono font-normal">INDIAN</span></p>
+            </div>
           </div>
         </div>
+
+        <!-- Right Bento Column: 3D Spatial Monolith Viewport (Span 5) -->
+        <div class="lg:col-span-5 bento-hud-card p-2 flex flex-col justify-between relative overflow-hidden">
+          <div class="spatial-canvas-container" id="spatialCanvasContainer">
+            <div class="spatial-badge">
+              <i class="fa-solid fa-cube text-amber-400"></i> SPATIAL_ARTIFACT // 3D_CONSTITUTION
+            </div>
+            <div class="spatial-hint">
+              <i class="fa-solid fa-hand-pointer text-amber-400"></i> DRAG OR HOVER TO TILT 3D MONOLITH
+            </div>
+            <!-- Canvas is mounted here dynamically via Three.js -->
+          </div>
+
+          <!-- Portrait & Archival Citation Card below Canvas -->
+          <div class="p-3.5 mt-2 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center gap-3">
+            <img src="/static/assets/ambedkar-portrait.png" alt="Dr. B. R. Ambedkar" class="w-12 h-12 rounded-lg object-cover object-top border border-amber-600/30">
+            <div class="flex-1 min-w-0">
+              <h4 class="text-xs font-bold text-white truncate">Dr. Bhimrao Ramji Ambedkar</h4>
+              <p class="text-[11px] text-slate-400 truncate">14 April 1891 – 6 December 1956 · Chief Architect of the Constitution</p>
+            </div>
+            <span class="px-2 py-1 rounded bg-amber-950 text-amber-300 text-[10px] font-mono font-bold border border-amber-600/30">DAIC</span>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Second Bento Tier: 4 Interactive Spatial Feature Modules -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        
+        <div onclick="switchTab('ideasTab')" class="bento-hud-card p-4 cursor-pointer group flex flex-col justify-between min-h-[120px]">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-amber-400">PILLAR 01</span>
+            <div class="w-8 h-8 rounded-lg bg-amber-600/10 text-amber-400 flex items-center justify-center text-sm group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white group-hover:text-amber-300 transition">Constitutional Ideas</h4>
+            <p class="text-[11px] text-slate-400 mt-0.5">7 Foundational Principles & Relational DB</p>
+          </div>
+        </div>
+
+        <div onclick="switchTab('studentNotebookTab')" class="bento-hud-card p-4 cursor-pointer group flex flex-col justify-between min-h-[120px]">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-indigo-400">STUDIO 02</span>
+            <div class="w-8 h-8 rounded-lg bg-indigo-600/10 text-indigo-400 flex items-center justify-center text-sm group-hover:bg-indigo-500 group-hover:text-slate-950 transition">
+              <i class="fa-solid fa-book-bookmark"></i>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white group-hover:text-indigo-300 transition">NotebookLM Studio</h4>
+            <p class="text-[11px] text-slate-400 mt-0.5">Backstory-to-Frontstory Deep-Dive Prompts</p>
+          </div>
+        </div>
+
+        <div onclick="switchTab('timelineTab')" class="bento-hud-card p-4 cursor-pointer group flex flex-col justify-between min-h-[120px]">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-emerald-400">CHRONOLOGY 03</span>
+            <div class="w-8 h-8 rounded-lg bg-emerald-600/10 text-emerald-400 flex items-center justify-center text-sm group-hover:bg-emerald-500 group-hover:text-slate-950 transition">
+              <i class="fa-solid fa-timeline"></i>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white group-hover:text-emerald-300 transition">Heritage Timeline</h4>
+            <p class="text-[11px] text-slate-400 mt-0.5">1916—1956 Landmark Milestones</p>
+          </div>
+        </div>
+
+        <div onclick="switchTab('ingestTab')" class="bento-hud-card p-4 cursor-pointer group flex flex-col justify-between min-h-[120px]">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-purple-400">ENGINE 04</span>
+            <div class="w-8 h-8 rounded-lg bg-purple-600/10 text-purple-400 flex items-center justify-center text-sm group-hover:bg-purple-500 group-hover:text-slate-950 transition">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white group-hover:text-purple-300 transition">Kraken & Qwen HTR</h4>
+            <p class="text-[11px] text-slate-400 mt-0.5">Handwritten Manuscripts (5MB Limit)</p>
+          </div>
+        </div>
+
+      </div>
+
+
 
       <!-- Filter Controls Bar -->
       <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 flex flex-wrap gap-4 items-center justify-between text-xs sm:text-sm filter-bar shadow-md">

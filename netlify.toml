@@ -11,6 +11,14 @@
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
 
+# Proxy API calls directly to the live Python cloud backend (Render / Railway)
+# NOTE: Replace 'ambedkar-api.onrender.com' with your actual Render service URL if different
+[[redirects]]
+  from = "/api/*"
+  to = "https://ambedkar-api.onrender.com/api/:splat"
+  status = 200
+  force = true
+
 # Single-Page fallback redirect for web navigation
 [[redirects]]
   from = "/*"
