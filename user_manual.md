@@ -1,213 +1,214 @@
 # User Manual & Operator Guide — Dr. B.R. Ambedkar Digital Heritage Archive
 **Problem Statement ID:** 26096 | **Target Institution:** Dr. Ambedkar International Centre (DAIC), New Delhi  
-**Project Location:** `C:\Users\NITESH\Downloads\MEORIAL_KIOSK\MODELS\PROTOTYPE\ambedkar01\ambedkar`
+**Live Production Portal:** [https://virasatstarkx.netlify.app/](https://virasatstarkx.netlify.app/)  
+**Live Cloud API Backend:** [https://ambedkar-api-81k6.onrender.com](https://ambedkar-api-81k6.onrender.com)  
+**GitHub Repository:** [https://github.com/rkmkrish1-argus/VIRASAT_](https://github.com/rkmkrish1-argus/VIRASAT_)  
+**Version:** 2.2.0 (Living Interface, 3D Spatial Lens & Cloud-Edge Sync)
 
 ---
 
 ## 1. Introduction
 
-Welcome to the **Dr. B.R. Ambedkar Digital Heritage Archive and Institutional Knowledge Platform**. This manual provides complete operational guidance for:
-1. **Memorial Visitors & Researchers:** Exploring writings, speeches, timelines, audio narration, and the AI research assistant.
-2. **Archivists & Curators:** Ingesting newly scanned manuscripts, performing OCR, and exporting metadata.
-3. **Exhibition Operators & System Administrators:** Setting up the server, deploying across LAN Wi-Fi or Cloudflare WAN, configuring touch kiosks, and troubleshooting.
+Welcome to the **Dr. B.R. Ambedkar Digital Heritage Archive and Institutional Knowledge Platform**. Engineered for the Ministry of Social Justice and Empowerment (MoSJE) and the Dr. Ambedkar International Centre (DAIC), this platform democratizes access to 538+ landmark writings, speeches, and Constituent Assembly Debates (CAD) through an interactive, multi-sensory "Living Interface" combining 3D spatial depth, grounded AI research assistance, and audio accessibility.
+
+This manual provides operational guidance for:
+1. **Memorial Visitors & Students:** Exploring the archive, interacting with the 3D Ambedkar Spectacles ("Spatial Lens"), examining how constitutional laws were crafted, using voice-guided AI research, and listening to audio narration.
+2. **Historians & Legal Researchers:** Querying Dublin Core archival metadata across 10 Indian languages, filtering 538 indexed records, and citing primary sources.
+3. **Archivists & Curators:** Using OCR digitization to ingest scanned manuscripts and managing the catalog with role-based authentication.
+4. **Exhibition Operators & IT Administrators:** Running standalone kiosk displays, LAN Wi-Fi hotspots, zero-latency Cloudflare tunnels, or cloud-hosted Netlify/Render environments.
 
 ---
 
-## 2. System Requirements & Prerequisites
+## 2. System Architecture & Corpus Metrics
 
-### Minimum Hardware
-- **Processor:** Intel Core i3 / AMD Ryzen 3 or higher (Intel Core i5 / Apple M-series recommended).
-- **RAM:** 4 GB minimum (8 GB recommended for OCR processing).
-- **Storage:** 2 GB free disk space (includes SQLite database, OCR language models, and cached documents).
-- **Display:** 1080p Full HD touchscreen or standard desktop monitor.
-
-### Software Dependencies
-- **Operating System:** Windows 10/11, Ubuntu 20.04+, or macOS 12+.
-- **Python:** Python 3.10, 3.11, or 3.12 (Check with `python --version`).
-- **Tesseract OCR:** Required for scanning PDFs and images.
-  - *Windows:* Download installer from [UB-Mannheim Tesseract](https://github.com/UB-Mannheim/tesseract/wiki) and install to `C:\Program Files\Tesseract-OCR\`.
-  - *Linux:* `sudo apt install tesseract-ocr tesseract-ocr-hin tesseract-ocr-mar`
-- **Web Browser:** Google Chrome or Microsoft Edge (Chromium-based browser required for Web Speech API and Chromium App-Mode).
+| Archival Parameter | Production Metric | Description |
+| :--- | :--- | :--- |
+| **Total Ingested Documents** | **538 Historical Works** | Complete corpus indexed across 3 verified national archives |
+| **Total Words Indexed** | **86,834 Words** | Curated transcripts, debates, and primary source treatises |
+| **Vector Embedding Chunks** | **835 Chunks** | Pre-partitioned semantic chunks for vector RAG |
+| **Full-Text Retrieval Latency** | **< 2.0 ms** | SQLite FTS5 engine outperforming government SLA (2.0s) |
+| **Supported Languages** | **10 Indian Languages** | English (418), Hindi (42), Telugu (27), Marathi (18), Bengali (11), Tamil (9), Gujarati (9), Punjabi (2), Malayalam (1), Kannada (1) |
+| **Primary Sources** | **3 Verified Repos** | Internet Archive (510), Dr. Ambedkar Foundation / BAWS (16), CAD Debates (12) |
+| **Theme System** | **Obsidian & Parchment** | Dynamic Dark (`#040507`) & Light (`#f5f4ee`) modes with adaptive 3D lighting |
 
 ---
 
 ## 3. Installation & Quick Start
 
-### Step 1: Open the Project Directory
-Open PowerShell or Command Prompt in the project folder:
+### Option A: Cloud Web Access (Zero Setup Required)
+Open any modern web browser and navigate directly to:
+**[https://virasatstarkx.netlify.app/](https://virasatstarkx.netlify.app/)**
+
+All 538 documents, the 3D Ambedkar Spectacles, search filters, timeline milestones, and modal inspectors are immediately functional with zero installation.
+
+---
+
+### Option B: Local Kiosk & Server Execution
+
+#### Step 1: Open the Project Directory
+Open PowerShell or Command Prompt in the repository folder:
 ```powershell
 cd C:\Users\NITESH\Downloads\MEORIAL_KIOSK\MODELS\PROTOTYPE\ambedkar01\ambedkar
 ```
 
-### Step 2: Initialize Virtual Environment & Dependencies
+#### Step 2: Initialize Virtual Environment & Start Server
 Run the local setup script:
 ```powershell
 .\start-local.ps1
 ```
-*What this does automatically:*
-1. Checks for Python 3.
-2. Creates an isolated virtual environment (`.venv`).
-3. Installs all required packages from `requirements.txt` (FastAPI, Uvicorn, PyMuPDF, Pytesseract, Pillow, etc.).
-4. Starts the FastAPI server at `http://127.0.0.1:8000`.
+*What this script does automatically:*
+1. Checks for Python 3.10+.
+2. Activates or creates the isolated virtual environment (`.venv`).
+3. Installs requirements from `requirements.txt` (FastAPI, Uvicorn, PyMuPDF, Pytesseract, Pillow, etc.).
+4. Starts the local FastAPI server at `http://127.0.0.1:8000`.
 
-### Step 3: Launch the User Interface
-Open your web browser and navigate to:
-```
-http://localhost:8000
-```
-To launch in dedicated, full-screen **Chromium Kiosk App Mode** (without browser bars):
-Double-click [`Launch-Ambedkar-Archive.bat`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/Launch-Ambedkar-Archive.bat).
+#### Step 3: Launch Dedicated Fullscreen Kiosk Mode
+Double-click [`Launch-Ambedkar-Archive.bat`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/Launch-Ambedkar-Archive.bat) or [`Run-Ambedkar-Archive.bat`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/Run-Ambedkar-Archive.bat).
+This launches Google Chrome or Microsoft Edge in borderless kiosk mode directly into the interface.
 
 ---
 
 ## 4. Multi-Device Exhibition & Network Deployment
 
-### Scenario A: Standalone Single Laptop Kiosk
-- **Best For:** Dedicated memorial touch kiosk station or offline evaluation desk.
-- **How to Run:**
-  Double-click `Run-Ambedkar-Archive.bat` or `Launch-Ambedkar-Archive.bat`.
-  The archive launches in fullscreen app mode on the local machine.
+### Scenario A: Standalone Single Touchscreen Kiosk
+- **Best For:** Dedicated memorial interactive touch-tables or offline evaluation kiosks.
+- **Execution:** Run `Launch-Ambedkar-Archive.bat`. The archive runs in clean fullscreen kiosk mode.
 
 ---
 
-### Scenario B: Multi-Device LAN (1 Laptop + 2 Phones/Tablets)
-- **Best For:** Live Hackathon / Exhibition judging tables where visitors use tablets or phones to browse while the laptop runs the central server.
-- **Topology:**
-  - **Phone 1:** Acts as a portable Wi-Fi Hotspot router (SSID: `AmbedkarArchive_LAN`).
-  - **Laptop:** Connects to Phone 1's hotspot; runs the central server.
-  - **Phone 2 / Tablet:** Connects to Phone 1's hotspot; acts as the interactive touchscreen kiosk.
-- **How to Start:**
-  1. On the Laptop, right-click and run:
+### Scenario B: Zero-Latency Cloudflare Edge Tunnel (Recommended for Live Judging)
+- **Best For:** Instant public global access without firewall port-forwarding or Render cold-start delays.
+- **Execution:**
+  1. Ensure the local server is running (`start-local.ps1` or port 8000).
+  2. Double-click [`start_cloudflare_tunnel.bat`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/start_cloudflare_tunnel.bat) (or run `.\cloudflared.exe tunnel --url http://127.0.0.1:8000`).
+  3. The tunnel will generate a public URL such as `https://curves-baseball-circular-declined.trycloudflare.com`.
+  4. Share this URL or display a QR code for visitors and evaluators to access the full archive with sub-second speeds.
+
+---
+
+### Scenario C: Multi-Device LAN (1 Laptop + Mobile Devices / Tablets)
+- **Best For:** Exhibition booths where tablets act as kiosks while the laptop acts as the central server.
+- **Execution:**
+  1. On the laptop, run:
      ```powershell
      .\start-lan.ps1
      ```
-  2. The script configures the Windows Defender Firewall rule and displays your LAN URL:
-     ```
-     Other devices on the same Wi-Fi: http://192.168.43.100:8000/
-     ```
-  3. Open that URL on Phone 2 or any tablet on the network.
+  2. The script configures the Windows Defender Firewall rule and displays your LAN URL (e.g. `http://192.168.43.100:8000/`).
+  3. Open that URL on any phone or tablet connected to the same Wi-Fi.
 
 ---
 
-### Scenario C: Zero-Latency USB Kiosk (ADB Reverse Port Forwarding)
-- **Best For:** High-interference convention halls where Wi-Fi is unreliable or blocked.
-- **Setup:**
-  1. Connect Phone 2 / Android Tablet to the Laptop via a USB cable.
-  2. Enable **USB Debugging** on the Android device.
-  3. Run the following command in PowerShell on the laptop:
+### Scenario D: High-Speed USB Kiosk (ADB Reverse Port Forwarding)
+- **Best For:** Convention halls with noisy or blocked Wi-Fi networks.
+- **Execution:**
+  1. Connect an Android tablet to the laptop via USB and enable USB Debugging.
+  2. Run:
      ```powershell
      adb reverse tcp:8000 tcp:8000
      ```
-  4. On the tablet, open Chrome and navigate to `http://localhost:8000`. Traffic routes directly over the high-speed USB bus with zero lag.
-
----
-
-### Scenario D: Public WAN Tunnel (Global Evaluator Link)
-- **Best For:** Sharing the live prototype with judges or evaluators outside your local network.
-- **How to Start:**
-  1. Ensure the local server is running (`start-local.ps1`).
-  2. In a second terminal window, run:
-     ```cmd
-     start-wan-tunnel.bat
-     ```
-  3. The script verifies that port 8000 is active and launches the bundled `cloudflared.exe`.
-  4. It prints a public secure URL:
-     ```
-     https://random-words.trycloudflare.com
-     ```
-  5. Share this URL or generate a QR code for evaluators to test on their personal phones.
+  3. Open `http://localhost:8000` in the tablet's browser for lag-free, wire-speed access.
 
 ---
 
 ## 5. Visitor & Researcher Guide
 
-### 1. Searching the Archive
-- **Keyword Search:** Type any topic, name, book title, or constitutional article into the top search box (e.g. `Untouchability`, `Directive Principles`, `Rupee`, `Article 356`) and press **Enter** or tap **Search**.
+### 1. 3D Spatial Lens — Dr. Ambedkar's Round Spectacles
+- Located at the hero header of the homepage, the 3D gold-wire spectacles (`AMBEDKAR_SPECS`) serve as the physical and metaphorical anchor of the exhibition.
+- **Interactive Controls:**
+  - **Mouse / Touch Parallax:** Move your cursor or drag on touch screens to rotate and tilt the spectacles in 3D space.
+  - **Reflective Specular Highlights:** Notice real-time reflection on the circular lenses and gold-plated temple joints.
+  - **Theme Adaptation:** Switching between Dark Mode and Light Mode automatically transitions the 3D studio lighting from an amber rim light to archival tungsten illumination.
+
+### 2. Backstory-to-Frontstory Law Crafting Studio
+- Directly below the 3D Spectacles, explore **"Why This Law Was Crafted This Way"**.
+- Tap on any key constitutional milestone:
+  - **Article 17 (Abolition of Untouchability):** Backstory: Mahad Satyagraha 1927 & Chavdar Tale water denial. Frontstory: Enacted as an absolute fundamental right enforceable against private citizens.
+  - **Article 21 (Personal Liberty & Due Process):** Backstory: Columbia University jurisprudence under John Dewey. Frontstory: Bedrock of constitutional safeguards against arbitrary detention.
+  - **Article 32 (Heart and Soul of the Constitution):** Backstory: Substantive rights are hollow without immediate judicial remedy. Frontstory: Direct right to petition the Supreme Court of India via prerogative writs.
+  - **Hindu Code Bill (Women's Property & Equal Rights):** Backstory: Resignation as Law Minister in 1951 over patriarchal dilution. Frontstory: Established equal inheritance, divorce rights, and monogamy for Indian women.
+  - **Reserve Bank of India Framework:** Backstory: London School of Economics doctorate treatise *The Problem of the Rupee*. Frontstory: Formed the operational architecture of India's central banking system.
+
+### 3. Comprehensive Search & Faceted Filtering
+- **Keyword Search:** Type any search query (e.g., `Annihilation of Caste`, `Directive Principles`, `Untouchability`, `Article 356`, `Rupee`) and press Enter.
 - **Keyboard Shortcut:** Press `Ctrl + K` (or `Cmd + K` on Mac) anywhere on the page to focus the search box.
-- **Clear Search:** Tap the `✕` icon inside the search box to clear query filters.
+- **538-Record Direct Catalog:** Searches across all 538 indexed historical works with instant pagination (30 records per page).
+- **Faceted Dropdowns:** Filter by:
+  - **Language:** English, Hindi, Telugu, Marathi, Bengali, Tamil, Gujarati, Punjabi, Malayalam, Kannada.
+  - **Document Type:** Publications, Speeches, CAD Debates, Manuscripts, Historical Records.
+  - **Source Repository:** Internet Archive, Constituent Assembly Debates, Dr. Ambedkar Foundation.
 
-### 2. Using Multi-Parameter Filters
-- **Language Dropdown:** Filter records written in any of the 10 indexed languages (English, Hindi, Marathi, Telugu, Tamil, etc.).
-- **Type Dropdown:** Filter by Publications, Speeches, CAD Debates, Manuscripts, or Historical Records.
-- **Source Dropdown:** Filter between Internet Archive, Constituent Assembly Debates, or Dr. Ambedkar Foundation.
-- **Quick Filters:** Tap any of the pre-configured topic chips (*CAD Debates*, *Annihilation of Caste*, *Directive Principles*, *Untouchability*, *Economics & RBI*, *Buddhism & Dhamma*) for instant one-touch exploration.
-
-### 3. Exploring the Historical Timeline
+### 4. Interactive Historical Timeline
 - Tap the **Timeline** tab in the navigation bar.
-- Scroll through 11 historical milestone cards spanning 1916 to 1956.
+- Trace 11 defining milestones spanning 1916 (Columbia University paper) to 1956 (Deekshabhoomi conversion).
 - Tap **"Read Original Historical Record"** on any card to immediately view the corresponding primary source document.
 
-### 4. Interacting with the AI Research Assistant
+### 5. AI Research Assistant & Grounded Q&A
 - Tap the **Research** tab.
-- **Preset Prompts:** Tap any of the recommended prompt pills:
-  - *Hero Worship / Bhakti in Politics*
-  - *Parliamentary vs Presidential System*
-  - *Article 356 as 'Dead Letter'*
-  - *Caste as Division of Labourers*
-- **Custom Questions:** Type your research question into the chat input and click **Ask** or press **Enter**.
-- **Voice Input (Speech-to-Text):** Tap the **Microphone** icon (`#aiVoiceBtn`). When the icon turns red and the status displays *"Listening..."*, speak your question clearly in English, Hindi, or Marathi. The transcription appears in real-time. Tap the button again to submit.
-- **Reviewing Citations:** Each assistant response provides excerpted historical evidence with a **"View Source"** button.
+- **Recommended Prompts:** Click one-touch prompts like *Hero Worship / Bhakti in Politics*, *Parliamentary vs Presidential System*, or *Article 356 as 'Dead Letter'*.
+- **Voice Speech-to-Text Input:** Tap the **Microphone** button (`#aiVoiceBtn`). When active, speak in English, Hindi, or Marathi. Real-time transcription is processed automatically.
+- **Source Verification:** Every answer includes excerpted evidence citations with a direct **"View Source"** button.
 
-### 5. Document Inspection & Audio Narration (TTS)
-- Tap the title or **Inspect** button on any document card to open the detail modal.
-- **Audio Readout:** Tap the large golden **Play** button in the Audio Narration bar. The system will synthesize a spoken reading of the title, summary, and quotes. Tap again to pause or stop.
-- **Primary Source Link:** If the record has an official government archive scan available, tap **"View Primary Source"** at the bottom right to open the original PDF mirror.
+### 6. Audio Narration (TTS)
+- In the Document Detail modal, tap the golden **Play** button.
+- The dual-engine audio synthesizer reads the title, executive summary, and key historical quotes.
+- Fallback: Uses high-fidelity cloud voices when online, or native browser Web Speech synthesis (`en-IN`, `hi-IN`, `mr-IN`) when offline.
 
-### 6. Changing Languages & Themes
-- **Language Switcher:** In the top navigation bar, tap **EN** (English), **हिंदी** (Hindi), or **मराठी** (Marathi). All interface text, placeholders, timeline events, and voice models adjust dynamically.
-- **Theme Toggle:** Tap the **Moon / Sun** icon in the header to switch between Dark and Light mode.
-- **Fullscreen Kiosk:** Tap **Kiosk Mode** in the header to enter or exit borderless fullscreen.
+### 7. Dual Themes: Obsidian & Archival Parchment
+- Tap the **Moon / Sun** button in the header.
+- **Obsidian Dark Mode:** Deep `#040507` background with gold amber typography and glassmorphic card borders.
+- **Archival Parchment Light Mode:** `#f5f4ee` paper parchment tone with deep slate typography and warm museum accents.
 
 ---
 
-## 6. Curatorial Guide: Ingesting Documents & OCR
+## 6. Curatorial Guide: Ingestion & Role-Based Access
 
-1. Tap the **Contribute** tab in the navigation bar.
-2. Fill in the document details:
-   - **Document Title:** e.g., *Address at All India Depressed Classes Conference*.
-   - **Author / Speaker:** Default: *Dr. B.R. Ambedkar*.
-   - **Historical Date:** Enter date in `YYYY-MM-DD` format.
-   - **Document Type:** Select *Speech*, *Debate*, *Publication*, or *Manuscript*.
-   - **Language:** Select language of the document.
-   - **Tags:** Enter comma-separated keywords (e.g. *social_justice, constitution, rights*).
-3. **Digitization & OCR:**
-   - Under *Scan a PDF or image for OCR*, choose your file (`.pdf`, `.png`, `.jpg`, `.tiff`).
-   - Select OCR Mode (*Printed text* or *Handwriting*).
-   - Click **Extract Text**. Wait for Tesseract to process the pages.
-   - The extracted text automatically populates the *Full Text Content* box below.
-4. **Curatorial Verification:**
-   - Review the extracted text in the text area. Correct any character misrecognitions or formatting flaws.
-5. **Submit to Archive:**
-   - Click **Ingest Document Into Pipeline**.
-   - The document is immediately stored in SQLite, indexed in the FTS5 virtual table, and saved as a JSON record in `processed_data/`. It is immediately discoverable in the search bar.
+The archive features a role-based authentication modal to safeguard historical records:
+
+### User Roles & Capabilities
+1. **Visitor:** Public browsing, search, timeline exploration, AI assistant, and audio narration.
+2. **Student (Passcode: `{STUDENT}`):** Unlocks deep document relationship graphs and advanced research queries.
+3. **Researcher / Curator (Passcode: `{RESEARCHER}`):** Unlocks the **Contribute** tab, full OCR digitization, and catalog ingestion pipelines.
+
+### Digitization Workflow
+1. Authenticate with Researcher role.
+2. Tap the **Contribute** tab.
+3. Upload a scan (`.pdf`, `.png`, `.jpg`, `.tiff`).
+4. Select OCR Mode (*Printed text* or *Handwriting*).
+5. Click **Extract Text** to generate editable OCR transcripts.
+6. Verify and edit extracted text, Dublin Core metadata, and tags.
+7. Click **Ingest Document Into Pipeline** to commit directly to SQLite and FTS5 indices.
 
 ---
 
-## 7. Troubleshooting & FAQ
+## 7. Automated Cloud Sync & Diagnostic Script
 
-### Q1: The server fails to start with `Port 8000 is already in use`
-- **Cause:** Another instance of Python or Uvicorn is running in the background.
-- **Solution:**
-  In PowerShell, run:
+To keep Netlify, GitHub, and Render synchronized, run the automated pipeline:
+```powershell
+.\.venv\Scripts\python.exe auto_deploy_and_check.py
+```
+This utility:
+1. Validates local frontend files (`index.html`, `app.js`, `styles.css`).
+2. Commits and pushes any modifications to GitHub `main` branch (triggering Netlify auto-build).
+3. Polls `https://virasatstarkx.netlify.app/` until the new version is live on the CDN.
+4. Performs a complete health audit of SQLite chunks, Cloud /api/stats, and proxy health.
+
+---
+
+## 8. Troubleshooting & Operator FAQ
+
+### Q1: The site displays "Complete Digital Heritage Catalog (538+ Works Indexed) Active"
+- **Meaning:** The frontend is successfully utilizing the pre-compiled 538-record catalog (`frontend/archive_documents.json`), providing immediate offline search and browsing even if the cloud backend is cold-starting.
+
+### Q2: How do I avoid Render cold-start delays?
+- Render's free tier spins down after 15 minutes of inactivity (taking ~30 seconds to wake).
+- **Solution:** Use the Cloudflare Tunnel via `start_cloudflare_tunnel.bat`. It connects directly to your local FastAPI server with zero delay.
+
+### Q3: How do I change between Light and Dark mode?
+- Tap the theme toggle button in the top navigation header. Both modes have been calibrated with WCAG AA compliance and adaptive 3D lighting.
+
+### Q4: Port 8000 is occupied
+- In PowerShell, run:
   ```powershell
   Get-Process python* | Stop-Process -Force
   ```
-  Then rerun `.\start-local.ps1`.
-
-### Q2: OCR extraction fails with `Tesseract is not installed or not in PATH`
-- **Cause:** Tesseract OCR binary was not detected on the machine.
-- **Solution:**
-  1. Download and run the Windows Tesseract installer from [UB-Mannheim](https://github.com/UB-Mannheim/tesseract/wiki).
-  2. Ensure it is installed to `C:\Program Files\Tesseract-OCR\`.
-  3. Re-run `backend/setup_ocr_models.py` to ensure Devanagari models are downloaded.
-
-### Q3: Audio Narration gives an error or remains silent
-- **Cause:** Cloud ElevenLabs credits are exhausted or network is offline.
-- **Behavior:** The archive automatically falls back to your browser's native speech synthesizer. Ensure your system volume is unmuted and the browser tab has permission to play audio.
-
-### Q4: Phone 2 cannot connect to the Laptop over Wi-Fi
-- **Cause:** Windows Firewall is blocking inbound connections on port 8000, or the phones are on different subnets.
-- **Solution:**
-  1. Ensure both devices are connected to the exact same Wi-Fi network or hotspot.
-  2. Launch using `start-lan.ps1` (which automatically creates the Windows Firewall inbound rule for port 8000).
-  3. Verify the IP address using `ipconfig` on the laptop.
+  Then re-run `.\start-local.ps1`.

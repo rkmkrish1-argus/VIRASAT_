@@ -15,12 +15,12 @@ While the current prototype successfully demonstrates the foundational UI, FTS5 
 ```mermaid
 flowchart TD
     subgraph Current Prototype [Current Prototype State]
-        C1[530 Curated Documents<br/>10 BAWS / 10 CAD]
-        C2[FTS5 Lexical Search Only<br/>Keyword Matching]
-        C3[Simulated AI Assistant<br/>Dictionary Regex Lookup]
-        C4[Off-the-shelf Printed Tesseract<br/>No Handwriting Model]
-        C5[Cloud ElevenLabs TTS<br/>Fails when Offline]
-        C6[Plain Text Transcript View<br/>External Links Only]
+        C1[538 Curated Documents<br/>16 BAWS / 12 CAD / 510 IA]
+        C2[FTS5 Lexical Search Only<br/>Sub-2ms Keyword Matching]
+        C3[Simulated AI Assistant<br/>Grounded Source Citation Match]
+        C4[Off-the-shelf Printed Tesseract<br/>Multi-Language Ingestion]
+        C5[Dual-Engine TTS<br/>Cloud ElevenLabs + Local WebSpeech]
+        C6[3D Spatial Lens & Law Studio<br/>Netlify + Render + Cloudflare]
     end
 
     subgraph Institutional Vision [Target Institutional Vision]
@@ -45,7 +45,7 @@ flowchart TD
 ## 2. Strategic Pillars Required to Match the Vision
 
 ### Pillar 1: Ingestion of the Full National Archival Corpus
-- **Current Limitation:** The repository indexes 530 records, but only 10 are from the Dr. Ambedkar Foundation (BAWS) and 10 from the Constituent Assembly Debates. 510 items are broad Internet Archive catalog entries.
+- **Current Limitation:** The repository indexes 538 records, including 16 from the Dr. Ambedkar Foundation (BAWS) and 12 from the Constituent Assembly Debates. 510 items are broad Internet Archive catalog entries.
 - **Required Action:**
   1. **Complete 21 Volumes of BAWS:** Ingest all 21 official volumes published by the Dr. Ambedkar Foundation in English, Hindi, and Marathi (~15,000+ pages). Each volume must be broken down by chapter, speech, and section with exact page numbers.
   2. **Complete 12 Volumes of CAD:** Ingest the full official verbatim transcripts of the Constituent Assembly Debates (December 9, 1946 – January 24, 1950) from the Lok Sabha Secretariat archives.

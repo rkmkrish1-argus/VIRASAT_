@@ -187,3 +187,23 @@ These issues are classified into 5 severity categories:
 | **P1** | Unauthenticated `/api/ingest` | `backend/app.py` | Add basic token authentication for curator actions. |
 | **P2** | CDN dependencies in offline kiosk | `frontend/index.html` | Download Tailwind and FontAwesome for 100% offline bundling. |
 | **P2** | Dummy full-text in IA records | `ambedkar_archive_data/` | Re-extract or flag items lacking full OCR transcripts. |
+
+---
+
+## 9. Recent Remediations & Production Fixes (Version 2.2.0)
+
+1. **Resolved 6-Record Limit on Homepage:**
+   - Generated `frontend/archive_documents.json` (1.3 MB) containing all 538 historical records directly from SQLite.
+   - Enhanced `frontend/app.js` with `loadLocalArchiveCatalog()` providing instant client-side keyword search, 3-axis filtering, pagination (30 records per page), and Dublin Core inspection modal with zero dependency on backend availability.
+2. **Resolved Netlify 404 Proxy Error:**
+   - Updated `netlify.toml` line 18 and `auto_deploy_and_check.py` to point directly to the active Render cloud deployment: `https://ambedkar-api-81k6.onrender.com/api/:splat`.
+   - Verified HTTP 200 OK across `/api/health` and `/api/stats`.
+3. **Resolved Dark & Light Mode Theme Glitches:**
+   - Overhauled `frontend/styles.css` using dynamic CSS color tokens for backgrounds, text, borders, chips, and modal surfaces.
+   - Obsidian Dark (`#040507`) and Archival Parchment Light (`#f5f4ee`) modes calibrated with zero contrast defects.
+4. **Replaced Generic 3D Artifact with Historical Spatial Anchor:**
+   - Removed generic 3D book/artifact placeholder and implemented Dr. B.R. Ambedkar's iconic gold round spectacles (`AMBEDKAR_SPECS`) in Three.js with real-time cursor parallax, metallic shaders, and theme-adaptive studio lighting.
+   - Added the **Backstory-to-Frontstory Law Crafting Studio** connecting historical personal adversity directly to constitutional jurisprudence (Article 17, 21, 32, Hindu Code Bill, RBI).
+5. **Added Zero-Latency Cloudflare Edge Tunneling:**
+   - Integrated `cloudflared.exe` with one-click launcher `start_cloudflare_tunnel.bat` routing port 8000 through Cloudflare's global edge network.
+

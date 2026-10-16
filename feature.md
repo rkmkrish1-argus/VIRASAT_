@@ -1,26 +1,30 @@
 # Feature Inventory & Specification — Dr. B.R. Ambedkar Digital Heritage Archive
 **Problem Statement ID:** 26096 | **Theme:** Smart Education & Cultural Preservation  
 **Deployment Target:** Dr. Ambedkar International Centre (DAIC), New Delhi  
-**Project Location:** `C:\Users\NITESH\Downloads\MEORIAL_KIOSK\MODELS\PROTOTYPE\ambedkar01\ambedkar`
+**Live Production URL:** [https://virasatstarkx.netlify.app/](https://virasatstarkx.netlify.app/)  
+**Live Cloud API URL:** [https://ambedkar-api-81k6.onrender.com](https://ambedkar-api-81k6.onrender.com)  
+**Version:** 2.2.0
 
 ---
 
-## 1. Feature Map Overview
+## 1. Feature Architecture Map
 
 ```mermaid
 graph TD
-    UI[Kiosk Web Interface] --> F1[1. Sub-Millisecond Hybrid Search]
+    UI[Living Interface Web Portal] --> F1[1. Sub-Millisecond Hybrid Search]
     UI --> F2[2. Multi-Faceted Filter Hub]
-    UI --> F3[3. Chronological Heritage Timeline]
-    UI --> F4[4. Constitutional Research Assistant]
-    UI --> F5[5. Dual-Engine Audio Narration TTS]
-    UI --> F6[6. Voice Speech-to-Text Input]
-    UI --> F7[7. Document Deep Inspection Modal]
-    UI --> F8[8. Multilingual Interface Switcher]
-    UI --> F9[9. Ingestion Pipeline & OCR Studio]
-    UI --> F10[10. Institutional Analytics & Export]
-    UI --> F11[11. Kiosk Fullscreen & Accessibility]
-    UI --> F12[12. Multi-Tier Deployment Network]
+    UI --> F3[3. 3D Spatial Lens: Ambedkar Spectacles]
+    UI --> F4[4. Backstory-to-Frontstory Law Studio]
+    UI --> F5[5. Chronological Heritage Timeline]
+    UI --> F6[6. Constitutional AI Research Assistant]
+    UI --> F7[7. Dual-Engine Audio Narration TTS]
+    UI --> F8[8. Voice Speech-to-Text Input]
+    UI --> F9[9. Document Deep Inspection Modal]
+    UI --> F10[10. Obsidian & Parchment Dual Themes]
+    UI --> F11[11. Ingestion Pipeline & OCR Studio]
+    UI --> F12[12. Role-Based Access Control]
+    UI --> F13[13. Complete 538-Record Client Catalog]
+    UI --> F14[14. Cloudflare Edge Tunneling]
 ```
 
 ---
@@ -31,159 +35,115 @@ graph TD
 - **Category:** Core Retrieval Engine
 - **Files Involved:** [`backend/database.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/database.py), [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/search`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`executeSearch()`).
 - **Description:** Performs ultra-low-latency lexical keyword matching across titles, summaries, full transcribed text, and tags.
-- **Performance:** Measured query response time is **0.5 ms to 1.8 ms**, outperforming the government's 2.0-second SLA target by over 1,000x.
-- **Capabilities:**
-  - Tokenized query matching with prefix search (`term*`).
-  - Supports search in English, Hindi, and regional scripts.
-  - Highlights matching record count and query latency in milliseconds on the UI.
-- **Fallback:** If the backend is offline, the frontend seamlessly executes client-side filtering over embedded JSON records (`FALLBACK_DOCS`).
+- **Performance:** Measured query latency is **0.5 ms to 1.8 ms**, outperforming the government's 2.0-second SLA target by over 1,000x.
+- **Capabilities:** Tokenized query matching with prefix search (`term*`) across English, Hindi, and regional scripts.
 
 ---
 
 ### Feature 2: Multi-Faceted Archival Filtering
 - **Category:** Search & Discovery
 - **Files Involved:** [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js).
-- **Description:** Allows visitors and researchers to refine 530+ archival records across 3 independent taxonomies:
-  1. **Language Filter:** All (10 Languages), English (410), Hindi (42), Telugu (27), Marathi (18), Bengali (11), Tamil (9), Gujarati (9), Punjabi (2), Malayalam (1), Kannada (1).
-  2. **Document Type Filter:** Publications (423), Speeches (63), CAD Debates (20), Manuscripts (4), Historical Records (20).
-  3. **Repository Source Filter:** Internet Archive (510), Constituent Assembly (10), Dr. Ambedkar Foundation (10).
+- **Description:** Allows visitors and researchers to refine 538 archival records across 3 independent taxonomies:
+  1. **Language Filter:** All (10 Languages), English (418), Hindi (42), Telugu (27), Marathi (18), Bengali (11), Tamil (9), Gujarati (9), Punjabi (2), Malayalam (1), Kannada (1).
+  2. **Document Type Filter:** Publications (426), Speeches (66), CAD Debates (22), Manuscripts (4), Historical Records (20).
+  3. **Repository Source Filter:** Internet Archive (510), Constituent Assembly Debates (12), Dr. Ambedkar Foundation / BAWS (16).
 - **Quick-Concept Chips:** One-tap shortcut buttons for recurring research topics: *CAD Debates, Annihilation of Caste, Directive Principles, Untouchability, Economics & RBI, Buddhism & Dhamma*.
 
 ---
 
-### Feature 3: Interactive Chronological Heritage Timeline
+### Feature 3: 3D Spatial Lens — Dr. Ambedkar's Round Spectacles (`AMBEDKAR_SPECS`)
+- **Category:** Spatial 3D Interaction & Living Interface
+- **Files Involved:** [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`initSpecs3D()`, `updateSpecs3DTheme()`), [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html).
+- **Description:** An interactive 3D hero artifact rendering Dr. B.R. Ambedkar’s iconic round, gold-rimmed spectacles in real-time WebGL using Three.js.
+- **Interactions:**
+  - Cursor-following and touch-drag rotation (`0.05` spring interpolation).
+  - Procedural gold metallic materials (`MeshStandardMaterial` with metalness `0.92`, roughness `0.22`).
+  - Translucent glass lenses with specular reflections.
+  - Dynamic studio lighting: Ambient amber glow in Dark mode, warm tungsten in Light mode.
+
+---
+
+### Feature 4: Backstory-to-Frontstory Law Crafting Studio
+- **Category:** Constitutional Education & Experiential Storytelling
+- **Files Involved:** [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`openLawDetail()`).
+- **Description:** Directly connected to the 3D Spectacles, this studio visually breaks down why monumental laws were shaped through Dr. Ambedkar's perspective:
+  - **Article 17 (Abolition of Untouchability):** Traced from the 1927 Mahad Water Satyagraha to direct civil penalty enactments.
+  - **Article 21 (Protection of Life & Personal Liberty):** Deweyan pragmatism applied to Indian fundamental liberties.
+  - **Article 32 (Constitutional Remedies):** Why rights without immediate prerogative writs are an empty promise.
+  - **Hindu Code Bill (Women's Property & Marital Rights):** The ethical fight for gender equality leading to his 1951 resignation.
+  - **Reserve Bank of India Act:** Roots in his London School of Economics doctorate treatise *The Problem of the Rupee*.
+
+---
+
+### Feature 5: Interactive Chronological Heritage Timeline
 - **Category:** Educational & Memorial Storytelling
 - **Files Involved:** [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/timeline`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`loadTimeline()`).
-- **Description:** An interactive chronological pathway tracing 11 defining constitutional and social milestones in Dr. Ambedkar's life:
-  - 1916: *Castes in India* paper at Columbia University.
-  - 1920: Launch of *Muknayak* fortnightly journal.
-  - 1923: *Problem of the Rupee* (London School of Economics / RBI origins).
-  - 1927: Mahad Satyagraha (Civic drinking water rights at Chavdar Tale).
-  - 1932: Poona Pact Agreement with Mahatma Gandhi.
-  - 1936: Publication of *Annihilation of Caste*.
-  - 1946: Maiden address to the Constituent Assembly.
-  - 1947: Appointed Chairman of the Constitution Drafting Committee.
-  - 1948: Presentation of the Draft Constitution of India.
-  - 1948: Unanimous adoption of Article 17 (Abolition of Untouchability).
-  - 1949: Final Constituent Assembly address ("Grammar of Anarchy").
-  - 1956: Historical Buddhist conversion at Deekshabhoomi, Nagpur.
-- **Deep-Link Integration:** Each timeline milestone card features a *"Read Original Historical Record"* button that directly opens the primary archival scan and transcript in the document inspection modal.
+- **Description:** Traces 11 pivotal milestones from 1916 to 1956 with deep links to primary scans and archival transcripts.
 
 ---
 
-### Feature 4: Archival Research Assistant (Q&A Interface)
+### Feature 6: Archival Research Assistant (Q&A Interface)
 - **Category:** AI Research & Grounded Assistance
 - **Files Involved:** [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/assistant`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`handleAiSubmit()`).
-- **Description:** A dedicated research chat panel allowing visitors to ask constitutional and biographical questions.
-- **Preset Historical Prompts:**
-  - *Hero Worship / Bhakti in Politics*
-  - *Parliamentary vs Presidential System*
-  - *Article 356 as 'Dead Letter'*
-  - *Caste as Division of Labourers*
-- **Source Citations:** Answers include clickable evidence cards showing:
-  - Document Title and Author
-  - Historical Date and Source Archive
-  - Relevant Quote Excerpt
-  - "View Source" button opening the full primary document.
+- **Description:** Grounded archival research chat with preset prompts, speech recognition, and verifiable citations.
 
 ---
 
-### Feature 5: Dual-Engine Audio Narration (Text-to-Speech)
+### Feature 7: Dual-Engine Audio Narration (Text-to-Speech)
 - **Category:** Multimodal Accessibility
 - **Files Involved:** [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/tts`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`toggleAudioNarration()`).
-- **Description:** Delivers spoken audio playback of document summaries, key quotes, and titles to serve visually impaired, elderly, or low-literacy visitors.
-- **Dual-Engine Architecture:**
-  1. **Primary Engine (Cloud):** ElevenLabs Multilingual V2 (`eleven_multilingual_v2`) using a configured voice profile for high-fidelity natural pacing.
-  2. **Fallback Engine (Offline Local):** Browser native `window.speechSynthesis` using Indian locale voice profiles:
-     - English: `en-IN`
-     - Hindi: `hi-IN`
-     - Marathi: `mr-IN`
-- **Controls:** Play/Pause button, real-time status display (`Connecting`, `Playing`, `Ready`), and automatic playback cleanup on modal close.
+- **Description:** Cloud ElevenLabs Multilingual V2 with seamless offline fallback to browser speech synthesis (`en-IN`, `hi-IN`, `mr-IN`).
 
 ---
 
-### Feature 6: Speech-to-Text Voice Query Input
-- **Category:** Touch Kiosk & Voice UX
-- **Files Involved:** [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html) (`#aiVoiceBtn`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`toggleAiVoiceInput()`).
-- **Description:** Enables visitors to speak questions aloud into the kiosk microphone instead of typing.
-- **Technology:** Integrates the HTML5 Web Speech API (`SpeechRecognition` / `webkitSpeechRecognition`).
-- **Multilingual Recognition:** Dynamically selects the speech recognition locale matching the UI language (`en-IN`, `hi-IN`, `mr-IN`).
-- **Interim Feedback:** Displays real-time interim speech transcription directly inside the input box as the visitor speaks.
+### Feature 8: Voice Speech-to-Text Input
+- **Category:** Hands-Free & Kiosk Accessibility
+- **Files Involved:** [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`initVoiceSearch()`).
+- **Description:** Web Speech API recognition for multilingual voice queries in English, Hindi, and Marathi.
 
 ---
 
-### Feature 7: Document Detail Inspection Modal
-- **Category:** Curatorial & Scholarly Viewer
+### Feature 9: Deep Document Inspection Modal
+- **Category:** Curatorial & Scholarly Research
 - **Files Involved:** [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html) (`#docModal`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`openDocModal()`).
-- **Description:** A slide-over modal window displaying complete archival metadata and transcript for any selected record.
-- **Sections Included:**
-  1. **Header Badges:** Document Type, Repository Provenance, Historical Date.
-  2. **Audio Narration Bar:** Spoken readout trigger for the active record.
-  3. **Executive Summary:** Concise contextual overview of the work.
-  4. **Key Historical Quotes:** Formatted blockquotes with amber accent styling.
-  5. **Archival Full Text / Excerpt:** Scrollable, monospace verbatim text transcript.
-  6. **Dublin Core Metadata Grid:** Identifier, Archive Reference, Word Count, Language, Physical Condition, Access Rights.
-  7. **Primary Source Deep-Link:** External anchor linking to verified official PDF mirrors (e.g. Sansad eparlib, MEA BAWS volume links).
+- **Description:** Comprehensive inspection modal displaying executive summaries, historical quotes, full transcripts, and Dublin Core metadata grids.
 
 ---
 
-### Feature 8: Dynamic Multilingual UI Localization
-- **Category:** Linguistic Inclusion
-- **Files Involved:** [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`setUiLanguage()`, `UI_TRANSLATIONS`, `TIMELINE_TRANSLATIONS`).
-- **Supported Languages:** **English (EN)**, **Hindi (हिंदी)**, and **Marathi (मराठी)**.
-- **Implementation:** Custom DOM TreeWalker traversal (`applyUiTranslations()`) that dynamically updates text nodes, button labels, placeholders, aria attributes, and filter options without triggering a page reload.
-- **Persistence:** Remembers the user's selected language in `localStorage`.
+### Feature 10: Obsidian & Archival Parchment Dual Theme System
+- **Category:** Visual Aesthetics & Ergonomics
+- **Files Involved:** [`frontend/styles.css`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/styles.css), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`toggleTheme()`).
+- **Description:**
+  - **Obsidian Dark Mode:** `#040507` abyss dark with amber typography (`#f59e0b`), subtle card borders, and high contrast.
+  - **Archival Parchment Light Mode:** `#f5f4ee` museum paper tone with dark slate typography and zero glare.
 
 ---
 
-### Feature 9: Ingestion Pipeline & OCR Studio
-- **Category:** Archival Administration & Digitization
-- **Files Involved:** [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/ocr`, `/api/ingest`), [`backend/ocr.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/ocr.py), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js).
-- **Description:** An institutional workflow allowing curators and memorial staff to digitize newly acquired materials.
-- **Workflow:**
-  1. Upload a scanned manuscript or printed PDF/image.
-  2. Select OCR mode (Printed Text vs Handwriting Model) and document language.
-  3. Extract text using Tesseract and multi-page PyMuPDF rendering.
-  4. Review and edit the extracted text in a side-by-side editing box.
-  5. Enter Dublin Core metadata (Title, Author, Historical Date, Type, Tags).
-  6. Ingest directly into the database: automatically inserts into SQLite `documents` table, indexes into FTS5 virtual table, and writes a backup JSON to `processed_data/`.
+### Feature 11: Digitization & Ingestion OCR Studio
+- **Category:** Archive Administration
+- **Files Involved:** [`backend/ocr.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/ocr.py), [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/ocr`, `/api/ingest`).
+- **Description:** Scans PDFs and image uploads via PyMuPDF and Tesseract OCR with multi-language parameters (`eng`, `hin`, `mar`, `tam`, `tel`).
 
 ---
 
-### Feature 10: Institutional Analytics & Data Export
-- **Category:** Reporting & Governance
-- **Files Involved:** [`backend/app.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/backend/app.py) (`/api/stats`, `/api/export/*`), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`loadStats()`).
-- **Description:** Live dashboard summarizing the state of the digital archive.
-- **Live Metrics:**
-  - Total Digitized Records (530+)
-  - Total Words Indexed (86,624+)
-  - Vector RAG Chunks Generated (835)
-  - Number of Indian Languages (10)
-- **Visual Distributions:** Language percentage breakdown bars and repository source provenance breakdown.
-- **Export Endpoints:**
-  - `/api/export/registry`: Download complete `registry.json`.
-  - `/api/export/csv`: Download `combined_metadata.csv` for spreadsheet analysis.
+### Feature 12: Role-Based Curatorial Access Control
+- **Category:** Institutional Security
+- **Files Involved:** [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js).
+- **Description:** Passcode verification gate protecting write operations:
+  - Visitor: Read-only access to browse, search, and listen.
+  - Student (`{STUDENT}`): Advanced analytical queries and cross-citations.
+  - Researcher / Curator (`{RESEARCHER}`): Unlocks ingestion and OCR pipeline.
 
 ---
 
-### Feature 11: Touch Kiosk Fullscreen Mode & Accessibility
-- **Category:** Hardware Kiosk Optimization
-- **Files Involved:** [`frontend/index.html`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/index.html), [`frontend/styles.css`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/styles.css).
-- **Description:** Optimized for physical exhibition touchscreens and smart displays.
-- **Capabilities:**
-  - One-touch Fullscreen toggle (`toggleFullScreen()`).
-  - Chromium App-Mode compatibility (`--app=http://localhost:8000`) removing browser toolbars, address bars, and navigation buttons.
-  - Dark / Light theme toggle.
-  - WCAG 2.1 AA accessibility: Keyboard focus navigation (`:focus-visible`), high-contrast modes (`@media (prefers-contrast: more)`), reduced motion overrides (`@media (prefers-reduced-motion: reduce)`), and forced colors support.
+### Feature 13: Complete 538-Record Client-Side Catalog
+- **Category:** High-Availability Resilience
+- **Files Involved:** [`frontend/archive_documents.json`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/archive_documents.json), [`frontend/app.js`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/frontend/app.js) (`loadLocalArchiveCatalog()`).
+- **Description:** A pre-compiled 1.3 MB static catalog containing all 538 historical records, enabling instant search, filtering, and pagination (30 records per page) with zero reliance on cloud container spin-up.
 
 ---
 
-### Feature 12: Multi-Tier Network Deployment Suite
-- **Category:** DevOps & Network Engineering
-- **Files Involved:** Deployment scripts in project root.
-- **Supported Modes:**
-  1. **Localhost Standalone:** `start-local.ps1` (`127.0.0.1:8000`).
-  2. **Local Area Network (LAN):** `start-lan.ps1` (`0.0.0.0:8000`, firewall rule addition, auto-IP discovery for Wi-Fi hotspot sharing with tablets and phones).
-  3. **Global Internet WAN:** `start-wan-tunnel.bat` (Encrypted Cloudflare Quick Tunnel via bundled `cloudflared.exe` providing instant `https://*.trycloudflare.com` links).
-  4. **Single-File Distribution:** `create-package.bat` (Generates portable `ambedkar-archive-package.zip`).
-  5. **Zero-Latency Wired Kiosk:** ADB reverse port forwarding (`adb reverse tcp:8000 tcp:8000`) connecting an Android touch display directly to the server via USB.
+### Feature 14: Cloudflare Edge Tunneling & Cloud Hybrid Setup
+- **Category:** Infrastructure & DevOps
+- **Files Involved:** [`start_cloudflare_tunnel.bat`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/start_cloudflare_tunnel.bat), [`netlify.toml`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/netlify.toml), [`auto_deploy_and_check.py`](file:///C:/Users/NITESH/Downloads/MEORIAL_KIOSK/MODELS/PROTOTYPE/ambedkar01/ambedkar/auto_deploy_and_check.py).
+- **Description:** Direct integration with Cloudflare Edge tunnels (`cloudflared`) allowing local kiosk servers to be accessed globally with sub-second latency, while Netlify provides static edge caching and automated proxying.
